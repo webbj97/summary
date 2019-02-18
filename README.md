@@ -11,4 +11,4 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 ### 阅读冴羽大大深入系列文章心得
 在掘金上偶然发现了 _冴羽大大_ 的系列文章，果断收藏、阅读，在这里附上原文地址。[冴羽写博客的地方～](https://github.com/mqyqingfeng/Blog)
 
-[1.从原型到原型链](https://github.com/webbj97/summary/issues/1)  
+[1.从原型到原型链](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/1.%E4%BB%8E%E5%8E%9F%E5%9E%8B%E5%88%B0%E5%8E%9F%E5%9E%8B%E9%93%BE.md)  
