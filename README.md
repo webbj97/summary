@@ -16,6 +16,10 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 
 [4.变量对象](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/4.%E6%B7%B1%E5%85%A5%E5%8F%98%E9%87%8F%E5%AF%B9%E8%B1%A1.md)
 
+## JavaScript部分2——专项知识点
+
+[1.数组去重问题]()
+
 ## 我阅读的针对前端（暂时）的精华文章
 ### 综合技术部分
 [1.阮一峰-前端技术栈](https://github.com/ruanyf/jstraining/blob/master/docs/history.md) 
