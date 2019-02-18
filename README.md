@@ -6,10 +6,10 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 [CSDN文章地址](https://blog.csdn.net/jbj6568839z)  
 
 ## 我阅读的针对前端（暂时）的精华文章
-###综合技术部分
+### 综合技术部分
 [1.阮一峰-前端技术栈](https://github.com/ruanyf/jstraining/blob/master/docs/history.md) 
 
-###JavaScript部分
+### JavaScript部分
 [1.冴羽-前端技术栈](https://github.com/mqyqingfeng/Blog) 
 
 ## 阅读冴羽大大深入系列文章心得
