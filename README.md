@@ -8,3 +8,4 @@
 
 
 ### 阅读冴羽大大深入系列文章心得
+[从原型到原型链](https://github.com/webbj97/summary/issues/1)  
