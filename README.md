@@ -18,7 +18,8 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 [1.阮一峰-前端技术栈](https://github.com/ruanyf/jstraining/blob/master/docs/history.md) 
 
 ### JavaScript部分
-[1.冴羽-前端技术栈](https://github.com/mqyqingfeng/Blog) 
+[1.冴羽的博客](https://github.com/mqyqingfeng/Blog) 
+
 [2.Ajax超全长篇幅知识](https://juejin.im/post/58c883ecb123db005311861a)
 
 ### CSS部分
