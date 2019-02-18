@@ -13,6 +13,9 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 [2.词法(静态)作用域和动态作用域](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/2.%E8%AF%8D%E6%B3%95%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E5%8A%A8%E6%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F.md)
 
 [3.JavaScript深入之执行上下文栈](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/3.%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87.md)
+
+[4.变量对象](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/4.%E6%B7%B1%E5%85%A5%E5%8F%98%E9%87%8F%E5%AF%B9%E8%B1%A1.md)
+
 ## 我阅读的针对前端（暂时）的精华文章
 ### 综合技术部分
 [1.阮一峰-前端技术栈](https://github.com/ruanyf/jstraining/blob/master/docs/history.md) 
