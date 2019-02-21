@@ -20,6 +20,10 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 
 [6.ECMAScript规范解读this](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/6.%E4%BB%8EECMAScript%E8%A7%84%E8%8C%83%E8%A7%A3%E8%AF%BBthis.md)
 
+[7.执行上下文](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/7.%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87.md)
+
+[8.闭包前世今生](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/8.%E9%97%AD%E5%8C%85%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F.md)
+
 ## JavaScript部分2——专项知识点
 
 [1.数组去重问题](https://github.com/webbj97/summary/blob/master/Blog-%E4%B8%93%E9%A2%98js%E8%AF%BB%E5%90%8E%E6%84%9F/1.%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E9%97%AE%E9%A2%98.md)
@@ -36,3 +40,6 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 ### CSS部分
 [1.CSS3弹性盒子](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
+
+
+###如果您读到了最后，又觉得对您有帮助的话，那么留下您的star～吧，会让我很有成就感呦
