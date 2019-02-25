@@ -28,6 +28,9 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 
 [1.数组去重问题](https://github.com/webbj97/summary/blob/master/Blog-%E4%B8%93%E9%A2%98js%E8%AF%BB%E5%90%8E%E6%84%9F/1.%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E9%97%AE%E9%A2%98.md)
 
+## Node.js入门
+[1.]()
+
 ## 我阅读的针对前端（暂时）的精华文章
 ### 综合技术部分
 [1.阮一峰-前端技术栈](https://github.com/ruanyf/jstraining/blob/master/docs/history.md) 
