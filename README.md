@@ -37,6 +37,7 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 
 [4.Node.js的模块系统](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/4.Node.js%E6%A8%A1%E5%9D%97%E7%B3%BB%E7%BB%9F.md)
 
+[5.npm和package.json](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/5.npm%E5%8C%85%E8%AF%B4%E6%98%8E%E5%92%8Cpackage.json.md)
 
 ## 我阅读的针对前端（暂时）的精华文章
 ### 综合技术部分
