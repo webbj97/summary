@@ -26,7 +26,7 @@ PS：本人目前是好未来教育的一名前端实习生，今天七月份毕
 
 [9.基本类型和引用类型的值传递](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/9.%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%80%BC%E4%BC%A0%E9%80%92.md)
 
-[10.基本类型和引用类型的值传递](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/10.call%E5%92%8Capply%E6%A8%A1%E6%8B%9F.md)
+[10.call 和 apply 模拟](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/10.call%E5%92%8Capply%E6%A8%A1%E6%8B%9F.md)
 
 ## JavaScript部分2——专项知识点
 
