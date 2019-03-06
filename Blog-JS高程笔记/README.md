@@ -4,7 +4,7 @@
 # 记录阅读JavaScript高级程序设计的一些收获和实例
 
 ## 目录
-[1.基础概念篇(针对第三章)]()
+[1.基础概念篇(针对第三章)](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/js-Blog/1.%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87.md)
 
 [2.变量、作用域和内存问题(针对第三章)]()
 
