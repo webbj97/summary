@@ -10,6 +10,15 @@
         "-search",
         "chapter-fold",
         "page-footer-ex",
-        "code"
-    ]
+        "code",
+        "copy-code-button",
+        "github",
+        "sharing-plus"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/webbj97"
+        }
+    }
+
 }
