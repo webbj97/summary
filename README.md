@@ -28,17 +28,24 @@
 
 ## JavaScript高级程序设计笔记
 
-[目录](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/README.md)  
+> 记录阅读JavaScript高级程序设计的一些收获和实例
+
+[1.基础概念篇(针对第三章)](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/js-Blog/1.%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E7%AF%87.md)  
+[2.变量、作用域和内存问题(针对第三章)](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/js-Blog/2.%E5%8F%98%E9%87%8F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E5%86%85%E5%AD%98%E9%97%AE%E9%A2%98.md)  
+[3.基本数据类型和判断](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/js-Blog/3.JS%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E4%BA%86%E7%B1%BB%E5%9E%8B.md)  
+[5.引用类型上](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/js-Blog/5.%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E4%B8%8A.md)  
+[7.面向对象的程序设计](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/js-Blog/7.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1.md)  
+[8.继承](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/js-Blog/8.%E7%BB%A7%E6%89%BF.md) 
 
 ## ES6系列
 > 正在逐渐有CSDN提炼到GitHub上
 
-[ES6系列(一)let和const](https://blog.csdn.net/jbj6568839z/article/details/84538367)
-[ES6系列(二)变量的解构赋值](https://blog.csdn.net/jbj6568839z/article/details/95185430)
-[ES6系列(三)字符串的扩展](https://blog.csdn.net/jbj6568839z/article/details/100538041)
-[ES6系列(四)函数的扩展](https://blog.csdn.net/jbj6568839z/article/details/100541937)
-[ES6系列(五)扩展运算符](https://blog.csdn.net/jbj6568839z/article/details/100670675)
-[ES6系列(六)独一无二的Symbol](https://blog.csdn.net/jbj6568839z/article/details/102488010)
+[ES6系列(一)let和const](https://blog.csdn.net/jbj6568839z/article/details/84538367)  
+[ES6系列(二)变量的解构赋值](https://blog.csdn.net/jbj6568839z/article/details/95185430)  
+[ES6系列(三)字符串的扩展](https://blog.csdn.net/jbj6568839z/article/details/100538041)  
+[ES6系列(四)函数的扩展](https://blog.csdn.net/jbj6568839z/article/details/100541937)  
+[ES6系列(五)扩展运算符](https://blog.csdn.net/jbj6568839z/article/details/100670675)  
+[ES6系列(六)独一无二的Symbol](https://blog.csdn.net/jbj6568839z/article/details/102488010)  
 
 ## Node.js入门
 [1.Node.js初探](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/1.Node.js%E5%88%9D%E6%8E%A2.md)  
