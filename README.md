@@ -7,7 +7,7 @@
 ### 我的其他博客浏览途径
 [CSDN文章地址](https://blog.csdn.net/jbj6568839z)  
 
-## JavaScript部分1--阅读冴羽大大深入系列文章心得 
+## JavaScript部分1--基础系列文章心得 
 在掘金上偶然发现了 _冴羽大大_ 的系列文章，果断收藏、阅读，在这里附上原文地址。[冴羽写博客的地方～](https://github.com/mqyqingfeng/Blog)
 
 [1.从原型到原型链](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/1.%E4%BB%8E%E5%8E%9F%E5%9E%8B%E5%88%B0%E5%8E%9F%E5%9E%8B%E9%93%BE.md)  
@@ -30,6 +30,16 @@
 
 [目录](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/README.md)  
 
+## ES6系列
+> 正在逐渐有CSDN提炼到GitHub上
+
+[ES6系列(一)let和const](https://blog.csdn.net/jbj6568839z/article/details/84538367)
+[ES6系列(二)变量的解构赋值](https://blog.csdn.net/jbj6568839z/article/details/95185430)
+[ES6系列(三)字符串的扩展](https://blog.csdn.net/jbj6568839z/article/details/100538041)
+[ES6系列(四)函数的扩展](https://blog.csdn.net/jbj6568839z/article/details/100541937)
+[ES6系列(五)扩展运算符](https://blog.csdn.net/jbj6568839z/article/details/100670675)
+[ES6系列(六)独一无二的Symbol](https://blog.csdn.net/jbj6568839z/article/details/102488010)
+
 ## Node.js入门
 [1.Node.js初探](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/1.Node.js%E5%88%9D%E6%8E%A2.md)  
 [2.Node.js的文件系统](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/2.Node.js%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.md)  
@@ -38,16 +48,14 @@
 [5.npm和package.json](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/5.npm%E5%8C%85%E8%AF%B4%E6%98%8E%E5%92%8Cpackage.json.md)  
 
 ## 我阅读推荐的针对前端（暂时）的精华文章
-### 综合技术部分
-[1.阮一峰-前端技术栈](https://github.com/ruanyf/jstraining/blob/master/docs/history.md)  
 
-### JavaScript部分
-[1.冴羽的博客](https://github.com/mqyqingfeng/Blog)  
-[2.Ajax超全长篇幅知识](https://juejin.im/post/58c883ecb123db005311861a)  
+### 综合部分
+[1.阮一峰-前端技术栈](https://github.com/ruanyf/jstraining/blob/master/docs/history.md)  
+[2.冴羽的博客](https://github.com/mqyqingfeng/Blog)  
+[3.Ajax超全长篇幅知识](https://juejin.im/post/58c883ecb123db005311861a)  
 
 ### CSS部分
 [1.CSS3弹性盒子](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)  
-
 
 
 ### 如果您读到了最后，又觉得对您有帮助的话，那么留下您的star～吧，会让我很有成就感呦
