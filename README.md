@@ -19,7 +19,7 @@
  7.[执行上下文](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/7.%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87.md)  
  8.[闭包前世今生](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/8.%E9%97%AD%E5%8C%85%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F.md)  
  9.[基本类型和引用类型的值传递](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/9.%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%80%BC%E4%BC%A0%E9%80%92.md)  
- 10.[call 和 apply 模拟](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/10.call%E5%92%8Capply%E6%A8%A1%E6%8B%9F.md)
+ 10.[call 和 apply 模拟](https://github.com/webbj97/summary/blob/master/Blog-%E6%B7%B1%E5%85%A5js%E8%AF%BB%E5%90%8E%E6%84%9F/10.call%E5%92%8Capply%E6%A8%A1%E6%8B%9F.md)  
  11.[bind的模拟与实现]()    
 
 ## JavaScript部分2——专项知识点
