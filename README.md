@@ -47,6 +47,8 @@
 [ES6系列(四)函数的扩展](https://blog.csdn.net/jbj6568839z/article/details/100541937)  
 [ES6系列(五)扩展运算符](https://blog.csdn.net/jbj6568839z/article/details/100670675)  
 [ES6系列(六)独一无二的Symbol](https://blog.csdn.net/jbj6568839z/article/details/102488010)  
+[ES6系列(七)promise浅谈](https://blog.csdn.net/jbj6568839z/article/details/95231902)  
+[ES6系列(八)promise浅谈](https://blog.csdn.net/jbj6568839z/article/details/102805094)  
 
 ## Node.js入门
 [1.Node.js初探](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/1.Node.js%E5%88%9D%E6%8E%A2.md)  
