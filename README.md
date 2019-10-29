@@ -1,11 +1,12 @@
 # 博健的git博客——扎实的基础能让你的技术生涯更长。
 ### 邮箱: webbj97@163.com
 > PS：本人目前是好未来教育的一名前端实习生，今天七月份毕业的大四学生一枚。
+> **2019.7.17更新，正式参加工作的第二周** 在git上梳理所学，要学的内容，旨在提高自己的技术水平,夯实基础～
 
-**2019.7.17更新，正式参加工作的第二周**
-在git上梳理所学，要学的内容，旨在提高自己的技术水平,夯实基础～
-### 我的其他博客浏览途径
+### 其他文章、Demo传送门
 [CSDN文章地址](https://blog.csdn.net/jbj6568839z)  
+[有趣的CSS](https://github.com/webbj97/Interesting-CSS)  
+[leetCode-算法题解](https://github.com/webbj97/leetCode-JavaScript-bj)  
 
 ## JavaScript部分1--基础系列文章心得 
 在掘金上偶然发现了 _冴羽大大_ 的系列文章，果断收藏、阅读，在这里附上原文地址。[冴羽写博客的地方～](https://github.com/mqyqingfeng/Blog)
@@ -39,7 +40,7 @@
 [8.继承](https://github.com/webbj97/summary/blob/master/Blog-JS%E9%AB%98%E7%A8%8B%E7%AC%94%E8%AE%B0/js-Blog/8.%E7%BB%A7%E6%89%BF.md) 
 
 ## ES6系列
-> 正在逐渐有CSDN提炼到GitHub上
+> 正在逐渐由CSDN提炼到Github上
 
 [ES6系列(一)let和const](https://blog.csdn.net/jbj6568839z/article/details/84538367)  
 [ES6系列(二)变量的解构赋值](https://blog.csdn.net/jbj6568839z/article/details/95185430)  
@@ -48,10 +49,10 @@
 [ES6系列(五)扩展运算符](https://blog.csdn.net/jbj6568839z/article/details/100670675)  
 [ES6系列(六)独一无二的Symbol](https://blog.csdn.net/jbj6568839z/article/details/102488010)  
 [ES6系列(七)promise浅谈](https://blog.csdn.net/jbj6568839z/article/details/95231902)  
-[ES6系列(八)promise浅谈](https://blog.csdn.net/jbj6568839z/article/details/102805094)  
+[ES6系列(八)Generator生成器](https://blog.csdn.net/jbj6568839z/article/details/102805094)  
 
 ## Node.js入门
-[1.Node.js初探](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/1.Node.js%E5%88%9D%E6%8E%A2.md)  
+[1.Node.js初探](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/1.Node.js%E5%88%9D%E6%8E%A2.md)
 [2.Node.js的文件系统](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/2.Node.js%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.md)  
 [3.Node.js中的Http](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/3.Node.js%E4%B8%AD%E7%9A%84http.md)  
 [4.Node.js的模块系统](https://github.com/webbj97/summary/blob/master/Blog-Node.js%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Blog/4.Node.js%E6%A8%A1%E5%9D%97%E7%B3%BB%E7%BB%9F.md)  
