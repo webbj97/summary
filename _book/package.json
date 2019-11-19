@@ -1,0 +1,24 @@
+{
+  "name": "js-summary",
+  "version": "1.0.0",
+  "description": "<h1 align=center>博健的git博客—扎实的基础能让你的技术生涯更长。</h1>",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gitbook serve",
+    "build": "gitbook build",
+    "deploy": "npm run build && gh-pages -d _book"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webbj97/summary.git"
+  },
+  "author": "bojian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webbj97/summary/issues"
+  },
+  "homepage": "https://github.com/webbj97/summary#readme",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
