@@ -1,0 +1,607 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>深入ES6系列 · Gitbook Use</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="姜博健">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1.let和const命令.md" />
+    
+    
+    <link rel="prev" href="../Blog-专题js读后感/3.节流问题.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://blog.csdn.net/jbj6568839z" target="_blank" class="custom-link">CSDN</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Blog-深入js读后感/summary.html">
+            
+                <a href="../Blog-深入js读后感/summary.html">
+            
+                    
+                    深入JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Blog-深入js读后感/1.从原型到原型链.html">
+            
+                <a href="../Blog-深入js读后感/1.从原型到原型链.html">
+            
+                    
+                    1.从原型到原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Blog-深入js读后感/2.词法作用域和动态作用域.html">
+            
+                <a href="../Blog-深入js读后感/2.词法作用域和动态作用域.html">
+            
+                    
+                    2.词法作用域和动态作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Blog-深入js读后感/3.执行上下文栈.html">
+            
+                <a href="../Blog-深入js读后感/3.执行上下文栈.html">
+            
+                    
+                    3.执行上下文栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Blog-深入js读后感/4.深入变量对象.html">
+            
+                <a href="../Blog-深入js读后感/4.深入变量对象.html">
+            
+                    
+                    4.深入变量对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Blog-深入js读后感/5.作用域链.html">
+            
+                <a href="../Blog-深入js读后感/5.作用域链.html">
+            
+                    
+                    5.作用域链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Blog-深入js读后感/6.从ECMAScript规范解读this.html">
+            
+                <a href="../Blog-深入js读后感/6.从ECMAScript规范解读this.html">
+            
+                    
+                    6.从ECMAScript规范解读this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Blog-深入js读后感/7.执行上下文.html">
+            
+                <a href="../Blog-深入js读后感/7.执行上下文.html">
+            
+                    
+                    7.执行上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Blog-深入js读后感/8.闭包的前世今生.html">
+            
+                <a href="../Blog-深入js读后感/8.闭包的前世今生.html">
+            
+                    
+                    8.闭包的前世今生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Blog-深入js读后感/9.基本类型和引用类型的值传递.html">
+            
+                <a href="../Blog-深入js读后感/9.基本类型和引用类型的值传递.html">
+            
+                    
+                    9.基本类型和引用类型的值传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Blog-深入js读后感/10.call和apply模拟.html">
+            
+                <a href="../Blog-深入js读后感/10.call和apply模拟.html">
+            
+                    
+                    10.call和apply模拟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Blog-深入js读后感/11.bind的模拟与实现.html">
+            
+                <a href="../Blog-深入js读后感/11.bind的模拟与实现.html">
+            
+                    
+                    11.bind的模拟与实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Blog-专题js读后感/summary.html">
+            
+                <a href="../Blog-专题js读后感/summary.html">
+            
+                    
+                    专题JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Blog-专题js读后感/1.数组去重问题.html">
+            
+                <a href="../Blog-专题js读后感/1.数组去重问题.html">
+            
+                    
+                    1.从原型到原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Blog-专题js读后感/2.深浅拷贝.html">
+            
+                <a href="../Blog-专题js读后感/2.深浅拷贝.html">
+            
+                    
+                    2.深浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Blog-专题js读后感/3.节流问题.html">
+            
+                <a href="../Blog-专题js读后感/3.节流问题.html">
+            
+                    
+                    3.节流问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    深入ES6系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1.let和const命令.md">
+            
+                <span>
+            
+                    
+                    1.从原型到原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="2.变量的解构赋值.md">
+            
+                <span>
+            
+                    
+                    2.深浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.字符串的扩展.md">
+            
+                <span>
+            
+                    
+                    3.字符串的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="4.函数的扩展.md">
+            
+                <span>
+            
+                    
+                    4.函数的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="5.扩展运算符.md">
+            
+                <span>
+            
+                    
+                    5.扩展运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="6.独一无二的Symbol">
+            
+                <span>
+            
+                    
+                    6.独一无二的Symbol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="7.Promise浅谈">
+            
+                <span>
+            
+                    
+                    7.Promise浅谈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" >
+            
+                <span>
+            
+                    
+                    待更新...
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >深入ES6系列</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="es6&#x7CFB;&#x5217;">ES6&#x7CFB;&#x5217;</h1>
+<p>ES6&#x7CFB;&#x5217;&#x4F1A;&#x5206;&#x4E3A;<code>&#x57FA;&#x7840;&#x7248;</code>&#x548C;<code>&#x6DF1;&#x5165;&#x7248;</code></p>
+<ol>
+<li>&#x57FA;&#x7840;&#x7248;&#x4F1A;&#x6839;&#x636E;ES6&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x70B9;&#x7684;&#x987A;&#x5E8F;&#x590D;&#x4E60;&#x3002;</li>
+<li>&#x5728;&#x5B8C;&#x6210;&#x57FA;&#x7840;&#x7248;&#x672C;&#x7684;&#x590D;&#x4E60;&#x540E;&#xFF0C;&#x4F1A;&#x901A;&#x8FC7;&#x4E86;&#x89E3;&#x5176;&#x4ED6;&#x5927;&#x4F6C;&#x7684;&#x6587;&#x7AE0;&#x4EE5;&#x53CA;&#x81EA;&#x5DF1;&#x7684;&#x5FC3;&#x5F97;&#xFF0C;&#x6DF1;&#x5165;&#x603B;&#x7ED3;&#x67D0;&#x4E2A;&#x77E5;&#x8BC6;&#x70B9;&#x3002;</li>
+</ol>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-11-20 10:55:27 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Blog-专题js读后感/3.节流问题.html" class="navigation navigation-prev " aria-label="Previous page: 3.节流问题">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1.let和const命令.md" class="navigation navigation-next " aria-label="Next page: 1.从原型到原型链">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"深入ES6系列","level":"1.4","depth":1,"next":{"title":"1.从原型到原型链","level":"1.4.1","depth":2,"path":"ES6/1.let和const命令.md","ref":"ES6/1.let和const命令.md","articles":[]},"previous":{"title":"3.节流问题","level":"1.3.3","depth":2,"path":"Blog-专题js读后感/3.节流问题.md","ref":"Blog-专题js读后感/3.节流问题.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"ES6/summary.md","mtime":"2019-11-20T02:55:27.777Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-20T03:07:11.237Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
