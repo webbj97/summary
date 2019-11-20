@@ -1,0 +1,466 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11.bind的模拟与实现 · Gitbook Use</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="姜博健">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Blog-专题js读后感/summary.html" />
+    
+    
+    <link rel="prev" href="10.call和apply模拟.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://blog.csdn.net/jbj6568839z" target="_blank" class="custom-link">CSDN</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    深入JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.从原型到原型链.html">
+            
+                <a href="1.从原型到原型链.html">
+            
+                    
+                    1.从原型到原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2.词法作用域和动态作用域.html">
+            
+                <a href="2.词法作用域和动态作用域.html">
+            
+                    
+                    2.词法作用域和动态作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3.执行上下文栈.html">
+            
+                <a href="3.执行上下文栈.html">
+            
+                    
+                    3.执行上下文栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="4.深入变量对象.html">
+            
+                <a href="4.深入变量对象.html">
+            
+                    
+                    4.深入变量对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="5.作用域链.html">
+            
+                <a href="5.作用域链.html">
+            
+                    
+                    5.作用域链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="6.从ECMAScript规范解读this.html">
+            
+                <a href="6.从ECMAScript规范解读this.html">
+            
+                    
+                    6.从ECMAScript规范解读this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="7.执行上下文.html">
+            
+                <a href="7.执行上下文.html">
+            
+                    
+                    7.执行上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="8.闭包的前世今生.html">
+            
+                <a href="8.闭包的前世今生.html">
+            
+                    
+                    8.闭包的前世今生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="9.基本类型和引用类型的值传递.html">
+            
+                <a href="9.基本类型和引用类型的值传递.html">
+            
+                    
+                    9.基本类型和引用类型的值传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="10.call和apply模拟.html">
+            
+                <a href="10.call和apply模拟.html">
+            
+                    
+                    10.call和apply模拟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.11" data-path="11.bind的模拟与实现.html">
+            
+                <a href="11.bind的模拟与实现.html">
+            
+                    
+                    11.bind的模拟与实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Blog-专题js读后感/summary.html">
+            
+                <a href="../Blog-专题js读后感/summary.html">
+            
+                    
+                    专题JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Blog-专题js读后感/1.数组去重问题.html">
+            
+                <a href="../Blog-专题js读后感/1.数组去重问题.html">
+            
+                    
+                    1.从原型到原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Blog-专题js读后感/2.深浅拷贝.html">
+            
+                <a href="../Blog-专题js读后感/2.深浅拷贝.html">
+            
+                    
+                    2.深浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Blog-专题js读后感/3.节流问题.html">
+            
+                <a href="../Blog-专题js读后感/3.节流问题.html">
+            
+                    
+                    3.节流问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >11.bind的模拟与实现</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="10.call和apply模拟.html" class="navigation navigation-prev " aria-label="Previous page: 10.call和apply模拟">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Blog-专题js读后感/summary.html" class="navigation navigation-next " aria-label="Next page: 专题JavaScript">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11.bind的模拟与实现","level":"1.2.11","depth":2,"next":{"title":"专题JavaScript","level":"1.3","depth":1,"path":"Blog-专题js读后感/summary.md","ref":"Blog-专题js读后感/summary.md","articles":[{"title":"1.从原型到原型链","level":"1.3.1","depth":2,"path":"Blog-专题js读后感/1.数组去重问题.md","ref":"Blog-专题js读后感/1.数组去重问题.md","articles":[]},{"title":"2.深浅拷贝","level":"1.3.2","depth":2,"path":"Blog-专题js读后感/2.深浅拷贝.md","ref":"Blog-专题js读后感/2.深浅拷贝.md","articles":[]},{"title":"3.节流问题","level":"1.3.3","depth":2,"path":"Blog-专题js读后感/3.节流问题.md","ref":"Blog-专题js读后感/3.节流问题.md","articles":[]}]},"previous":{"title":"10.call和apply模拟","level":"1.2.10","depth":2,"path":"Blog-深入js读后感/10.call和apply模拟.md","ref":"Blog-深入js读后感/10.call和apply模拟.md","articles":[]},"dir":"neutral"},"config":{"plugins":["chapter-fold"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"Blog-深入js读后感/11.bind的模拟与实现.md","mtime":"2019-11-19T03:14:18.313Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-21T01:49:20.296Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
