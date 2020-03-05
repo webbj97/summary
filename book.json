@@ -7,7 +7,6 @@
         }
     },
     "plugins": [
-        "-search",
         "chapter-fold",
         "page-footer-ex",
         "code",
