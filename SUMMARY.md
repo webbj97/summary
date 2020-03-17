@@ -30,6 +30,7 @@
     1. [1.数组](algorithms/1.数组md)
     2. [2.链表](algorithms/2.链表.md)
     3. [3.Map和Set](algorithms/3.Map和Set.md)
+    4. [4.栈](algorithms/4.栈.md)
 * [你不知道的JavaScript](unknowJs/summary.md)
     1. [1.类型](unknowJs/mid/mid-1.md)
     2. [2.值](unknowJs/mid/mid-2.md)

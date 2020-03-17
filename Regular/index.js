@@ -11,5 +11,10 @@
 
 // // item.name.replace(/^(.).+(.)$/, function(res){return res.replace(/./g, '*')})
 
-var reg = /abc+a/
-console.log('结果:', reg.test('abca'));
+// var reg = /abc+a/
+// console.log('结果:', reg.test('abca'));
+
+var reg = /iPhone(\sX|11)/
+var data = 'iPhone11,8'
+console.log(data.search(reg));
+
