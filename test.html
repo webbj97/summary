@@ -1,3 +1,9 @@
+<!--
+ * @desc:
+ * @Author: 余光
+ * @Email: webbj97@163.com
+ * @Date: 2020-04-07 15:44:50
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,28 +11,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .test{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        .test > img{
+            width: 100px;
+            height: auto;
+        }
+        .test > img:hover{
+            animation-play-state: paused;
+        }
+
+
+
+    </style>
 </head>
 <body>
+    <div class="test">
+        <img src="./fixedbar-icon-hover-v3.gif" alt="">
 
+    </div>
     <script>
-        // const getServerStuff = callback => ajaxCall(json => callback(json));
-        // // 这行
-        // ajaxCall(json => callback(json));
 
-        // // 等价于这行
-        // ajaxCall(callback);
-
-        const func1 = name => name+2
-
-        // 可以看出 func2 和 func3完全一致
-        const func2 = name => func1(name)
-        const func3 = func1()
-
-        const res1 = func2(1)
-        const res2 = func3(1)
-
-        console.log('res1:', res1);
-        console.log('res2:', res2);
 
     </script>
 </body>
