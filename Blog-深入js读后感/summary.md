@@ -27,11 +27,12 @@
 9. [9.基本类型和引用类型的值传递](9.基本类型和引用类型的值传递.md)
 10. [10.call和apply模拟](10.call和apply模拟.md)
 11. [11.bind的模拟与实现](11.bind的模拟与实现.md)
+11. [12.一篇搞懂this指向问题](12.一篇搞懂this指向问题.md)
 
 
 ### 关于我
 
-* **decs：** 19年毕业的前端开发一枚，沉迷Js
+* **decs：** 刚参加工作的前端开发一枚，沉迷Js
 * **E-mail：** webbj97@163.com
 * **个人博客：** [CSDN](https://blog.csdn.net/jbj6568839z)
 * **GitHub：** [传送门](https://github.com/webbj97)
