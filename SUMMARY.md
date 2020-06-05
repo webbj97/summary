@@ -17,6 +17,7 @@
     9. [9.基本类型和引用类型的值传递](Blog-深入js读后感/9.基本类型和引用类型的值传递.md)
     10. [10.call和apply模拟](Blog-深入js读后感/10.call和apply模拟.md)
     11. [11.bind的模拟与实现](Blog-深入js读后感/11.bind的模拟与实现.md)
+    12. [12.一篇搞懂this指向问题](Blog-深入js读后感/12.一篇搞懂this指向问题.md)
 * [JavaScript设计模式](JavaScript设计模式/READ.md)
     1. [1.基础之this](JavaScript设计模式/1.this.md)
 * [JavaScript专题系列](Blog-专题/summary.md)

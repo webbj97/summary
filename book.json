@@ -10,9 +10,10 @@
         "chapter-fold",
         "page-footer-ex",
         "code",
-        "copy-code-button",
+        "emphasize",
         "github",
-        "sharing-plus"
+        "github-buttons",
+        "sectionx"
     ],
     "pluginsConfig": {
         "github": {
