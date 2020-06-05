@@ -21,7 +21,7 @@
 * [JavaScript设计模式](JavaScript设计模式/READ.md)
     1. [1.基础之this](JavaScript设计模式/1.this.md)
 * [JavaScript专题系列](Blog-专题/summary.md)
-    1. [1.从原型到原型链](Blog-专题/1.数组去重问题.md)
+    1. [1.数组去重](Blog-专题/1.数组去重问题.md)
     2. [2.深浅拷贝](Blog-专题/copy.md)
     3. [3.节流](Blog-专题/3.节流问题.md)
     4. [4.防抖](Blog-专题/4.防抖问题.md)

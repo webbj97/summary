@@ -40,20 +40,23 @@
 
 ## JavaScript--专题进阶系列文章
 
-1. 持续整理中
+1. 持续整理中，左侧目录存在均是自己希望去完善，且正在整理的内容
 
 ## 我阅读推荐的针对前端的精华文章
 
-### 综合部分
-[1.阮一峰-前端技术栈](https://github.com/ruanyf/jstraining/blob/master/docs/history.md)<br/>
-[2.冴羽的博客](https://github.com/mqyqingfeng/Blog)<br/>
-[3.Ajax超全长篇幅知识](https://juejin.im/post/58c883ecb123db005311861a)<br/>
+**系列篇**
 
-### CSS部分
-[1.CSS3弹性盒子](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)<br/>
+1. [阮一峰-前端技术栈](https://github.com/ruanyf/jstraining/blob/master/docs/history.md)
+2. [冴羽的博客](https://github.com/mqyqingfeng/Blog)
+3. [木易杨前端进阶](https://muyiy.cn/)
+
+**专享篇**
+
+1. 持续整理中
 
 
 ### 如果您读到了最后，又觉得对您有帮助的话，那么留下您的star～吧，会让我很有成就感呦
+
 <h1 align=center>
     <img src="./Images/common/star.png"/>
 </h1>

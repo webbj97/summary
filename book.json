@@ -18,6 +18,19 @@
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/webbj97"
+        },
+        "github-buttons": {
+            "buttons": [{
+              "user": "webbj97",
+              "repo": "leetCode-Js",
+              "type": "star",
+              "size": "large"
+            }, {
+              "user": "webbj97",
+              "type": "follow",
+              "width": "230",
+              "count": false
+            }]
         }
     }
 
