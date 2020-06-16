@@ -13,31 +13,126 @@
             background: red;
             justify-content: space-between;
         }
+
+
+        /* 重置导航栏 */
+        #header-grid {
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            box-shadow: 0px 0px 16px 0px rgba(225, 225, 225, 0.5);
+        }
+
+        .nv-page-title-wrap {
+            display: none;
+        }
+
+        /* 重置底部 */
+        .hfg-grid-top {
+            border-bottom: 1px solid #363B41;
+        }
+
+        /* 主内容区域 */
+        #content {
+            max-width: none;
+            padding-top: 56px;
+        }
+
+        #hlg-main-container {
+            width: 1120px;
+            margin: 0 auto;
+        }
+
+        #hlg-main-container-large {
+            width: 1220px;
+            margin: 0 auto;
+        }
+
+        #hlg-main-container-full {
+            width: 100%;
+        }
+
+        /* 标签初始化 */
+        p {
+            width: 100%;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* 基本布局 */
+        .hlg-ui-flex-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hlg-ui-flex-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hlg-text-white {
+            color: red;
+        }
+
+        .hlg-text-center {
+            text-align: center;
+        }
+
+        .hl-ui-flex-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .hlg-hover-big {
+            position: relative;
+            padding: 6px 20px;
+            background: red;
+            transition: all .2s;
+        }
+
+        .hlg-hover-big:hover {
+            color: #ccc;
+            transform: scale(1.1);
+        }
+        .shadow{
+            width: 40px;
+            height: 40px;
+            font-weight: 500;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 4px solid red;
+            line-height: 40px;
+            text-align: center;
+            font-size: 30px;
+            -webkit-text-stroke: 2px red;
+            background: cornflowerblue;
+        }
     </style>
 </head>
 
 <body>
-    <div class="test" style="color: #ccc;font-size: 14px;">
-        联系人：飞翔<br />
-        电话/微信：19959852110<br />
-        合作邮箱：feixiang@gaoding.com<br />
-        联系地址：厦门市湖里区高林中路535号万科云玺27楼<br />
+    <div class="shadow">
+        天
     </div>
-    <div style="background: url('http://sc.huanleguang.com/hlgofficial/about/bg-gd.png') no-repeat;
-     background-size: 1120px 256px; width: 1120px; height: 256px; padding: 36px 32px 0">
-        <div style="color: #1f44f2"><b style="font-size: 20px; padding-left: 20px; line-height: 38px;">稿定设计</b> | 让设计更简单</div>
-        <p class="hlg-ui-text-white">稿定设计是一个多场景在线商业视觉设计工具及内容平台，我们打破了工具与技术限制，基于丰富的可商用版权素材，根据不同场景的需求，设计制作了海量优质模板。</p>
-        <p class="hlg-ui-text-white">让所有用户通过简单的拖、拉、拽等操作就可以轻松制作出精美的手机海报、演示文档PPT、电商素材、新媒体素材、营销及行政物料等各类平面设计与创意视频。并通过在PC、WAP、APP、小程序等多端布局，让用户随时随地完成设计。
-        </p>
-        <p class="hlg-ui-text-white">产品包括：稿定设计（WEB/APP）、稿定视频app端、在线ps、码工在线</p>
+    <div id="hlg-main-container" class="hlg-ui-flex-col">
+        <img width="560px" src="http://sc.huanleguang.com/hlgofficial/introduction/title-compare.png" alt="特权对比">
+        <div style="background: url('http://sc.huanleguang.com/hlgofficial/introduction/bg-compare.png') center no-repeat;
+         width: 1112px; height: 2672px; background-size: 1112px auto; ">
+            <a href="https://www.csdn.net/" target="_blank" class="hlg-hover-big"
+                style="width: 100px; height: 40px; border-radius: 8px; text-align: center; line-height: 40px;">立即订购</a>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
-    <div style="background: url('http://sc.huanleguang.com/hlgofficial/about/bg-hlg.png') no-repeat;
-     background-size: 1120px 204px; width: 1120px; height: 204px; padding: 36px 32px 0">
-        <div style="color: #d92424"><b style="font-size: 20px; padding-left: 20px; line-height: 38px;">稿定设计</b> | 让设计更简单</div>
-        <p class="hlg-ui-text-white">欢乐逛助手工具软件是一款综合性企业服务级软件，主要为电商商家（淘宝、天猫、飞猪等电商平台上的卖家）提供店铺综合管理工具；通过技术驱动有效提供聚划算淘抢购批量完善、海量订单解决方案、智能生成标题和智能生成透明图等综合解决方案。</p>
-        <p class="hlg-ui-text-white">产品包括：欢乐逛、欢乐逛促销、欢乐逛打单、欢乐逛送券、欢乐逛抽奖、欢乐逛尺码助手、欢乐逛商品</p>
-    </div>
+
 </body>
 
 </html>
