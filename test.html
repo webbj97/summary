@@ -7,33 +7,131 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        .test {
+            width: 200px;
+            height: 300px;
+            background: red;
+            justify-content: space-between;
+        }
 
 
+        /* 重置导航栏 */
+        #header-grid {
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            box-shadow: 0px 0px 16px 0px rgba(225, 225, 225, 0.5);
+        }
 
+        .nv-page-title-wrap {
+            display: none;
+        }
+
+        /* 重置底部 */
+        .hfg-grid-top {
+            border-bottom: 1px solid #363B41;
+        }
+
+        /* 主内容区域 */
+        #content {
+            max-width: none;
+            padding-top: 56px;
+        }
+
+        #hlg-main-container {
+            width: 1120px;
+            margin: 0 auto;
+        }
+
+        #hlg-main-container-large {
+            width: 1220px;
+            margin: 0 auto;
+        }
+
+        #hlg-main-container-full {
+            width: 100%;
+        }
+
+        /* 标签初始化 */
+        p {
+            width: 100%;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* 基本布局 */
+        .hlg-ui-flex-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hlg-ui-flex-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hlg-text-white {
+            color: red;
+        }
+
+        .hlg-text-center {
+            text-align: center;
+        }
+
+        .hl-ui-flex-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .hlg-hover-big {
+            position: relative;
+            padding: 6px 20px;
+            background: red;
+            transition: all .2s;
+        }
+
+        .hlg-hover-big:hover {
+            color: #ccc;
+            transform: scale(1.1);
+        }
+        .shadow{
+            width: 40px;
+            height: 40px;
+            font-weight: 500;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 4px solid red;
+            line-height: 40px;
+            text-align: center;
+            font-size: 30px;
+            -webkit-text-stroke: 2px red;
+            background: cornflowerblue;
+        }
     </style>
 </head>
 
 <body>
+    <div class="shadow">
+        天
+    </div>
+    <div id="hlg-main-container" class="hlg-ui-flex-col">
+        <img width="560px" src="http://sc.huanleguang.com/hlgofficial/introduction/title-compare.png" alt="特权对比">
+        <div style="background: url('http://sc.huanleguang.com/hlgofficial/introduction/bg-compare.png') center no-repeat;
+         width: 1112px; height: 2672px; background-size: 1112px auto; ">
+            <a href="https://www.csdn.net/" target="_blank" class="hlg-hover-big"
+                style="width: 100px; height: 40px; border-radius: 8px; text-align: center; line-height: 40px;">立即订购</a>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
-
-    <script>
-        var arr = [];
-
-        for(let i = 0;i < 100; i++){
-            arr.push(i);
-        };
-
-        var renderList  = function(data){
-            for(let i = 0; i < data.length; i++){
-                var div = document.createElement('div');
-                div.innerHTML = i
-                document.body.appendChild(div);
-            }
-        }
-
-        renderList(arr)
-
-    </script>
 
 </body>
 
