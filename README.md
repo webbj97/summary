@@ -16,11 +16,13 @@
 * 微信: j565017805
 * [CSDN](https://blog.csdn.net/jbj6568839z)
 * [GitHub](https://github.com/webbj97)
+* [掘金](https://juejin.im/user/5c0726c6f265da613b6f8dab/posts)
 
-### 学习总结
+### 沉淀
 
-* [CSDN](https://blog.csdn.net/jbj6568839z)
+* [CSDN博客](https://blog.csdn.net/jbj6568839z)
 * [leetCode题解](https://webbj97.github.io/leetCode-Js/)
+* [前端进阶笔记](https://webbj97.github.io/summary/)
 
 ## JavaScript--基础必会系列文章
 在掘金上偶然发现了 _冴羽大大_ 的系列文章，果断收藏、阅读，在这里附上原文地址。[冴羽写博客的地方～](https://github.com/mqyqingfeng/Blog)

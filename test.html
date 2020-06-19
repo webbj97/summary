@@ -91,47 +91,135 @@
         }
 
         .hlg-hover-big {
+            display: inline-block;
             position: relative;
-            padding: 6px 20px;
-            background: red;
             transition: all .2s;
+            transform: scale(1);
         }
 
         .hlg-hover-big:hover {
-            color: #ccc;
             transform: scale(1.1);
         }
-        .shadow{
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .hlg-fix-tool {
+            position: fixed;
+            top: 200px;
+            right: 0;
+            width: 40px;
+            height: 160px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .fix-tool-item {
+            position: relative;
             width: 40px;
             height: 40px;
-            font-weight: 500;
-            margin: 0 auto;
-            border-radius: 50%;
-            border: 4px solid red;
-            line-height: 40px;
-            text-align: center;
-            font-size: 30px;
-            -webkit-text-stroke: 2px red;
-            background: cornflowerblue;
+            border: 1px solid red;
+        }
+
+        .fix-tool-item--hover {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 40px;
+            padding-right: 10px;
+            width: 100px;
+            height: 160px;
+            border: 1px solid red;
+        }
+
+        .item-hover-content {
+            width: 100%;
+            height: 100%;
+            background: chartreuse;
+        }
+
+        .fix-tool-item:hover .fix-tool-item--hover {
+            display: block;
+            font-size: 12px;
+            white-space: nowrap;
         }
     </style>
 </head>
 
 <body>
-    <div class="shadow">
-        天
-    </div>
-    <div id="hlg-main-container" class="hlg-ui-flex-col">
-        <img width="560px" src="http://sc.huanleguang.com/hlgofficial/introduction/title-compare.png" alt="特权对比">
-        <div style="background: url('http://sc.huanleguang.com/hlgofficial/introduction/bg-compare.png') center no-repeat;
-         width: 1112px; height: 2672px; background-size: 1112px auto; ">
-            <a href="https://www.csdn.net/" target="_blank" class="hlg-hover-big"
-                style="width: 100px; height: 40px; border-radius: 8px; text-align: center; line-height: 40px;">立即订购</a>
-            <div></div>
-            <div></div>
+    <div class="hlg-fix-tool">
+        <div class="fix-tool-item fix-tool-gift">
+            <div class="fix-tool-item--inner">1</div>
+            <div class="fix-tool-item--hover">
+                <div class="item-hover-content"></div>
+            </div>
+        </div>
+        <div class="fix-tool-item fix-tool-gift">
+            <div class="fix-tool-item--inner">1</div>
+            <div class="fix-tool-item--hover">
+                <div class="item-hover-content"></div>
+            </div>
+        </div>
+        <div class="fix-tool-item fix-tool-gift">
+            <div class="fix-tool-item--inner">1</div>
+            <div class="fix-tool-item--hover">
+                <div class="item-hover-content"></div>
+            </div>
+        </div>
+        <div id="to-top" class="fix-tool-item fix-tool-gift">
+            <div class="fix-tool-item--inner">1</div>
+            <div class="fix-tool-item--hover">
+                <div class="item-hover-content"></div>
+            </div>
         </div>
     </div>
+    <script>
+        var a = null
+        var i = 0
+        var urlMap = [
+            {url: 'https://yuguang.blog.csdn.net/article/details/106793254'},
+            {url: 'https://yuguang.blog.csdn.net/article/details/106668345'},
+            {url: 'https://yuguang.blog.csdn.net/article/details/106618708'},
+            {url: 'https://yuguang.blog.csdn.net/article/details/106555301'},
+            {url: 'https://yuguang.blog.csdn.net/article/details/106479511'},
+        ]
+        var setTime = function () {
+            const index = (Math.random() * 10) >> 1;
+            a = window.open(urlMap[index].url);
+            i++;
+            console.log('打开新页面:', i, '次');
+            setTimeout(() => {
+                a.close()
+                a = null
+            }, 1000);
+        };
 
+        setInterval(() => {
+            setTime()
+        }, 62000);
+
+        function getY(x) {
+            if (x < 0) {
+                return x * x;
+            } else if (x >= 0 && x < 10) {
+                return 10 - 0.5 * x;
+            } else {
+                return x - x;
+            }
+        }
+        console.log('getY:', getY(-1));
+    </script>
+
+void sum(int x){
+    if (x < 0) {
+        return x * x;
+    } else if (x >= 0 && x < 10) {
+        return 10 - 0.5 * x;
+    } else {
+        return x - x;
+    }
+    return sum;
+}
 
 </body>
 
