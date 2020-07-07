@@ -1,0 +1,86 @@
+<!--
+ * @desc:
+ * @Author: 余光
+ * @Email: webbj97@163.com
+ * @Date: 2020-06-30 11:56:14
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 200px;
+        }
+
+        .wrap {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.2);
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap"></div>
+
+    <script>
+        //获取元素
+        var dom = document.querySelector('.wrap')
+        var x = 0;
+        var y = 0;
+        var l = 0;
+        var t = 0;
+        var isDown = false;
+        //鼠标按下事件
+        var data = {
+            top: dom.style.top || 1,
+            left: dom.style.left || 1
+        }
+        dom.onmousedown = function (e) {
+            e.preventDefault()
+            //获取x坐标和y坐标
+            x = e.clientX;
+            y = e.clientY;
+            console.log('dom/top:', dom.style.top);
+            console.log('dom/left:', dom.style.left);
+            //获取左部和顶部的偏移量
+            l = dom.offsetLeft;
+            t = dom.offsetTop;
+            //开关打开
+            isDown = true;
+            //设置样式
+            dom.style.cursor = 'move';
+        }
+        //鼠标移动
+        window.onmousemove = function (e) {
+            e.preventDefault()
+            if (!isDown) return;
+            //获取x和y
+            var nx = e.clientX;
+            var ny = e.clientY;
+            //计算移动后的左偏移量和顶部的偏移量
+            var nl = nx - (x - l + 200);
+            var nt = ny - (y - t + 200);
+
+            dom.style.left = nl + 'px';
+            dom.style.top = nt + 'px';
+        }
+        //鼠标抬起事件
+        dom.onmouseup = function (e) {
+            e.preventDefault()
+            //开关关闭
+            isDown = false;
+            dom.style.cursor = 'default';
+        }
+    </script>
+</body>
+
+</html>
