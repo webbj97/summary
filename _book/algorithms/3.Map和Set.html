@@ -1,0 +1,914 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.Map和Set · Gitbook Use</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="姜博健">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4.栈.html" />
+    
+    
+    <link rel="prev" href="链表4.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"webbj97","repo":"summary","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://blog.csdn.net/jbj6568839z" target="_blank" class="custom-link">CSDN</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Js内功/summary.html">
+            
+                <a href="../Js内功/summary.html">
+            
+                    
+                    JavaScript内功修炼
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Js内功/1.一篇搞懂this指向问题.html">
+            
+                <a href="../Js内功/1.一篇搞懂this指向问题.html">
+            
+                    
+                    1.一篇搞懂this指向问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Js内功/2.从原型到原型链.html">
+            
+                <a href="../Js内功/2.从原型到原型链.html">
+            
+                    
+                    2.从原型到原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Js内功/3.JavaScript中的作用域.html">
+            
+                <a href="../Js内功/3.JavaScript中的作用域.html">
+            
+                    
+                    3.JavaScript中的作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Js内功/4.执行上下文.html">
+            
+                <a href="../Js内功/4.执行上下文.html">
+            
+                    
+                    4.执行上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Js内功/5.深入变量对象.html">
+            
+                <a href="../Js内功/5.深入变量对象.html">
+            
+                    
+                    5.深入变量对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Js内功/6.立即执行函数.html">
+            
+                <a href="../Js内功/6.立即执行函数.html">
+            
+                    
+                    6.立即调用函数表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Js内功/7.闭包.html">
+            
+                <a href="../Js内功/7.闭包.html">
+            
+                    
+                    7.看透闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Js内功/8.JavaScript中的参数传递.html">
+            
+                <a href="../Js内功/8.JavaScript中的参数传递.html">
+            
+                    
+                    8.参数传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Js内功/9.基本数据类型.html">
+            
+                <a href="../Js内功/9.基本数据类型.html">
+            
+                    
+                    9.Js数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Js内功/10.你真的了解Js吗1.html">
+            
+                <a href="../Js内功/10.你真的了解Js吗1.html">
+            
+                    
+                    10.你真的了解Js吗（系列完结）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" >
+            
+                <span>
+            
+                    
+                    Js内功修炼之正则（敬请期待）
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Js专题/summary.html">
+            
+                <a href="../Js专题/summary.html">
+            
+                    
+                    JavaScript专项进阶系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Js专题/1.变量与函数提升.html">
+            
+                <a href="../Js专题/1.变量与函数提升.html">
+            
+                    
+                    1.变量与函数提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Js专题/copy.html">
+            
+                <a href="../Js专题/copy.html">
+            
+                    
+                    2.深浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Js专题/3.节流问题.html">
+            
+                <a href="../Js专题/3.节流问题.html">
+            
+                    
+                    3.节流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Js专题/4.防抖问题.html">
+            
+                <a href="../Js专题/4.防抖问题.html">
+            
+                    
+                    4.防抖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Js专题/sort.html">
+            
+                <a href="../Js专题/sort.html">
+            
+                    
+                    5.最全的数组排序实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Js专题/1.数组去重问题.md">
+            
+                <span>
+            
+                    
+                    1.数组去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" >
+            
+                <span>
+            
+                    
+                    待更新...
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../JavaScript设计模式/READ.html">
+            
+                <a href="../JavaScript设计模式/READ.html">
+            
+                    
+                    JavaScript设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../JavaScript设计模式/1.this.html">
+            
+                <a href="../JavaScript设计模式/1.this.html">
+            
+                    
+                    1.基础之this
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../ES6/summary.html">
+            
+                <a href="../ES6/summary.html">
+            
+                    
+                    深入ES6系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ES6/basis/1.let和const命令.html">
+            
+                <a href="../ES6/basis/1.let和const命令.html">
+            
+                    
+                    1.从原型到原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../ES6/basis/2.变量的解构赋值.html">
+            
+                <a href="../ES6/basis/2.变量的解构赋值.html">
+            
+                    
+                    2.深浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../ES6/basis/3.字符串的扩展.html">
+            
+                <a href="../ES6/basis/3.字符串的扩展.html">
+            
+                    
+                    3.字符串的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../ES6/basis/4.函数的扩展.html">
+            
+                <a href="../ES6/basis/4.函数的扩展.html">
+            
+                    
+                    4.函数的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../ES6/basis/5.扩展运算符.html">
+            
+                <a href="../ES6/basis/5.扩展运算符.html">
+            
+                    
+                    5.扩展运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../ES6/basis/6.独一无二的Symbol">
+            
+                <span>
+            
+                    
+                    6.独一无二的Symbol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../ES6/basis/7.Promise浅谈">
+            
+                <span>
+            
+                    
+                    7.Promise浅谈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    待更新...
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="algorithms.html">
+            
+                <a href="algorithms.html">
+            
+                    
+                    算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="1.数组md">
+            
+                <span>
+            
+                    
+                    1.数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="链表1.html">
+            
+                <a href="链表1.html">
+            
+                    
+                    2.链表——单链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="链表2.html">
+            
+                <a href="链表2.html">
+            
+                    
+                    3.链表——双指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="链表3.html">
+            
+                <a href="链表3.html">
+            
+                    
+                    4.链表——面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="链表4.html">
+            
+                <a href="链表4.html">
+            
+                    
+                    5.链表——双链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.6" data-path="3.Map和Set.html">
+            
+                <a href="3.Map和Set.html">
+            
+                    
+                    5.Map和Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="4.栈.html">
+            
+                <a href="4.栈.html">
+            
+                    
+                    6.栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="5.二叉树.html">
+            
+                <a href="5.二叉树.html">
+            
+                    
+                    7.二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../sourceCode/sourceCode.html">
+            
+                <a href="../sourceCode/sourceCode.html">
+            
+                    
+                    源码阅读系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    1.Vue源码阅读
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5.Map和Set</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7406;&#x89E3;map&#x548C;set&#x672C;&#x8EAB;">&#x7406;&#x89E3;Map&#x548C;Set&#x672C;&#x8EAB;</h1>
+<p>&#x4E3B;&#x8981;&#x7406;&#x89E3;&#x89D2;&#x5EA6;</p>
+<ul>
+<li>&#x4E24;&#x8005;&#x7684;&#x533A;&#x522B;&#x4E0E;&#x8054;&#x7CFB;</li>
+<li>&#x5177;&#x4F53;&#x95EE;&#x9898;&#x5177;&#x4F53;&#x5206;&#x6790;</li>
+<li>hash&#x8868;&#xFF0C;hash&#x51FD;&#x6570; &#xFF0C;hash&#x78B0;&#x649E;</li>
+</ul>
+<h3 id="&#x4E00;&#x3001;&#x54C8;&#x5E0C;&#x51FD;&#x6570;">&#x4E00;&#x3001;&#x54C8;&#x5E0C;&#x51FD;&#x6570;</h3>
+<p>&#x5047;&#x8BBE;&#x4F60;&#x8981;&#x5C06;&#x73ED;&#x7EA7;&#x91CC;&#x6240;&#x6709;&#x540C;&#x5B66;&#x7684;&#x540D;&#x5B57;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#xFF1A;</p>
+<ul>
+<li>&#x9009;&#x62E9;&#x6570;&#x7EC4;&#x5B58;&#x50A8;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x4F60;&#x8981;<code>&#x627E;Tom</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x904D;&#x5386;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x65F6;&#x95F4;&#x8D1F;&#x8D23;&#x5EA6;&#x8F83;&#x9AD8;&#xFF08;&#x7EBF;&#x6027;&#x641C;&#x7D22;&#xFF09;</li>
+<li>&#x9009;&#x62E9;Hash&#x7684;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x67E5;&#x627E;&#x7684;&#x65F6;&#x95F4;&#x8D1F;&#x8D23;&#x5EA6;&#x662F;O(1)<ul>
+<li>&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x51FD;&#x6570;&#xFF08;&#x65B9;&#x5F0F;&#x591A;&#x79CD;&#x591A;&#x6837;&#xFF09;</li>
+<li>&#x901A;&#x8FC7;&#x54C8;&#x5E0C;&#x51FD;&#x6570;&#x5C06;<code>Tom</code>&#x8F6C;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x503C;</li>
+<li>&#x4E3E;&#x4F8B;&#x5C06;&apos;t&apos;,&apos;o&apos;,&apos;m&apos;&#x7684;<code>ascii&#x7801;</code>&#x76F8;&#x52A0;&#xFF0C;&#x518D;%30&#xFF0C;&#x5F97;&#x5230;&#x503C;&#x5B58;&#x50A8;&#x201C;Tom&#x201D;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x4E8C;&#x3001;&#x54C8;&#x5E0C;&#x78B0;&#x649E;">&#x4E8C;&#x3001;&#x54C8;&#x5E0C;&#x78B0;&#x649E;</h3>
+<p><strong>&#x5982;&#x679C;&#x6070;&#x597D;&#x6709;&#x53E6;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x901A;&#x8FC7;&#x54C8;&#x5E0C;&#x51FD;&#x6570;&#x5F97;&#x5230;&#x7684;&#x503C;&#x91CD;&#x590D;&#x4E86;&#xFF0C;&#x600E;&#x4E48;&#x89E3;&#x51B3;&#xFF1F;</strong></p>
+<ul>
+<li>&#x62C9;&#x94FE;&#x6CD5;<ul>
+<li>&#x5982;&#x679C;&#x5B58;&#x5728;&#x91CD;&#x590D;&#x503C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x6700;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x5EFA;&#x4E00;&#x4E2A;&#x94FE;&#x8868;&#x3002;
+<img src="https://img-blog.csdnimg.cn/20191223161137819.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x4E09;&#x3001;list-vs-map-vs-set">&#x4E09;&#x3001;List vs Map vs Set</h3>
+<ul>
+<li>list = <code>[1,2,3,4]</code></li>
+<li>map = <code>{&apos;jack&apos; : 100, &apos;name&apos; : 100}</code></li>
+<li>set =<code>{&apos;name&apos;,&apos;selina&apos;}</code></li>
+</ul>
+<h3 id="&#x56DB;&#x3001;hashmap-vs-treemap--hashset-vs-treeset">&#x56DB;&#x3001;HashMap vs TreeMap \ HashSet vs TreeSet</h3>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-02-16 13:41:13 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="链表4.html" class="navigation navigation-prev " aria-label="Previous page: 5.链表——双链表">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4.栈.html" class="navigation navigation-next " aria-label="Next page: 6.栈">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.Map和Set","level":"1.6.6","depth":2,"next":{"title":"6.栈","level":"1.6.7","depth":2,"path":"algorithms/4.栈.md","ref":"algorithms/4.栈.md","articles":[]},"previous":{"title":"5.链表——双链表","level":"1.6.5","depth":2,"path":"algorithms/链表4.md","ref":"algorithms/链表4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"summary","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"algorithms/3.Map和Set.md","mtime":"2020-02-16T05:41:13.523Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-17T02:08:39.949Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
