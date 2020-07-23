@@ -20,50 +20,50 @@
 
 ## 文章指引
 
-1. [this指向详解，思维脑图与代码的结合，让你一篇搞懂this、call、apply。系列（一）](https://yuguang.blog.csdn.net/article/details/106479511)
+1. [一篇搞懂this指向问题](1.一篇搞懂this指向问题.md)
     - 一、this的指向
     - 二、call和apply
     - 三、模拟实现一个call
     - 四、bind
-2. [从原型到原型链，修炼JavaScript内功这篇文章真的不能错过！系列（二）](https://yuguang.blog.csdn.net/article/details/106555301)
+2. [从原型到原型链](2.从原型到原型链.md)
     - 一、构造函数
     - 二、原型
     - 三、实例与原型
     - 四、原型的原型
     - 五、原型链
-3. [从作用域到作用域链，思维脑图+代码示例让知识点一目了然！系列（三）](https://yuguang.blog.csdn.net/article/details/106618708)
+3. [词法作用域和动态作用域](3.JavaScript中的作用域.md)
     - 一、作用域的定义
     - 二、理解作用域
     - 三、作用域链
     - 四、思考与总结
-4. [JavaScript中的执行上下文，既然遇见了这篇图文并茂的文章，干脆看完吧！（系列四）](https://yuguang.blog.csdn.net/article/details/106479511)
+4. [执行上下文栈](4.执行上下文.md)
     - 一、怎么描述执行上下文？
     - 二、执行栈
     - 三、形象化执行栈
     - 四、思考与总结
-5. [this指向详解，思维脑图与代码的结合，让你一篇搞懂this、call、apply。系列（一）](https://yuguang.blog.csdn.net/article/details/106793254)
+5. [深入变量对象](5.深入变量对象.md)
     - 一、变量对象
     - 二、全局变量对象
     - 三、函数变量对象
-6. [JavaScript之深入理解立即调用函数表达式（IIFE），你对它的理解，决定了它的出镜率（系列六）](https://yuguang.blog.csdn.net/article/details/106824296)
+6. [立即执行函数](6.立即执行函数.md)
     - 一、了解立即调用函数表达式
     - 二、立即调用函数表达式报错了？
     - 三、使用立即调用函数的正确姿势
     - 四、常见使用场景
-7. [JavaScript之闭包，给自己的Js一场重生（系列七）](https://yuguang.blog.csdn.net/article/details/106940646)
+7. [闭包](7.闭包.md)
     - 一、什么是闭包？
     - 二、分析闭包
     - 三、经典问题
-8. [JavaScript中的参数传递(求值策略)，ECMAScript中所有函数的参数都是按值传递吗（系列八）](https://yuguang.blog.csdn.net/article/details/107111529)
+8. [JavaScript中的参数传递](8.JavaScript中的参数传递.md)
     - 一、值传递
     - 二、引用传递
     - 三、共享传递
     - 四、总结
-9. [JavaScript中的基本数据类型，地基同样重要（系列九）](https://yuguang.blog.csdn.net/article/details/107151991)
+9. [基本数据类型](9.基本数据类型.md)
     - 一、类型
     - 二、数据类型分类
     - 三、常见问题
-10. [你真的了解Js吗？用五个问题来回顾之前的内容，留下你的答案我们一起进步！（系列十）](https://yuguang.blog.csdn.net/article/details/107259293)
+10. [你真的了解Js吗](10.你真的了解Js吗1.md)
     - 五道题回顾系列知识点
 
 如果您读过系列的文章，并觉得它对您有所启发，不妨给我的项目[前端进阶笔记](https://github.com/webbj97/summary)点个star以资鼓励吧～
@@ -71,16 +71,6 @@
 如果您有什么建议，如文章描述、表达、知识准确性等等都可以在评论区留言，我们一起进步。
 
 另外本文会不定时的根据笔者对Js的理解进行微调，虚心学习，奥利给～
-
-1. [一篇搞懂this指向问题](1.一篇搞懂this指向问题.md)
-2. [从原型到原型链](2.从原型到原型链.md)
-3. [词法作用域和动态作用域](3.JavaScript中的作用域.md)
-4. [执行上下文栈](4.执行上下文.md)
-5. [深入变量对象](5.深入变量对象.md)
-7. [执行上下文](7.执行上下文.md)
-8. [闭包的前世今生](8.闭包的前世今生.md)
-9. [Js中的基本数据类型](9.基本数据类型.md)
-10. [10.你真的了解Js吗（系列完结）](10.10.你真的了解Js吗1.md)
 
 
 

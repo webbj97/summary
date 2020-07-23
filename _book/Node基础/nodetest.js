@@ -1,3 +1,9 @@
+/*
+ * @desc:
+ * @Author: 余光
+ * @Email: webbj97@163.com
+ * @Date: 2020-07-10 11:45:48
+ */
 var http = require("http");
 var axios = require('axios');
 var cheerio = require('cheerio');
@@ -14,7 +20,7 @@ const fs = require('fs');
 //     response.end('Hello World\n');
 // }).listen(8888);
 
-var baseUrl = 'https://blog.csdn.net/jbj6568839z/category_9292818_2.html'; // 专栏
+var baseUrl = 'https://blog.csdn.net/jbj6568839z/category_10069610.html'; // 专栏
 var list = []
 var func = function() {
     axios.get(baseUrl).then(res => {

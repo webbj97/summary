@@ -1,11 +1,4 @@
-function foo(a, b) {
-    console.log('a', a)
-}
-foo();
-
-
-// 声明形式
-var myObject = {
-    key: 'value'
-}
-
+var arr = [NaN, NaN, NaN, 1, 2]
+arr.forEach(item => {
+    console.log('item:', item);
+});

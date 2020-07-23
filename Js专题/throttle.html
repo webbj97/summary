@@ -6,50 +6,35 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>throttle</title>
+    <title>Document</title>
     <style>
-        .test {
-            width: 200px;
-            height: 200px;
-            background: #ccc;
-            margin: 0 auto;
-        }
+    .wrap{
+        width: 500px;
+        min-height: 100px;
+        border: 1px solid red;
+        display: flex;
+
+    }
+    .left{
+        width: 100px;
+        height: 20px;
+    }
+    input{
+        flex: 1;
+        min-height: 100px;
+    }
     </style>
 </head>
-
 <body>
 
-    <div class="test"></div>
-    <script>
-        function throttle(func, delay) {
-            var context, args;
-            var previous = 0;
-            return function () {
-                var now = +new Date();
-                console.log('点击就会触发',new Date().getSeconds());
-                context = this;
-                args = arguments;
-                if (now - previous > delay) {
-                    func.apply(context, args);
-                    previous = now;
-                }
-            }
-        }
-        var oDiv = document.querySelector('.test')
-        var timer = null
-        oDiv.onclick = throttle(()=>{
-            var now = new Date();
-            console.log('节流触发', now.getSeconds());
-        }, 3000)
+    <div class="wrap">
+        <div class="left">1dadasd</div>
+        <input type="textarea" />
 
-        // throttle(3000, () => {console.log('11111:')})
-
-    </script>
+    </div>
 </body>
-
 </html>

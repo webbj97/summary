@@ -1,4 +1,4 @@
-function foo(a, b) {
-    console.log('a', a)
-}
-foo();
+var arr = [NaN, NaN, NaN, 1, 2]
+arr.forEach(item => {
+    console.log('item:', item);
+});
