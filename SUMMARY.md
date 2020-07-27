@@ -20,8 +20,8 @@
 * [JavaScript专项进阶系列](Js专题/summary.md)
     1. [1.变量与函数提升](Js专题/1.变量与函数提升.md)
     2. [2.深浅拷贝](Js专题/2.数组去重.md)
-    3. [3.节流](Js专题/3.节流问题.md)
-    4. [4.防抖](Js专题/4.防抖问题.md)
+    4. [3.防抖](Js专题/3.防抖问题.md)
+    3. [4.节流](Js专题/4.节流问题.md)
     5. [5.深浅拷贝](Js专题/copy.md)
     5. [5.最全的数组排序实现](Js专题/sort.md)
     7. [1.数组去重](Js专题/1.数组去重问题.md)
@@ -29,7 +29,6 @@
 * [JavaScript设计模式](JavaScript设计模式/READ.md)
     1. [1.基础之this](JavaScript设计模式/1.this.md)
 * [深入ES6系列](ES6/summary.md)
-    <img src="./Images/common/logo.png">
     1. [1.从原型到原型链](ES6/basis/1.let和const命令.md)
     2. [2.深浅拷贝](ES6/basis/2.变量的解构赋值.md)
     3. [3.字符串的扩展](ES6/basis/3.字符串的扩展.md)
