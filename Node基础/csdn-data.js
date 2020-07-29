@@ -1,13 +1,11 @@
-/*
- * @desc:
- * @Author: 余光
- * @Email: webbj97@163.com
- * @Date: 2020-07-10 15:05:41
- */
 [
 	{
 		"link": "https://blog.csdn.net/jbj6568839z/article/details/103161970",
 		"title": "余光的前端进阶笔记（持续更新）"
+	},
+	{
+		"link": "https://blog.csdn.net/jbj6568839z/article/details/107544166",
+		"title": "JavaScript专题系列之数组去重，会就要会的理直气壮（系列二）"
 	},
 	{
 		"link": "https://blog.csdn.net/jbj6568839z/article/details/107402963",
@@ -15,7 +13,7 @@
 	},
 	{
 		"link": "https://blog.csdn.net/jbj6568839z/article/details/107390368",
-		"title": "JavaScript的预编译与提升，一起去发现Js华丽的暗箱操作（系列一）"
+		"title": "JavaScript中的变量提升与预编译，一起去发现Js华丽的暗箱操作（系列一）"
 	},
 	{
 		"link": "https://blog.csdn.net/jbj6568839z/article/details/107259293",
