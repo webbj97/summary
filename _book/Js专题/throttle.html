@@ -1,40 +1,101 @@
-<!--
- * @desc:
- * @Author: 余光
- * @Email: webbj97@163.com
- * @Date: 2019-11-21 17:45:26
--->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    .wrap{
-        width: 500px;
-        min-height: 100px;
-        border: 1px solid red;
-        display: flex;
+        #wrapper {
+            width: 100%;
+            height: 140px;
 
-    }
-    .left{
-        width: 100px;
-        height: 20px;
-    }
-    input{
-        flex: 1;
-        min-height: 100px;
-    }
+            background: rgba(0, 0, 0, 0.8);
+
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 140px;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
+    <div id="wrapper"></div>
 
-    <div class="wrap">
-        <div class="left">1dadasd</div>
-        <input type="textarea" />
+    <script>
+        var count = 1;
 
-    </div>
+        var oWrapper = document.querySelector('#wrapper');
+
+        function moveAction() {
+            oWrapper.innerHTML = count++;
+        }
+
+        oWrapper.onmousemove = throttle(moveAction, 2000);
+
+        // function throttle(func, wait) {
+        // 	var _this, arg;
+        // 	var prev = 0; // 上一次触发的时间，第一次默认为0
+
+        // 	return function () {
+        // 		var now = Date.now(); // 触发时的时间
+        // 		_this = this;
+        // 		if (now - prev > wait) {
+        // 			func.apply(_this, arg); // 允许传入参数，并修正this
+        // 			prev = now; // 更新上一次触发的时间
+        // 		}
+        // 	}
+        // }
+
+        // function throttle(func, wait) {
+        // 	var _this, arg;
+        // 	var timer; // 初始化
+        // 	return function () {
+        // 		_this = this; // 记录this
+        // 		arg = arguments; // 记录参数数组
+        // 		if (timer) return; // 时候未到
+        // 		timer = setTimeout(() => {
+        // 			func.apply(_this, arg); // 允许传入参数，并修正this
+        // 			timer = null;
+        // 		}, wait);
+        // 	}
+        // }
+
+        // 第三版
+        function throttle(func, wait) {
+            var timeout, context, args, result;
+            var previous = 0;
+
+            var later = function () {
+                previous = +new Date();
+                timeout = null;
+                func.apply(context, args)
+            };
+
+            var throttled = function () {
+                var now = +new Date();
+                //下次触发 func 剩余的时间
+                var remaining = wait - (now - previous);
+                context = this;
+                args = arguments;
+                // 如果没有剩余的时间了或者你改了系统时间
+                if (remaining <= 0 || remaining > wait) {
+                    if (timeout) {
+                        clearTimeout(timeout);
+                        timeout = null;
+                    }
+                    previous = now;
+                    func.apply(context, args);
+                } else if (!timeout) {
+                    timeout = setTimeout(later, remaining);
+                }
+            };
+            return throttled;
+        }
+    </script>
 </body>
+
 </html>
