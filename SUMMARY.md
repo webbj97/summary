@@ -23,9 +23,10 @@
     4. [3.防抖](Js专题/3.防抖问题.md)
     3. [4.节流](Js专题/4.节流问题.md)
     5. [5.深浅拷贝](Js专题/5.深浅拷贝.md)
-    6. [待更新...]()
+    6. [6.数据类型检测](Js专题/6.类型判断,md)
+    7. [7.待确定]
 * [JavaScript设计模式](JavaScript设计模式/READ.md)
-    1. [1.基础之this](JavaScript设计模式/1.this.md)
+    0. [0.学习设计模式之前](JavaScript设计模式/1.this.md)
 * [深入ES6系列](ES6/summary.md)
     1. [1.let和const命令](ES6/1.let和const命令.md)
     <!-- 2. [2.深浅拷贝](ES6/basis/2.变量的解构赋值.md)

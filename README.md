@@ -6,7 +6,7 @@
 -->
 
 <h1 align=center>
-    <img src="./Images/Js.jpg"/>
+    <img src="https://hlgcdn.oss-cn-hangzhou.aliyuncs.com/hlg-ui/1597299044012458/Js.jpg"/>
 </h1>
 <h1 align=center>余光前端进阶笔记</h1>
 
