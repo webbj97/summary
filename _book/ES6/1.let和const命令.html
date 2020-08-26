@@ -401,12 +401,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" >
+        <li class="chapter " data-level="1.3.7" data-path="../Js专题/7.类型转换.html">
+            
+                <a href="../Js专题/7.类型转换.html">
+            
+                    
+                    7.类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" >
             
                 <span>
             
                     
-                    [7.待确定]
+                    8.待更新
             
                 </span>
             
@@ -761,46 +774,58 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 align="center" id="let&#x548C;const">let&#x548C;const</h1>
+                                <h1 align="center" id="es6&#x57FA;&#x7840;&#x4E4B;let&#x548C;const">ES6&#x57FA;&#x7840;&#x4E4B;let&#x548C;const</h1>
 
-<h2 id="1let-&#x547D;&#x4EE4;">1.let &#x547D;&#x4EE4;</h2>
-<p>ES6 &#x65B0;&#x589E;&#x4E86;let&#x547D;&#x4EE4;&#xFF0C;&#x7528;&#x6765;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x3002;&#x5B83;&#x7684;&#x7528;&#x6CD5;&#x7C7B;&#x4F3C;&#x4E8E;var&#xFF0C;&#x4F46;&#x662F;&#x6240;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x53EA;&#x5728;let&#x547D;&#x4EE4;&#x6240;&#x5728;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x5185;&#x6709;&#x6548;&#x3002;</p>
+<blockquote>
+<p>&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x5B66;&#x4E60;&#x4E00;&#x95E8;&#x8BED;&#x8A00;&#x65F6;&#xFF0C;&#x6700;&#x5148;&#x4E86;&#x89E3;&#x7684;&#x90E8;&#x5206;&#x4E4B;&#x4E00;&#x3002;&#x4E0D;&#x8981;&#x5FFD;&#x7565;&#x5B83;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x6765;&#x770B;&#x770B;ES6&#x4E2D;&#x65B0;&#x589E;&#x7684;&#x4E24;&#x79CD;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x547D;&#x4EE4;&#x5427;&#xFF5E;</p>
+</blockquote>
+<p>&#x5728;&#x5F00;&#x59CB;ES6&#x7CFB;&#x5217;&#x4E4B;&#x521D;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5E94;&#x8BE5;&#x9075;&#x5FAA;&#x5C3D;&#x91CF;&#x6216;&#x8005;&#x5B8C;&#x5168;&#x5C06;&#x5B83;&#x4EEC;&#x5E94;&#x7528;&#x5230;&#x6211;&#x4EEC;&#x4E4B;&#x540E;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x4E4B;&#x4E2D;&#xFF0C;&#x52A0;&#x6CB9;&#xFF01;</p>
+<h2 id="&#x76EE;&#x5F55;">&#x76EE;&#x5F55;</h2>
+<ul>
+<li><a href="#1">&#x4E00;&#x3001;let &#x547D;&#x4EE4;</a></li>
+<li><a href="#2">&#x4E8C;&#x3001;const &#x547D;&#x4EE4;</a></li>
+<li><a href="#3">&#x4E09;&#x3001;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</a></li>
+<li><a href="#4">&#x56DB;&#x3001;&#x601D;&#x8003;</a></li>
+</ul>
+<h2 id="1">&#x4E00;&#x3001;let &#x547D;&#x4EE4;</h2>
+
+<p>ES6 &#x65B0;&#x589E;&#x4E86;let&#x547D;&#x4EE4;&#xFF0C;&#x7528;&#x6765;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x3002;&#x5B83;&#x7684;&#x7528;&#x6CD5;&#x7C7B;&#x4F3C;&#x4E8E;var&#xFF0C;&#x4F46;&#x662F;&#x6240;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x53EA;&#x5728;let&#x547D;&#x4EE4;&#x6240;&#x5728;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x5185;&#x6709;&#x6548;&#x3002;&#x5373;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#x73B0;&#x8C61;</p>
+<p>&#x5982;&#x679C;&#x5927;&#x5BB6;&#x5BF9;&#x4EC0;&#x4E48;&#x662F;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#x6709;&#x7591;&#x60D1;&#xFF0C;&#x4E0D;&#x59A8;&#x770B;&#x770B;<a href="https://blog.csdn.net/jbj6568839z/article/details/107390368" target="_blank">&#x300A;JavaScript&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#x4E0E;&#x9884;&#x7F16;&#x8BD1;&#x300B;</a></p>
+<h5 id="11-let&#x62D2;&#x7EDD;&#x63D0;&#x5347;">1.1 let&#x62D2;&#x7EDD;&#x63D0;&#x5347;</h5>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(value); <span class="hljs-comment">// undefined</span>
+<span class="hljs-keyword">var</span> value = <span class="hljs-string">&apos;&#x4F59;&#x5149;&apos;</span>;
+</code></pre>
+<p>&#x901A;&#x8FC7; var &#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x58F0;&#x660E;&#x7684;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x4F1A;&#x88AB;&#x63D0;&#x524D;&#xFF0C;&#x8FD9;&#x5BFC;&#x81F4;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x867D;&#x7136;&#x5B83;&#x7684;&#x503C;&#x4E0D;&#x4E00;&#x6837;&#x7B26;&#x5408;&#x4F60;&#x7684;&#x9884;&#x671F;&#x3002;</p>
 <pre><code class="lang-js">{
   <span class="hljs-keyword">let</span> a = <span class="hljs-number">10</span>;
   <span class="hljs-keyword">var</span> b = <span class="hljs-number">1</span>;
 }
-
-a <span class="hljs-comment">// ReferenceError: a is not defined.</span>
-b <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// a is not defined</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 1</span>
 </code></pre>
-<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5728;&#x4EE3;&#x7801;&#x5757;&#x4E4B;&#x4E2D;&#xFF0C;&#x5206;&#x522B;&#x7528;let&#x548C;var&#x58F0;&#x660E;&#x4E86;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x3002;&#x7136;&#x540E;&#x5728;&#x4EE3;&#x7801;&#x5757;&#x4E4B;&#x5916;&#x8C03;&#x7528;&#x8FD9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x7ED3;&#x679C;let&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x62A5;&#x9519;&#xFF0C;var&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x8FD4;&#x56DE;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x503C;&#x3002;&#x8FD9;&#x8868;&#x660E;&#xFF0C;let&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x53EA;&#x5728;&#x5B83;&#x6240;&#x5728;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x6709;&#x6548;&#x3002;</p>
-<p>for&#x5FAA;&#x73AF;&#x7684;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x5C31;&#x5F88;&#x5408;&#x9002;&#x4F7F;&#x7528;let&#x547D;&#x4EE4;&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
-  <span class="hljs-comment">// ...</span>
-}
-
-<span class="hljs-built_in">console</span>.log(i);
-</code></pre>
-<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x8BA1;&#x6570;&#x5668;i&#x53EA;&#x5728;for&#x5FAA;&#x73AF;&#x4F53;&#x5185;&#x6709;&#x6548;&#xFF0C;&#x5728;&#x5FAA;&#x73AF;&#x4F53;&#x5916;&#x5F15;&#x7528;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
-<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x679C;&#x4F7F;&#x7528;var&#xFF0C;&#x6700;&#x540E;&#x8F93;&#x51FA;&#x7684;&#x662F;10&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [];
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;<code>&#x53D8;&#x91CF;a</code>&#x53EA;&#x5728;&#x4ED6;&#x6240;&#x5728;&#x7684; <code>{}</code>&#x4E2D;&#x6709;&#x6548;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x7684;&#x51CF;&#x5C11;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x6C61;&#x67D3;&#x7684;&#x60C5;&#x51B5;</p>
+<h5 id="12-&#x7ECF;&#x5178;&#x7684;&#x95EE;&#x9898;&#x7684;for&#x5FAA;&#x73AF;&#x95EE;&#x9898;">1.2 &#x7ECF;&#x5178;&#x7684;&#x95EE;&#x9898;&#x7684;for&#x5FAA;&#x73AF;&#x95EE;&#x9898;</h5>
+<p>&#x8FD8;&#x662F;&#x90A3;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5927;&#x5BB6;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> arr = [];
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
-  a[i] = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-    <span class="hljs-built_in">console</span>.log(i);
-  };
+    arr[i] = () =&gt; { <span class="hljs-built_in">console</span>.log(i) }
 }
-a[<span class="hljs-number">6</span>](); <span class="hljs-comment">// 10</span>
+arr[<span class="hljs-number">0</span>](); <span class="hljs-comment">// 10</span>
+arr[<span class="hljs-number">1</span>](); <span class="hljs-comment">// 10</span>
+arr[<span class="hljs-number">2</span>](); <span class="hljs-comment">// 10</span>
 </code></pre>
-<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;i&#x662F;var&#x547D;&#x4EE4;&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x5728;&#x5168;&#x5C40;&#x8303;&#x56F4;&#x5185;&#x90FD;&#x6709;&#x6548;&#xFF0C;&#x6240;&#x4EE5;&#x5168;&#x5C40;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;i&#x3002;&#x6BCF;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#xFF0C;&#x53D8;&#x91CF;i&#x7684;&#x503C;&#x90FD;&#x4F1A;&#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x800C;&#x5FAA;&#x73AF;&#x5185;&#x88AB;&#x8D4B;&#x7ED9;&#x6570;&#x7EC4;a&#x7684;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;console.log(i)&#xFF0C;&#x91CC;&#x9762;&#x7684;i&#x6307;&#x5411;&#x7684;&#x5C31;&#x662F;&#x5168;&#x5C40;&#x7684;i&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6240;&#x6709;&#x6570;&#x7EC4;a&#x7684;&#x6210;&#x5458;&#x91CC;&#x9762;&#x7684;i&#xFF0C;&#x6307;&#x5411;&#x7684;&#x90FD;&#x662F;&#x540C;&#x4E00;&#x4E2A;i&#xFF0C;&#x5BFC;&#x81F4;&#x8FD0;&#x884C;&#x65F6;&#x8F93;&#x51FA;&#x7684;&#x662F;&#x6700;&#x540E;&#x4E00;&#x8F6E;&#x7684;i&#x7684;&#x503C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; 10&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [];
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;<code>&#x53D8;&#x91CF;i</code>&#x662F;<code>var</code>&#x547D;&#x4EE4;&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x5728;&#x5168;&#x5C40;&#x8303;&#x56F4;&#x5185;&#x90FD;&#x6709;&#x6548;&#xFF0C;&#x6240;&#x4EE5;&#x5168;&#x5C40;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;i&#x3002;&#x6BCF;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#xFF0C;&#x53D8;&#x91CF;i&#x7684;&#x503C;&#x90FD;&#x4F1A;&#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x800C;&#x5FAA;&#x73AF;&#x5185;&#x88AB;&#x8D4B;&#x7ED9;&#x6570;&#x7EC4;a&#x7684;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;console.log(i)&#xFF0C;&#x91CC;&#x9762;&#x7684;i&#x6307;&#x5411;&#x7684;&#x5C31;&#x662F;&#x5168;&#x5C40;&#x7684;i&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6240;&#x6709;&#x6570;&#x7EC4;a&#x7684;&#x6210;&#x5458;&#x91CC;&#x9762;&#x7684;i&#xFF0C;&#x6307;&#x5411;&#x7684;&#x90FD;&#x662F;&#x540C;&#x4E00;&#x4E2A;i&#xFF0C;&#x5BFC;&#x81F4;&#x8FD0;&#x884C;&#x65F6;&#x8F93;&#x51FA;&#x7684;&#x662F;&#x6700;&#x540E;&#x4E00;&#x8F6E;&#x7684;i&#x7684;&#x503C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; 10&#x3002;</p>
+<p>&#x5229;&#x7528;let&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x6539;&#x52A8;&#x4E00;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> arr = [];
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
-  a[i] = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-    <span class="hljs-built_in">console</span>.log(i);
-  };
+    arr[i] = () =&gt; { <span class="hljs-built_in">console</span>.log(i) }
 }
-a[<span class="hljs-number">6</span>](); <span class="hljs-comment">// 6</span>
+arr[<span class="hljs-number">0</span>](); <span class="hljs-comment">// 0</span>
+arr[<span class="hljs-number">1</span>](); <span class="hljs-comment">// 1</span>
+arr[<span class="hljs-number">2</span>](); <span class="hljs-comment">// 2</span>
 </code></pre>
-<h3 id="&#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#x58F0;&#x660E;">&#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#x58F0;&#x660E;</h3>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;<code>&#x53D8;&#x91CF;i</code>&#x662F;<code>let</code>&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x5F53;&#x524D;&#x7684;i&#x53EA;&#x5728;&#x672C;&#x8F6E;&#x5FAA;&#x73AF;&#x6709;&#x6548;&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#x7684;i&#x5176;&#x5B9E;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x867D;&#x7136;&#x8F93;&#x51FA;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x53EB;<code>i</code>&#xFF0C;&#x4F46;&#x4ED6;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E4B;&#x4E2D;&#x4E86;&#x3002;</p>
+<h5 id="13-let&#x4E0D;&#x80FD;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x91CD;&#x590D;&#x58F0;&#x660E;">1.3 let&#x4E0D;&#x80FD;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x91CD;&#x590D;&#x58F0;&#x660E;</h5>
 <p>let&#x4E0D;&#x5141;&#x8BB8;&#x5728;&#x76F8;&#x540C;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#xFF0C;&#x91CD;&#x590D;&#x58F0;&#x660E;&#x540C;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</p>
 <pre><code class="lang-js"><span class="hljs-comment">// &#x62A5;&#x9519;</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func</span>(<span class="hljs-params"></span>) </span>{
@@ -815,86 +840,67 @@ a[<span class="hljs-number">6</span>](); <span class="hljs-comment">// 6</span>
 }
 </code></pre>
 <p>&#x56E0;&#x6B64;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x91CD;&#x65B0;&#x58F0;&#x660E;&#x53C2;&#x6570;&#x3002;</p>
-<h3 id="&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;">&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</h3>
-<p>&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#xFF1F;
-ES5 &#x53EA;&#x6709;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x548C;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x6CA1;&#x6709;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x8FD9;&#x5E26;&#x6765;&#x5F88;&#x591A;&#x4E0D;&#x5408;&#x7406;&#x7684;&#x573A;&#x666F;&#x3002;</p>
-<ul>
-<li>&#x7B2C;&#x4E00;&#x79CD;&#x573A;&#x666F;&#xFF0C;&#x5185;&#x5C42;&#x53D8;&#x91CF;&#x53EF;&#x80FD;&#x4F1A;&#x8986;&#x76D6;&#x5916;&#x5C42;&#x53D8;&#x91CF;&#x3002;
-```js
-var tmp = new Date();</li>
-</ul>
-<p>function f() {
-  console.log(tmp);
-  if (false) {
-    var tmp = &apos;hello world&apos;;
-  }
-}</p>
-<p>f(); // undefined</p>
-<pre><code>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x7684;&#x539F;&#x610F;&#x662F;&#xFF0C;if&#x4EE3;&#x7801;&#x5757;&#x7684;&#x5916;&#x90E8;&#x4F7F;&#x7528;&#x5916;&#x5C42;&#x7684;tmp&#x53D8;&#x91CF;&#xFF0C;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x5185;&#x5C42;&#x7684;tmp&#x53D8;&#x91CF;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x51FD;&#x6570;f&#x6267;&#x884C;&#x540E;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;undefined&#xFF0C;&#x539F;&#x56E0;&#x5728;&#x4E8E;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#xFF0C;&#x5BFC;&#x81F4;&#x5185;&#x5C42;&#x7684;tmp&#x53D8;&#x91CF;&#x8986;&#x76D6;&#x4E86;&#x5916;&#x5C42;&#x7684;tmp&#x53D8;&#x91CF;&#x3002;
+<h5 id="14-&#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;">1.4 &#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;</h5>
+<p>&#x5927;&#x5BB6;&#x4E0D;&#x8981;&#x88AB;&#x8FD9;&#x4E2A;&#x201C;&#x9AD8;&#x5927;&#x4E0A;&#x201D;&#x7684;&#x540D;&#x5B57;&#x6B3A;&#x9A97;&#x4E86;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> tmp = <span class="hljs-number">123</span>;
 
-- &#x7B2C;&#x4E8C;&#x79CD;&#x573A;&#x666F;&#xFF0C;&#x7528;&#x6765;&#x8BA1;&#x6570;&#x7684;&#x5FAA;&#x73AF;&#x53D8;&#x91CF;&#x6CC4;&#x9732;&#x4E3A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;
-```js
-var s = &apos;hello&apos;;
-
-for (var i = 0; i &lt; s.length; i++) {
-  console.log(s[i]);
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+  tmp = <span class="hljs-string">&apos;abc&apos;</span>; <span class="hljs-comment">// ReferenceError: Cannot access &apos;tmp&apos; before initialization</span>
+  <span class="hljs-keyword">let</span> tmp;
 }
-
-console.log(i); // 5
-</code></pre><p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;i&#x53EA;&#x7528;&#x6765;&#x63A7;&#x5236;&#x5FAA;&#x73AF;&#xFF0C;&#x4F46;&#x662F;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x5B83;&#x5E76;&#x6CA1;&#x6709;&#x6D88;&#x5931;&#xFF0C;&#x6CC4;&#x9732;&#x6210;&#x4E86;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;</p>
-<h2 id="2const&#x547D;&#x4EE4;">2.const&#x547D;&#x4EE4;</h2>
-<h3 id="&#x57FA;&#x672C;&#x7528;&#x6CD5;">&#x57FA;&#x672C;&#x7528;&#x6CD5;</h3>
-<ul>
-<li>const&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x53EA;&#x8BFB;&#x7684;&#x5E38;&#x91CF;&#x3002;&#x4E00;&#x65E6;&#x58F0;&#x660E;&#xFF0C;&#x5E38;&#x91CF;&#x7684;&#x503C;&#x5C31;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x3002;
-```js
-const PI = 3.1415;
-PI // 3.1415</li>
-</ul>
-<p>PI = 3;
-// TypeError: Assignment to constant variable.</p>
-<pre><code>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8868;&#x660E;&#x6539;&#x53D8;&#x5E38;&#x91CF;&#x7684;&#x503C;&#x4F1A;&#x62A5;&#x9519;&#x3002;
-
-- const&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x4E0D;&#x5F97;&#x6539;&#x53D8;&#x503C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;const&#x4E00;&#x65E6;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x7ACB;&#x5373;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E0D;&#x80FD;&#x7559;&#x5230;&#x4EE5;&#x540E;&#x8D4B;&#x503C;&#x3002;
-```js
-const foo;
-// SyntaxError: Missing initializer in const declaration
-</code></pre><p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8868;&#x793A;&#xFF0C;&#x5BF9;&#x4E8E;const&#x6765;&#x8BF4;&#xFF0C;&#x53EA;&#x58F0;&#x660E;&#x4E0D;&#x8D4B;&#x503C;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
-<ul>
-<li>const&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E0E;let&#x547D;&#x4EE4;&#x76F8;&#x540C;&#xFF1A;&#x53EA;&#x5728;&#x58F0;&#x660E;&#x6240;&#x5728;&#x7684;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x6709;&#x6548;&#x3002;<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
-<span class="hljs-keyword">const</span> MAX = <span class="hljs-number">5</span>;
-}
-MAX <span class="hljs-comment">// Uncaught ReferenceError: MAX is not defined</span>
 </code></pre>
-</li>
-<li><p>const&#x547D;&#x4EE4;&#x58F0;&#x660E;&#x7684;&#x5E38;&#x91CF;&#x4E5F;&#x662F;&#x4E0D;&#x63D0;&#x5347;&#xFF0C;&#x540C;&#x6837;&#x5B58;&#x5728;&#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x58F0;&#x660E;&#x7684;&#x4F4D;&#x7F6E;&#x540E;&#x9762;&#x4F7F;&#x7528;&#x3002;</p>
+<p><img src="https://img-blog.csdnimg.cn/20200826151951631.png"></p>
+<p>&#x518D;&#x770B;&#x770B;&#x4E66;&#x4E2D;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
-<span class="hljs-built_in">console</span>.log(MAX); <span class="hljs-comment">// ReferenceError</span>
-<span class="hljs-keyword">const</span> MAX = <span class="hljs-number">5</span>;
+  <span class="hljs-comment">// TDZ&#x5F00;&#x59CB;</span>
+  tmp = <span class="hljs-string">&apos;abc&apos;</span>; <span class="hljs-comment">// ReferenceError</span>
+  <span class="hljs-built_in">console</span>.log(tmp); <span class="hljs-comment">// ReferenceError</span>
+
+  <span class="hljs-keyword">let</span> tmp; <span class="hljs-comment">// TDZ&#x7ED3;&#x675F;</span>
+  <span class="hljs-built_in">console</span>.log(tmp); <span class="hljs-comment">// undefined</span>
+
+  tmp = <span class="hljs-number">123</span>;
+  <span class="hljs-built_in">console</span>.log(tmp); <span class="hljs-comment">// 123</span>
 }
 </code></pre>
-<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5728;&#x5E38;&#x91CF;MAX&#x58F0;&#x660E;&#x4E4B;&#x524D;&#x5C31;&#x8C03;&#x7528;&#xFF0C;&#x7ED3;&#x679C;&#x62A5;&#x9519;&#x3002;</p>
-</li>
-<li><p>const&#x58F0;&#x660E;&#x7684;&#x5E38;&#x91CF;&#xFF0C;&#x4E5F;&#x4E0E;let&#x4E00;&#x6837;&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#x58F0;&#x660E;&#x3002;
-```js
-var message = &quot;Hello!&quot;;
-let age = 25;</p>
-</li>
-</ul>
-<p>// &#x4EE5;&#x4E0B;&#x4E24;&#x884C;&#x90FD;&#x4F1A;&#x62A5;&#x9519;
-const message = &quot;Goodbye!&quot;;
-const age = 30;</p>
-<pre><code>### &#x672C;&#x8D28;
-- const&#x5B9E;&#x9645;&#x4E0A;&#x4FDD;&#x8BC1;&#x7684;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x4E0D;&#x5F97;&#x6539;&#x52A8;&#xFF0C;&#x800C;&#x662F;&#x53D8;&#x91CF;&#x6307;&#x5411;&#x7684;&#x90A3;&#x4E2A;&#x5185;&#x5B58;&#x5730;&#x5740;&#x6240;&#x4FDD;&#x5B58;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x5F97;&#x6539;&#x52A8;&#x3002;&#x5BF9;&#x4E8E;&#x7B80;&#x5355;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF08;&#x6570;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x5E03;&#x5C14;&#x503C;&#xFF09;&#xFF0C;&#x503C;&#x5C31;&#x4FDD;&#x5B58;&#x5728;&#x53D8;&#x91CF;&#x6307;&#x5411;&#x7684;&#x90A3;&#x4E2A;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x56E0;&#x6B64;&#x7B49;&#x540C;&#x4E8E;&#x5E38;&#x91CF;&#x3002;&#x4F46;&#x5BF9;&#x4E8E;&#x590D;&#x5408;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF08;&#x4E3B;&#x8981;&#x662F;&#x5BF9;&#x8C61;&#x548C;&#x6570;&#x7EC4;&#xFF09;&#xFF0C;&#x53D8;&#x91CF;&#x6307;&#x5411;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x4FDD;&#x5B58;&#x7684;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x7684;&#x6307;&#x9488;&#xFF0C;const&#x53EA;&#x80FD;&#x4FDD;&#x8BC1;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF08;&#x5373;&#x603B;&#x662F;&#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x7684;&#x5730;&#x5740;&#xFF09;&#xFF0C;&#x81F3;&#x4E8E;&#x5B83;&#x6307;&#x5411;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x662F;&#x4E0D;&#x662F;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x5C31;&#x5B8C;&#x5168;&#x4E0D;&#x80FD;&#x63A7;&#x5236;&#x4E86;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5C06;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x58F0;&#x660E;&#x4E3A;&#x5E38;&#x91CF;&#x5FC5;&#x987B;&#x975E;&#x5E38;&#x5C0F;&#x5FC3;&#x3002;
-```js
-const foo = {};
+<p>&#x603B;&#x4E4B;&#xFF0C;&#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;&#x7684;&#x672C;&#x8D28;&#x5C31;&#x662F;&#xFF0C;&#x53EA;&#x8981;&#x4E00;&#x8FDB;&#x5165;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x6240;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;&#x5C31;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x53EF;&#x83B7;&#x53D6;&#xFF0C;&#x53EA;&#x6709;&#x7B49;&#x5230;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x7684;&#x90A3;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x51FA;&#x73B0;&#xFF0C;&#x624D;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x548C;&#x4F7F;&#x7528;&#x8BE5;&#x53D8;&#x91CF;&#x3002;</p>
+<h5 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h5>
+<ol>
+<li>let &#x548C; var&#x4E00;&#x6837;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x53D8;&#x91CF;</li>
+<li>let &#x4E0D;&#x5B58;&#x5728;&#x53D8;&#x91CF;&#x63D0;&#x5347;</li>
+<li>let &#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#x58F0;&#x660E;</li>
+<li>let &#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x5B58;&#x5728;&#x201C;&#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;&#x201D;</li>
+</ol>
+<h2 id="2">&#x4E8C;&#x3001;const&#x547D;&#x4EE4;</h2>
 
-// &#x4E3A; foo &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x6210;&#x529F;
-foo.prop = 123;
-foo.prop // 123
+<h5 id="21-&#x548C;let&#x5F88;&#x50CF;&#x7684;const">2.1 &#x548C;let&#x5F88;&#x50CF;&#x7684;const</h5>
+<p>const&#x7EDD;&#x5927;&#x90E8;&#x5206;&#x7279;&#x70B9;&#x548C;let&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x58F0;&#x660E;&#x662F;&#x4E00;&#x4E2A;&#x53EA;&#x8BFB;&#x7684;&#x5E38;&#x91CF;&#x3002;&#x4E00;&#x65E6;&#x58F0;&#x660E;&#xFF0C;&#x5E38;&#x91CF;&#x7684;&#x503C;&#x5C31;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x3002;</p>
+<h5 id="22-const&#x4E0D;&#x53EF;&#x4FEE;&#x6539;">2.2 const&#x4E0D;&#x53EF;&#x4FEE;&#x6539;</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> PI = <span class="hljs-number">3.1415</span>;
+PI <span class="hljs-comment">// 3.1415</span>
 
-// &#x5C06; foo &#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;
-foo = {}; // TypeError: &quot;foo&quot; is read-only
-</code></pre><p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5E38;&#x91CF;foo&#x50A8;&#x5B58;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x53EA;&#x662F;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#xFF0C;&#x5373;&#x4E0D;&#x80FD;&#x628A;foo&#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#xFF0C;&#x4F46;&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#x662F;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x4E3A;&#x5176;&#x6DFB;&#x52A0;&#x65B0;&#x5C5E;&#x6027;&#x3002;</p>
+PI = <span class="hljs-number">3</span>; <span class="hljs-comment">// TypeError: Assignment to constant variable.</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8868;&#x660E;&#x6539;&#x53D8;&#x5E38;&#x91CF;&#x7684;&#x503C;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> foo;
+<span class="hljs-comment">// SyntaxError: Missing initializer in const declaration</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8868;&#x793A;&#xFF0C;&#x5BF9;&#x4E8E;const&#x6765;&#x8BF4;&#xFF0C;&#x53EA;&#x58F0;&#x660E;&#x4E0D;&#x8D4B;&#x503C;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<h5 id="23-&#x5BF9;&#x4E8E;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;&#x7684;&#x7591;&#x60D1;">2.3 &#x5BF9;&#x4E8E;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;&#x7684;&#x7591;&#x60D1;</h5>
+<p>const&#x7684;&#x4E0D;&#x53EF;&#x5199;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x4E0D;&#x5F97;&#x6539;&#x52A8;&#xFF0C;&#x800C;&#x662F;&#x53D8;&#x91CF;&#x6307;&#x5411;&#x7684;&#x90A3;&#x4E2A;&#x5185;&#x5B58;&#x5730;&#x5740;&#x6240;&#x4FDD;&#x5B58;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x5F97;&#x6539;&#x52A8;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x7B80;&#x5355;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF08;&#x6570;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x5E03;&#x5C14;&#x503C;&#xFF09;&#xFF0C;&#x503C;&#x5C31;&#x4FDD;&#x5B58;&#x5728;&#x53D8;&#x91CF;&#x6307;&#x5411;&#x7684;&#x90A3;&#x4E2A;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x56E0;&#x6B64;&#x7B49;&#x540C;&#x4E8E;&#x5E38;&#x91CF;&#x3002;</p>
+<p>&#x4F46;&#x5BF9;&#x4E8E;&#x590D;&#x5408;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF08;&#x4E3B;&#x8981;&#x662F;&#x5BF9;&#x8C61;&#x548C;&#x6570;&#x7EC4;&#xFF09;&#xFF0C;&#x53D8;&#x91CF;&#x6307;&#x5411;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x4FDD;&#x5B58;&#x7684;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x7684;&#x6307;&#x9488;&#xFF0C;const&#x53EA;&#x80FD;&#x4FDD;&#x8BC1;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF08;&#x5373;&#x603B;&#x662F;&#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x7684;&#x5730;&#x5740;&#xFF09;&#xFF0C;&#x81F3;&#x4E8E;&#x5B83;&#x6307;&#x5411;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x662F;&#x4E0D;&#x662F;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x5C31;&#x5B8C;&#x5168;&#x4E0D;&#x80FD;&#x63A7;&#x5236;&#x4E86;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5C06;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x58F0;&#x660E;&#x4E3A;&#x5E38;&#x91CF;&#x5FC5;&#x987B;&#x975E;&#x5E38;&#x5C0F;&#x5FC3;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> foo = {};
+
+<span class="hljs-comment">// &#x4E3A; foo &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x6210;&#x529F;</span>
+foo.prop = <span class="hljs-number">123</span>;
+foo.prop <span class="hljs-comment">// 123</span>
+
+<span class="hljs-comment">// &#x5C06; foo &#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;</span>
+foo = {}; <span class="hljs-comment">// TypeError: &quot;foo&quot; is read-only</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5E38;&#x91CF;foo&#x50A8;&#x5B58;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x53EA;&#x662F;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#xFF0C;&#x5373;&#x4E0D;&#x80FD;&#x628A;foo&#x6307;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#xFF0C;&#x4F46;&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#x662F;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x4E3A;&#x5176;&#x6DFB;&#x52A0;&#x65B0;&#x5C5E;&#x6027;&#x3002;</p>
 <p>&#x4E0B;&#x9762;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;</p>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> a = [];
 a.push(<span class="hljs-string">&apos;Hello&apos;</span>); <span class="hljs-comment">// &#x53EF;&#x6267;&#x884C;</span>
@@ -902,7 +908,127 @@ a.length = <span class="hljs-number">0</span>;    <span class="hljs-comment">// 
 a = [<span class="hljs-string">&apos;Dave&apos;</span>];    <span class="hljs-comment">// &#x62A5;&#x9519;</span>
 </code></pre>
 <p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5E38;&#x91CF;a&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x672C;&#x8EAB;&#x662F;&#x53EF;&#x5199;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x5C06;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x8D4B;&#x503C;&#x7ED9;a&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-07-30 09:34:32 </span> </footer>
+<h5 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h5>
+<ol>
+<li>const &#x548C; let &#x4E00;&#x6837;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x53D8;&#x91CF;</li>
+<li>const &#x4E0D;&#x5B58;&#x5728;&#x53D8;&#x91CF;&#x63D0;&#x5347;</li>
+<li>const &#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#x58F0;&#x660E;</li>
+<li>const &#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x5B58;&#x5728;&#x201C;&#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;&#x201D;</li>
+<li>const &#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x7684;&#x5B58;&#x50A8;&#x5730;&#x5740;&#x4E0D;&#x53EF;&#x5199;</li>
+</ol>
+<h2 id="3">&#x4E09;&#x3001;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</h2>
+
+<p>&#x5728;let&#x548C;const&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x770B;&#x5230;&#x201C;&#x5F53;&#x524D;&#x4EE3;&#x7801;&#x5757;&#x201D;&#x6216;&#x201C;&#x51FD;&#x6570;&#x5757;&#x201D;&#x7684;&#x5B57;&#x6837;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x5BF9;&#x8FD9;&#x4E2A;<code>&#x5757;</code>&#x8FDB;&#x884C;&#x5B9A;&#x4E49;&#x5462;&#xFF1F;</p>
+<p>ES6&#x7684;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x2014;&#x2014;<strong>&#x6709;&#x5927;&#x62EC;&#x53F7;&#xFF08; {}&#x6216;() &#xFF09;</strong>&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5927;&#x62EC;&#x53F7;&#xFF0C;JavaScript &#x5F15;&#x64CE;&#x5C31;&#x8BA4;&#x4E3A;&#x4E0D;&#x5B58;&#x5728;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x5728;&#x6CA1;&#x6709;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x65F6;&#xFF0C;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x5462;&#xFF1F;</p>
+<h5 id="31-&#x5185;&#x5C42;&#x53D8;&#x91CF;&#x53EF;&#x80FD;&#x4F1A;&#x8986;&#x76D6;&#x5916;&#x5C42;&#x53D8;&#x91CF;&#x3002;">3.1 &#x5185;&#x5C42;&#x53D8;&#x91CF;&#x53EF;&#x80FD;&#x4F1A;&#x8986;&#x76D6;&#x5916;&#x5C42;&#x53D8;&#x91CF;&#x3002;</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> params = { name: <span class="hljs-string">&apos;&#x4F59;&#x5149;&apos;</span> };
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(params);
+    <span class="hljs-keyword">var</span> params = {
+        name: <span class="hljs-number">10</span>
+    }
+}
+
+func(); <span class="hljs-comment">// undefined</span>
+</code></pre>
+<p>&#x88AB;var&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x5B58;&#x5728;&#x6781;&#x5927;&#x7684;&#x98CE;&#x9669;</p>
+<h5 id="32-&#x7B2C;&#x4E8C;&#x79CD;&#x573A;&#x666F;&#xFF0C;&#x7528;&#x6765;&#x8BA1;&#x6570;&#x7684;&#x5FAA;&#x73AF;&#x53D8;&#x91CF;&#x6CC4;&#x9732;&#x4E3A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;">3.2 &#x7B2C;&#x4E8C;&#x79CD;&#x573A;&#x666F;&#xFF0C;&#x7528;&#x6765;&#x8BA1;&#x6570;&#x7684;&#x5FAA;&#x73AF;&#x53D8;&#x91CF;&#x6CC4;&#x9732;&#x4E3A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;</h5>
+<p>&#x53C8;&#x662F;&#x90A3;&#x4E2A;&#x719F;&#x6089;&#x7684;&#x573A;&#x666F;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> s = <span class="hljs-string">&apos;hello&apos;</span>;
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; s.length; i++) {
+  <span class="hljs-built_in">console</span>.log(s[i]);
+}
+
+<span class="hljs-built_in">console</span>.log(i); <span class="hljs-comment">// 5</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;i&#x53EA;&#x7528;&#x6765;&#x63A7;&#x5236;&#x5FAA;&#x73AF;&#xFF0C;&#x4F46;&#x662F;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x5B83;&#x5E76;&#x6CA1;&#x6709;&#x6D88;&#x5931;&#xFF0C;&#x6CC4;&#x9732;&#x6210;&#x4E86;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x3002;</p>
+<h2 id="4">&#x56DB;&#x3001;&#x601D;&#x8003;</h2>
+
+<p>&#x65E2;&#x7136;ES6&#x662F;Js&#x7684;&#x65B0;&#x6807;&#x51C6;&#xFF08;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x4E0D;&#x7B97;&#x662F;&#x65B0;&#x6807;&#x51C6;&#x4E86;...&#xFF09;&#xFF0C;&#x5B83;&#x7684;&#x5411;&#x540E;&#x517C;&#x5BB9;&#x662F;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x5462;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x501F;&#x52A9;babel&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x6587;&#x7AE0;&#x5185;&#x63D0;&#x5230;&#x7684;&#x90E8;&#x5206;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<h5 id="41-&#x5355;&#x7EAF;&#x7684;-let-&#x548C;-const-&#x58F0;&#x660E;">4.1 &#x5355;&#x7EAF;&#x7684; let &#x548C; const &#x58F0;&#x660E;</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> num = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">const</span> str = <span class="hljs-string">&apos;str&apos;</span>;
+
+<span class="hljs-comment">// babel</span>
+
+<span class="hljs-keyword">var</span> num = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">&apos;str&apos;</span>;
+</code></pre>
+<p>&#x54A6;&#xFF5E;&#xFF0C;&#x5E94;&#x8BE5;babel&#x8F6C;&#x6362;&#x540E;&#x53D8;&#x6210;&#x4E86;var&#xFF0C;&#x6211;&#x4EEC;&#x662F;&#x5728;&#x65E0;&#x7528;&#x529F;&#x5417;&#xFF1F;</p>
+<h5 id="42-&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684;-const-&#x548C;-let">4.2 &#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684; const &#x548C; let</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> bool = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">if</span> (bool) {
+    <span class="hljs-keyword">let</span> a = <span class="hljs-number">1</span>;
+}
+<span class="hljs-built_in">console</span>.log(a);
+
+<span class="hljs-comment">// babel</span>
+<span class="hljs-keyword">var</span> bool = <span class="hljs-literal">true</span>;
+
+<span class="hljs-keyword">if</span> (bool) {
+  <span class="hljs-keyword">var</span> _a = <span class="hljs-number">1</span>;
+}
+
+<span class="hljs-built_in">console</span>.log(a);
+</code></pre>
+<p>&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;<code>a</code>&#x53D8;&#x91CF;&#x53D8;&#x6210;&#x4E86; <code>_a</code>&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x5728;&#x4F5C;&#x7528;&#x57DF;&#x5916;&#x4F7F;&#x7528;&#x5B83;&#x65F6;&#xFF0C;&#x5F53;&#x7136;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#xFF01;</p>
+<h5 id="43-for-&#x5FAA;&#x73AF;&#x4E2D;&#x7684;let">4.3 for &#x5FAA;&#x73AF;&#x4E2D;&#x7684;let</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> arr = [];
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+    arr[i] = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(i) }
+}
+
+<span class="hljs-comment">// babel</span>
+<span class="hljs-keyword">var</span> arr = [];
+
+<span class="hljs-keyword">var</span> _loop = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_loop</span>(<span class="hljs-params">i</span>) </span>{
+    arr[i] = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(i);
+    };
+};
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+    _loop(i);
+}
+</code></pre>
+<p>&#x4F60;&#x4F1A;&#x53D1;&#x73B0;let&#x58F0;&#x660E;i,&#x5728;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x4E2D;&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4ED6;&#x4EEC;&#x4E92;&#x4E0D;&#x5F71;&#x54CD;&#x3002;</p>
+<p>&#x5230;&#x8FD9;&#x91CC;&#x5173;&#x4E8E;let&#x548C;const&#x5C31;&#x603B;&#x7ED3;&#x5230;&#x8FD9;&#x91CC;&#x6B21;</p>
+<h5 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h5>
+<ul>
+<li><a href="https://github.com/mqyqingfeng/Blog/issues/82" target="_blank">ES6&#x7CFB;&#x5217;&#x4E4B;let&#x548C;const</a></li>
+<li><a href="https://es6.ruanyifeng.com/#docs/let#const-%E5%91%BD%E4%BB%A4" target="_blank">ES6&#x5165;&#x95E8;</a></li>
+</ul>
+<h2 id="5">&#x5199;&#x5728;&#x6700;&#x540E;</h2>
+
+<p><strong>JavaScript&#x7CFB;&#x5217;&#xFF1A;</strong></p>
+<ol>
+<li><a href="https://blog.csdn.net/jbj6568839z/article/details/103161970" target="_blank">&#x300A;JavaScript&#x5185;&#x529F;&#x8FDB;&#x9636;&#x7CFB;&#x5217;&#x300B;&#xFF08;&#x5DF2;&#x5B8C;&#x7ED3;&#xFF09;</a></li>
+<li><a href="https://blog.csdn.net/jbj6568839z/category_10204368.html" target="_blank">&#x300A;JavaScript&#x4E13;&#x9879;&#x7CFB;&#x5217;&#x300B;&#xFF08;&#x6301;&#x7EED;&#x66F4;&#x65B0;&#xFF09;</a></li>
+<li><a href="https://blog.csdn.net/jbj6568839z/category_8464707.html" target="_blank">&#x300A;ES6&#x57FA;&#x7840;&#x7CFB;&#x5217;&#x300B;&#xFF08;&#x6301;&#x7EED;&#x66F4;&#x65B0;&#xFF09;</a></li>
+</ol>
+<p><strong>&#x5173;&#x4E8E;&#x6211;</strong></p>
+<ul>
+<li>&#x82B1;&#x540D;&#xFF1A;&#x4F59;&#x5149;&#xFF08;&#x6C89;&#x8FF7;JS&#xFF0C;&#x865A;&#x5FC3;&#x5B66;&#x4E60;&#x4E2D;&#xFF09;</li>
+<li>WX&#xFF1A;j565017805</li>
+</ul>
+<p><strong>&#x5176;&#x4ED6;&#x6C89;&#x6DC0;</strong></p>
+<ul>
+<li><a href="https://webbj97.github.io/leetCode-Js/" target="_blank">Js&#x7248;LeetCode&#x9898;&#x89E3;</a></li>
+<li><a href="https://webbj97.github.io/summary/" target="_blank">&#x524D;&#x7AEF;&#x8FDB;&#x9636;&#x7B14;&#x8BB0;</a></li>
+<li><a href="https://yuguang.blog.csdn.net/" target="_blank">&#x6211;&#x7684;CSDN&#x535A;&#x5BA2;</a></li>
+</ul>
+<p>&#x5982;&#x679C;&#x60A8;&#x770B;&#x5230;&#x4E86;&#x6700;&#x540E;&#xFF0C;&#x5BF9;&#x6587;&#x7AE0;&#x6709;&#x4EFB;&#x4F55;&#x5EFA;&#x8BAE;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x8BC4;&#x8BBA;&#x533A;&#x7559;&#x8A00;</p>
+<p>&#x8FD9;&#x662F;<a href="https://github.com/webbj97/summary" target="_blank">&#x6587;&#x7AE0;&#x6240;&#x5728;GitHub&#x4ED3;&#x5E93;&#x7684;&#x4F20;&#x9001;&#x95E8;</a>&#xFF0C;&#x5982;&#x679C;&#x771F;&#x7684;&#x5BF9;&#x60A8;&#x6709;&#x6240;&#x5E2E;&#x52A9;&#xFF0C;&#x5E0C;&#x671B;&#x53EF;&#x4EE5;&#x70B9;&#x4E2A;star&#xFF0C;&#x8FD9;&#x662F;&#x5BF9;&#x6211;&#x6700;&#x5927;&#x7684;&#x9F13;&#x52B1; &#xFF5E;</p>
+<p align="center">
+    <img src="https://img-blog.csdnimg.cn/20200602155947301.png" width="60%">
+</p>
+
+
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-08-26 18:22:47 </span> </footer>
                                 
                                 </section>
                             
@@ -945,7 +1071,7 @@ a = [<span class="hljs-string">&apos;Dave&apos;</span>];    <span class="hljs-co
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.let和const命令","level":"1.5.1","depth":2,"next":{"title":"3.字符串的扩展","level":"1.5.2","depth":2,"path":"ES6/basis/3.字符串的扩展.md","ref":"ES6/basis/3.字符串的扩展.md","articles":[]},"previous":{"title":"深入ES6系列","level":"1.5","depth":1,"path":"ES6/summary.md","ref":"ES6/summary.md","articles":[{"title":"1.let和const命令","level":"1.5.1","depth":2,"path":"ES6/1.let和const命令.md","ref":"ES6/1.let和const命令.md","articles":[]},{"title":"3.字符串的扩展","level":"1.5.2","depth":2,"path":"ES6/basis/3.字符串的扩展.md","ref":"ES6/basis/3.字符串的扩展.md","articles":[]},{"title":"4.函数的扩展","level":"1.5.3","depth":2,"path":"ES6/basis/4.函数的扩展.md","ref":"ES6/basis/4.函数的扩展.md","articles":[]},{"title":"5.扩展运算符","level":"1.5.4","depth":2,"path":"ES6/basis/5.扩展运算符.md","ref":"ES6/basis/5.扩展运算符.md","articles":[]},{"title":"6.独一无二的Symbol","level":"1.5.5","depth":2,"path":"ES6/basis/6.独一无二的Symbol","ref":"ES6/basis/6.独一无二的Symbol","articles":[]},{"title":"7.Promise浅谈","level":"1.5.6","depth":2,"path":"ES6/basis/7.Promise浅谈","ref":"ES6/basis/7.Promise浅谈","articles":[]},{"title":"待更新...","level":"1.5.7","depth":2,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"summary","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"ES6/1.let和const命令.md","mtime":"2020-07-30T01:34:32.123Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-20T11:12:08.042Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.let和const命令","level":"1.5.1","depth":2,"next":{"title":"3.字符串的扩展","level":"1.5.2","depth":2,"path":"ES6/basis/3.字符串的扩展.md","ref":"ES6/basis/3.字符串的扩展.md","articles":[]},"previous":{"title":"深入ES6系列","level":"1.5","depth":1,"path":"ES6/summary.md","ref":"ES6/summary.md","articles":[{"title":"1.let和const命令","level":"1.5.1","depth":2,"path":"ES6/1.let和const命令.md","ref":"ES6/1.let和const命令.md","articles":[]},{"title":"3.字符串的扩展","level":"1.5.2","depth":2,"path":"ES6/basis/3.字符串的扩展.md","ref":"ES6/basis/3.字符串的扩展.md","articles":[]},{"title":"4.函数的扩展","level":"1.5.3","depth":2,"path":"ES6/basis/4.函数的扩展.md","ref":"ES6/basis/4.函数的扩展.md","articles":[]},{"title":"5.扩展运算符","level":"1.5.4","depth":2,"path":"ES6/basis/5.扩展运算符.md","ref":"ES6/basis/5.扩展运算符.md","articles":[]},{"title":"6.独一无二的Symbol","level":"1.5.5","depth":2,"path":"ES6/basis/6.独一无二的Symbol","ref":"ES6/basis/6.独一无二的Symbol","articles":[]},{"title":"7.Promise浅谈","level":"1.5.6","depth":2,"path":"ES6/basis/7.Promise浅谈","ref":"ES6/basis/7.Promise浅谈","articles":[]},{"title":"待更新...","level":"1.5.7","depth":2,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"summary","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"ES6/1.let和const命令.md","mtime":"2020-08-26T10:22:47.703Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-26T10:32:54.626Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

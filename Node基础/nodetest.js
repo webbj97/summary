@@ -20,25 +20,22 @@ const fs = require('fs');
 //     response.end('Hello World\n');
 // }).listen(8888);
 
-var baseUrl = 'https://blog.csdn.net/jbj6568839z/category_10069610.html'; // 专栏
-var list = []
-var func = function() {
+const funcArticle = function({ baseUrl, domStr }) {
+    const list = [];
     axios.get(baseUrl).then(res => {
-        var $ = cheerio.load(res.data);
-        var articleList = $('.column_article_list li'); // 拿到文章列表
-        var len = articleList.length;
-        for (let i = 0; i < len; i++) {
-            var now = $(articleList[i]).find('a');
-            var title = now.find('.title');
-            var obj = {
-                link: now.attr('href'),
-                title: title.text().replace(/(\s+|原创|原力计划)/g, '')
+        const $ = cheerio.load(res.data);
+        const listArr = Array.from($(domStr)); // 传入文章节点数组的dom节点
+        listArr.forEach(e => {
+            const article = $(e).find('h4');
+            const params = {
+                title: article.text().replace(/(\s+|原创|原力计划)/g, ''),
+                link: article.find('a').attr('href'),
             }
-            list.push(obj)
-        }
+            list.push(params);
+        });
 
         let str = JSON.stringify(list, null, "\t")
-        fs.writeFile('csdn-data.js', str, { flag: 'a' }, function(err) {
+        fs.writeFile('data.js', str, { flag: 'a' }, (err) => {
             if (err) console.log('error!!!');
             console.log('写入完成');
         })
@@ -46,36 +43,8 @@ var func = function() {
         console.log(err);
     })
 }
-func()
-
-
-// var func = function(id) {
-//     const nowUrl = baseUrl + id
-//     axios.get(nowUrl).then(res => {
-//         var $ = cheerio.load(res.data);
-//         var articleList = $('.article-item-box'); // 拿到文章列表
-//         var len = articleList.length;
-
-//         for (let i = 0; i < len; i++) {
-//             var now = $(articleList[i]).find('h4 a');
-//             var visit = $(articleList[i]).find('.read-num')[0].children[1].data;
-//             var discuss = $(articleList[i]).find('.read-num')[1].children[1].data
-//             list.push({
-//                 titie: now.text().replace(/(\s+|原创|原力计划)/g, ''), // 结构原因，需要剔除不需要的部分
-//                 link: now.attr('href'),
-//                 visit,
-//                 discuss
-//             })
-//         }
-
-//         let str = JSON.stringify(list, null, "\t")
-//         fs.writeFile('csdn-data.js', str, { flag: 'a' }, function(err) {
-//             if (err) console.log('error!!!');
-//             console.log('写入完成');
-//         })
-//     }).catch(err => {
-//         console.log(err);
-//     })
-// }
-
-// func(1)
+const params = {
+    baseUrl: 'https://blog.csdn.net/jbj6568839z/article/list/1',
+    domStr: '.article-list .article-item-box'
+}
+funcArticle(params);
