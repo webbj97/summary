@@ -29,7 +29,7 @@
 * [深入ES6系列](ES6/summary.md)
     1. [1.let和const命令](ES6/1.let和const命令.md)
     2. [2.变量的解构赋值](ES6/2.变量的解构赋值.md)
-    8. [待更新...]()
+    8. [3.箭头函数](ES6/3.箭头函数.md)
 * [JavaScript设计模式](JavaScript设计模式/READ.md)
     0. [0.设计模式（前）](JavaScript设计模式/1.this.md)
 * [算法与数据结构](algorithms/algorithms.md)

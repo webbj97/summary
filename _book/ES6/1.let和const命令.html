@@ -82,7 +82,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="basis/3.字符串的扩展.html" />
+    <link rel="next" href="2.变量的解构赋值.html" />
     
     
     <link rel="prev" href="summary.html" />
@@ -432,39 +432,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../JavaScript设计模式/READ.html">
-            
-                <a href="../JavaScript设计模式/READ.html">
-            
-                    
-                    JavaScript设计模式
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" data-path="../JavaScript设计模式/1.this.html">
-            
-                <a href="../JavaScript设计模式/1.this.html">
-            
-                    
-                    0.学习设计模式之前
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="summary.html">
+        <li class="chapter " data-level="1.4" data-path="summary.html">
             
                 <a href="summary.html">
             
@@ -478,7 +446,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.5.1" data-path="1.let和const命令.html">
+        <li class="chapter active" data-level="1.4.1" data-path="1.let和const命令.html">
             
                 <a href="1.let和const命令.html">
             
@@ -491,12 +459,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="basis/3.字符串的扩展.html">
+        <li class="chapter " data-level="1.4.2" data-path="2.变量的解构赋值.html">
             
-                <a href="basis/3.字符串的扩展.html">
+                <a href="2.变量的解构赋值.html">
             
                     
-                    3.字符串的扩展
+                    2.变量的解构赋值
             
                 </a>
             
@@ -504,12 +472,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="basis/4.函数的扩展.html">
+        <li class="chapter " data-level="1.4.3" data-path="3.模版字符串的妙用.html">
             
-                <a href="basis/4.函数的扩展.html">
+                <a href="3.模版字符串的妙用.html">
             
                     
-                    4.函数的扩展
+                    3.模版字符串的妙用
             
                 </a>
             
@@ -517,53 +485,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="basis/5.扩展运算符.html">
+
+            </ul>
             
-                <a href="basis/5.扩展运算符.html">
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../JavaScript设计模式/READ.html">
+            
+                <a href="../JavaScript设计模式/READ.html">
             
                     
-                    5.扩展运算符
+                    JavaScript设计模式
             
                 </a>
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.5.5" data-path="basis/6.独一无二的Symbol">
+        <li class="chapter " data-level="1.5.1" data-path="../JavaScript设计模式/1.this.html">
             
-                <span>
+                <a href="../JavaScript设计模式/1.this.html">
             
                     
-                    6.独一无二的Symbol
+                    0.设计模式（前）
             
                 </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.6" data-path="basis/7.Promise浅谈">
-            
-                <span>
-            
-                    
-                    7.Promise浅谈
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.7" >
-            
-                <span>
-            
-                    
-                    待更新...
-            
-                </span>
             
 
             
@@ -774,7 +722,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 align="center" id="es6&#x57FA;&#x7840;&#x4E4B;let&#x548C;const">ES6&#x57FA;&#x7840;&#x4E4B;let&#x548C;const</h1>
+                                <h1 align="center" id="es6&#x57FA;&#x7840;&#x7CFB;&#x5217;&#x4E4B;let&#x548C;const">ES6&#x57FA;&#x7840;&#x7CFB;&#x5217;&#x4E4B;let&#x548C;const</h1>
 
 <blockquote>
 <p>&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x5B66;&#x4E60;&#x4E00;&#x95E8;&#x8BED;&#x8A00;&#x65F6;&#xFF0C;&#x6700;&#x5148;&#x4E86;&#x89E3;&#x7684;&#x90E8;&#x5206;&#x4E4B;&#x4E00;&#x3002;&#x4E0D;&#x8981;&#x5FFD;&#x7565;&#x5B83;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x6765;&#x770B;&#x770B;ES6&#x4E2D;&#x65B0;&#x589E;&#x7684;&#x4E24;&#x79CD;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x547D;&#x4EE4;&#x5427;&#xFF5E;</p>
@@ -786,6 +734,7 @@
 <li><a href="#2">&#x4E8C;&#x3001;const &#x547D;&#x4EE4;</a></li>
 <li><a href="#3">&#x4E09;&#x3001;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</a></li>
 <li><a href="#4">&#x56DB;&#x3001;&#x601D;&#x8003;</a></li>
+<li><a href="#5">&#x5199;&#x5728;&#x6700;&#x540E;</a></li>
 </ul>
 <h2 id="1">&#x4E00;&#x3001;let &#x547D;&#x4EE4;</h2>
 
@@ -872,6 +821,7 @@ arr[<span class="hljs-number">2</span>](); <span class="hljs-comment">// 2</span
 <li>let &#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#x58F0;&#x660E;</li>
 <li>let &#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x5B58;&#x5728;&#x201C;&#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;&#x201D;</li>
 </ol>
+<p><img src="https://img-blog.csdnimg.cn/20200826182500803.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70#pic_center" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
 <h2 id="2">&#x4E8C;&#x3001;const&#x547D;&#x4EE4;</h2>
 
 <h5 id="21-&#x548C;let&#x5F88;&#x50CF;&#x7684;const">2.1 &#x548C;let&#x5F88;&#x50CF;&#x7684;const</h5>
@@ -916,6 +866,7 @@ a = [<span class="hljs-string">&apos;Dave&apos;</span>];    <span class="hljs-co
 <li>const &#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x5B58;&#x5728;&#x201C;&#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;&#x201D;</li>
 <li>const &#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x7684;&#x5B58;&#x50A8;&#x5730;&#x5740;&#x4E0D;&#x53EF;&#x5199;</li>
 </ol>
+<p><img src="https://img-blog.csdnimg.cn/20200826182743957.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70#pic_center" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
 <h2 id="3">&#x4E09;&#x3001;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</h2>
 
 <p>&#x5728;let&#x548C;const&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x770B;&#x5230;&#x201C;&#x5F53;&#x524D;&#x4EE3;&#x7801;&#x5757;&#x201D;&#x6216;&#x201C;&#x51FD;&#x6570;&#x5757;&#x201D;&#x7684;&#x5B57;&#x6837;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x5BF9;&#x8FD9;&#x4E2A;<code>&#x5757;</code>&#x8FDB;&#x884C;&#x5B9A;&#x4E49;&#x5462;&#xFF1F;</p>
@@ -997,7 +948,7 @@ func(); <span class="hljs-comment">// undefined</span>
 </code></pre>
 <p>&#x4F60;&#x4F1A;&#x53D1;&#x73B0;let&#x58F0;&#x660E;i,&#x5728;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x4E2D;&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4ED6;&#x4EEC;&#x4E92;&#x4E0D;&#x5F71;&#x54CD;&#x3002;</p>
 <p>&#x5230;&#x8FD9;&#x91CC;&#x5173;&#x4E8E;let&#x548C;const&#x5C31;&#x603B;&#x7ED3;&#x5230;&#x8FD9;&#x91CC;&#x6B21;</p>
-<h5 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h5>
+<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://github.com/mqyqingfeng/Blog/issues/82" target="_blank">ES6&#x7CFB;&#x5217;&#x4E4B;let&#x548C;const</a></li>
 <li><a href="https://es6.ruanyifeng.com/#docs/let#const-%E5%91%BD%E4%BB%A4" target="_blank">ES6&#x5165;&#x95E8;</a></li>
@@ -1028,7 +979,7 @@ func(); <span class="hljs-comment">// undefined</span>
 </p>
 
 
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-08-26 18:22:47 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-08-26 19:18:27 </span> </footer>
                                 
                                 </section>
                             
@@ -1060,7 +1011,7 @@ func(); <span class="hljs-comment">// undefined</span>
                 </a>
                 
                 
-                <a href="basis/3.字符串的扩展.html" class="navigation navigation-next " aria-label="Next page: 3.字符串的扩展">
+                <a href="2.变量的解构赋值.html" class="navigation navigation-next " aria-label="Next page: 2.变量的解构赋值">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1071,7 +1022,7 @@ func(); <span class="hljs-comment">// undefined</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.let和const命令","level":"1.5.1","depth":2,"next":{"title":"3.字符串的扩展","level":"1.5.2","depth":2,"path":"ES6/basis/3.字符串的扩展.md","ref":"ES6/basis/3.字符串的扩展.md","articles":[]},"previous":{"title":"深入ES6系列","level":"1.5","depth":1,"path":"ES6/summary.md","ref":"ES6/summary.md","articles":[{"title":"1.let和const命令","level":"1.5.1","depth":2,"path":"ES6/1.let和const命令.md","ref":"ES6/1.let和const命令.md","articles":[]},{"title":"3.字符串的扩展","level":"1.5.2","depth":2,"path":"ES6/basis/3.字符串的扩展.md","ref":"ES6/basis/3.字符串的扩展.md","articles":[]},{"title":"4.函数的扩展","level":"1.5.3","depth":2,"path":"ES6/basis/4.函数的扩展.md","ref":"ES6/basis/4.函数的扩展.md","articles":[]},{"title":"5.扩展运算符","level":"1.5.4","depth":2,"path":"ES6/basis/5.扩展运算符.md","ref":"ES6/basis/5.扩展运算符.md","articles":[]},{"title":"6.独一无二的Symbol","level":"1.5.5","depth":2,"path":"ES6/basis/6.独一无二的Symbol","ref":"ES6/basis/6.独一无二的Symbol","articles":[]},{"title":"7.Promise浅谈","level":"1.5.6","depth":2,"path":"ES6/basis/7.Promise浅谈","ref":"ES6/basis/7.Promise浅谈","articles":[]},{"title":"待更新...","level":"1.5.7","depth":2,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"summary","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"ES6/1.let和const命令.md","mtime":"2020-08-26T10:22:47.703Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-26T10:32:54.626Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.let和const命令","level":"1.4.1","depth":2,"next":{"title":"2.变量的解构赋值","level":"1.4.2","depth":2,"path":"ES6/2.变量的解构赋值.md","ref":"ES6/2.变量的解构赋值.md","articles":[]},"previous":{"title":"深入ES6系列","level":"1.4","depth":1,"path":"ES6/summary.md","ref":"ES6/summary.md","articles":[{"title":"1.let和const命令","level":"1.4.1","depth":2,"path":"ES6/1.let和const命令.md","ref":"ES6/1.let和const命令.md","articles":[]},{"title":"2.变量的解构赋值","level":"1.4.2","depth":2,"path":"ES6/2.变量的解构赋值.md","ref":"ES6/2.变量的解构赋值.md","articles":[]},{"title":"3.模版字符串的妙用","level":"1.4.3","depth":2,"path":"ES6/3.模版字符串的妙用.md","ref":"ES6/3.模版字符串的妙用.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"summary","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"ES6/1.let和const命令.md","mtime":"2020-08-26T11:18:27.049Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-01T05:36:57.868Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
