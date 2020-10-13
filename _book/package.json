@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "cheerio": "^1.0.0-rc.3"
+    "cheerio": "^1.0.0-rc.3",
+    "driver.js": "^0.9.8",
+    "node-xlsx": "^0.15.0"
   }
 }

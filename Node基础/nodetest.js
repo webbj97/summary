@@ -20,17 +20,23 @@ const fs = require('fs');
 //     response.end('Hello World\n');
 // }).listen(8888);
 
-const funcArticle = function({ baseUrl, domStr }) {
+const funcArticle = function({ baseUrl, domStr, type }) {
     const list = [];
     axios.get(baseUrl).then(res => {
         const $ = cheerio.load(res.data);
         const listArr = Array.from($(domStr)); // 传入文章节点数组的dom节点
+
         listArr.forEach(e => {
-            const article = $(e).find('h4');
-            const params = {
-                title: article.text().replace(/(\s+|原创|原力计划)/g, ''),
-                link: article.find('a').attr('href'),
+            const params = {};
+            let article;
+            if (type === 'article') {
+                article = $(e).find('h4');
+                params.link = article.find('a').attr('href');
+            } else {
+                article = $(e);
+                params.link = article.attr('href');
             }
+            params.title = article.text().replace(/(\s+|原创|原力计划)/g, '').slice(0, 20);
             list.push(params);
         });
 
@@ -43,8 +49,15 @@ const funcArticle = function({ baseUrl, domStr }) {
         console.log(err);
     })
 }
-const params = {
+const params1 = {
     baseUrl: 'https://blog.csdn.net/jbj6568839z/article/list/1',
-    domStr: '.article-list .article-item-box'
+    domStr: '.article-list .article-item-box',
+    type: 'article' // 文章列表
 }
-funcArticle(params);
+
+const params2 = {
+    baseUrl: 'https://blog.csdn.net/jbj6568839z/category_10069610.html',
+    domStr: '.column_article_list li a',
+    type: 'category' // 文章专栏
+}
+funcArticle(params2);
