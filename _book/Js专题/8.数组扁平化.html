@@ -1,0 +1,1063 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>8.数组扁平化 · Gitbook Use</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="姜博健">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="9.数组中查找指定元素.html" />
+    
+    
+    <link rel="prev" href="7.类型转换.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"webbj97","repo":"summary","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://blog.csdn.net/jbj6568839z" target="_blank" class="custom-link">CSDN</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Js内功/summary.html">
+            
+                <a href="../Js内功/summary.html">
+            
+                    
+                    JavaScript内功修炼
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Js内功/1.一篇搞懂this指向问题.html">
+            
+                <a href="../Js内功/1.一篇搞懂this指向问题.html">
+            
+                    
+                    1.一篇搞懂this指向问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Js内功/2.从原型到原型链.html">
+            
+                <a href="../Js内功/2.从原型到原型链.html">
+            
+                    
+                    2.从原型到原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Js内功/3.JavaScript中的作用域.html">
+            
+                <a href="../Js内功/3.JavaScript中的作用域.html">
+            
+                    
+                    3.JavaScript中的作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Js内功/4.执行上下文.html">
+            
+                <a href="../Js内功/4.执行上下文.html">
+            
+                    
+                    4.执行上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Js内功/5.深入变量对象.html">
+            
+                <a href="../Js内功/5.深入变量对象.html">
+            
+                    
+                    5.深入变量对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Js内功/6.立即执行函数.html">
+            
+                <a href="../Js内功/6.立即执行函数.html">
+            
+                    
+                    6.立即调用函数表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Js内功/7.闭包.html">
+            
+                <a href="../Js内功/7.闭包.html">
+            
+                    
+                    7.看透闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Js内功/8.JavaScript中的参数传递.html">
+            
+                <a href="../Js内功/8.JavaScript中的参数传递.html">
+            
+                    
+                    8.参数传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Js内功/9.基本数据类型.html">
+            
+                <a href="../Js内功/9.基本数据类型.html">
+            
+                    
+                    9.Js数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Js内功/10.你真的了解Js吗1.html">
+            
+                <a href="../Js内功/10.你真的了解Js吗1.html">
+            
+                    
+                    10.你真的了解Js吗（系列完结）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" >
+            
+                <span>
+            
+                    
+                    Js内功修炼之正则（敬请期待）
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1.变量与函数提升.html">
+            
+                <a href="1.变量与函数提升.html">
+            
+                    
+                    JavaScript专项进阶系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1.变量与函数提升.html">
+            
+                <a href="1.变量与函数提升.html">
+            
+                    
+                    1.变量与函数提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.数组去重.html">
+            
+                <a href="2.数组去重.html">
+            
+                    
+                    2.数组去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3.防抖.html">
+            
+                <a href="3.防抖.html">
+            
+                    
+                    3.防抖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4.节流.html">
+            
+                <a href="4.节流.html">
+            
+                    
+                    4.节流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="5.深浅拷贝.html">
+            
+                <a href="5.深浅拷贝.html">
+            
+                    
+                    5.深浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="6.类型判断,md">
+            
+                <span>
+            
+                    
+                    6.数据类型检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="7.类型转换.html">
+            
+                <a href="7.类型转换.html">
+            
+                    
+                    7.类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.8" data-path="8.数组扁平化.html">
+            
+                <a href="8.数组扁平化.html">
+            
+                    
+                    8.数组扁平化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="9.数组中查找指定元素.html">
+            
+                <a href="9.数组中查找指定元素.html">
+            
+                    
+                    9.数组中查找指定元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../ES6/summary.html">
+            
+                <a href="../ES6/summary.html">
+            
+                    
+                    深入ES6系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../ES6/1.let和const命令.html">
+            
+                <a href="../ES6/1.let和const命令.html">
+            
+                    
+                    1.let和const命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../ES6/2.变量的解构赋值.html">
+            
+                <a href="../ES6/2.变量的解构赋值.html">
+            
+                    
+                    2.变量的解构赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../ES6/3.箭头函数.html">
+            
+                <a href="../ES6/3.箭头函数.html">
+            
+                    
+                    3.箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../JavaScript设计模式/READ.html">
+            
+                <a href="../JavaScript设计模式/READ.html">
+            
+                    
+                    JavaScript设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../JavaScript设计模式/1.this.html">
+            
+                <a href="../JavaScript设计模式/1.this.html">
+            
+                    
+                    0.设计模式（前）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../algorithms/algorithms.html">
+            
+                <a href="../algorithms/algorithms.html">
+            
+                    
+                    算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../algorithms/1.数组md">
+            
+                <span>
+            
+                    
+                    1.数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../algorithms/链表1.html">
+            
+                <a href="../algorithms/链表1.html">
+            
+                    
+                    2.链表——单链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../algorithms/链表2.html">
+            
+                <a href="../algorithms/链表2.html">
+            
+                    
+                    3.链表——双指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../algorithms/链表3.html">
+            
+                <a href="../algorithms/链表3.html">
+            
+                    
+                    4.链表——面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../algorithms/链表4.html">
+            
+                <a href="../algorithms/链表4.html">
+            
+                    
+                    5.链表——双链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../algorithms/3.Map和Set.html">
+            
+                <a href="../algorithms/3.Map和Set.html">
+            
+                    
+                    5.Map和Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../algorithms/4.栈.html">
+            
+                <a href="../algorithms/4.栈.html">
+            
+                    
+                    6.栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../algorithms/5.二叉树.html">
+            
+                <a href="../algorithms/5.二叉树.html">
+            
+                    
+                    7.二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../sourceCode/sourceCode.html">
+            
+                <a href="../sourceCode/sourceCode.html">
+            
+                    
+                    源码阅读系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    1.Vue源码阅读
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >8.数组扁平化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 align="center" id="javascript&#x4E13;&#x9898;&#x4E4B;&#x6570;&#x7EC4;&#x6241;&#x5E73;&#x5316;">JavaScript&#x4E13;&#x9898;&#x4E4B;&#x6570;&#x7EC4;&#x6241;&#x5E73;&#x5316;</h1>
+
+<blockquote>
+<p>&#x6570;&#x7EC4;&#x6241;&#x5E73;&#x5316;&#x8FD9;&#x4E00;&#x6982;&#x5FF5;&#x5927;&#x5BB6;&#x90FD;&#x4E86;&#x89E3;&#xFF0C;&#x4F46;&#x5728;&#x5B9E;&#x9645;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x662F;&#x5426;&#x601D;&#x8003;&#x8FC7;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x5B83;&#xFF1F;&#x6216;&#x8005;&#x8BF4;&#x5B9E;&#x73B0;&#x5B83;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x80FD;&#x6536;&#x83B7;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;
+&#x6211;&#x4EEC;&#x5C3D;&#x91CF;&#x7528;&#x591A;&#x79CD;&#x65B9;&#x6CD5;&#x8FBE;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x4E3B;&#x6D41;&#x7684;&#xFF0C;&#x975E;&#x4E3B;&#x6D41;&#x7684;&#x90FD;&#x641E;&#x4E00;&#x641E;&#xFF5E;</p>
+</blockquote>
+<h2 id="&#x76EE;&#x5F55;">&#x76EE;&#x5F55;</h2>
+<ul>
+<li><a src="#1">&#x4E00;&#x3001;&#x9012;&#x5F52;</a></li>
+<li><a src="#2">&#x4E8C;&#x3001;reduce</a></li>
+<li><a src="#3">&#x4E09;&#x3001;apply+some</a></li>
+<li><a src="#4">&#x56DB;&#x3001;ES6&#x5C55;&#x5F00;&#x8FD0;&#x7B97;&#x7B26;</a></li>
+<li><a src="#5">&#x4E94;&#x3001;toString</a></li>
+<li><a src="#6">&#x516D;&#x3001;&#x6B63;&#x5219;</a></li>
+<li><a src="#7">&#x4E03;&#x3001;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;&#x6241;&#x5E73;&#x5316;&#x5DE5;&#x5177;&#x65B9;&#x6CD5;</a></li>
+<li><a src="#8">&#x5199;&#x5728;&#x6700;&#x540E;</a></li>
+</ul>
+<p align="center">
+    <img src="https://img-blog.csdnimg.cn/20201019170553314.jpg" width="70%">
+</p>
+
+<h2 id="1">&#x4E00;&#x3001;&#x9012;&#x5F52;</h2>
+
+<p>for&#x5FAA;&#x73AF;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x8FDB;&#x884C;&#x6570;&#x7EC4;&#x64CD;&#x4F5C;&#x65F6;&#x6700;&#x5BB9;&#x6613;&#x60F3;&#x5230;&#x7684;&#xFF0C;&#x5728;&#x4E0D;&#x8003;&#x8651;&#x65F6;&#x95F4;&#x548C;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9012;&#x5F52;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x7F8E;&#x7684;&#x9009;&#x62E9;&#xFF01;</p>
+<p><strong>&#x793A;&#x4F8B;&#xFF1A;</strong></p>
+<pre><code>&#x8F93;&#x5165;
+const arr = [1, [2, [3, 4, { a: 1 }], null], undefined];`
+&#x8F93;&#x51FA;
+[ 1, 2, 3, 4, { a: 1 }, null, undefined ]
+</code></pre><p><strong>&#x4EE3;&#x7801;&#xFF1A;</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flatten</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">let</span> res = [];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Array</span>.isArray(arr[i])) {
+            <span class="hljs-comment">// &#x56E0;&#x4E3A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x6570;&#x7EC4;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x505A;&#x62FC;&#x63A5;&#x5904;&#x7406;</span>
+            res = res.concat(flatten(arr[i]));
+        } <span class="hljs-keyword">else</span> {
+            res.push(arr[i])
+        }
+    }
+    <span class="hljs-keyword">return</span> res;
+}
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong></p>
+<ol>
+<li>&#x5224;&#x65AD;&#x6570;&#x7EC4;&#x5185;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x672C;&#x7C7B;&#x578B;</li>
+<li>&#x5982;&#x679C;&#x4E0D;&#x662F;&#x6570;&#x7EC4;&#xFF1A;&#x76F4;&#x63A5;&#x5B58;&#x5165;&#x65B0;&#x6570;&#x7EC4;&#x4E2D;</li>
+<li>&#x5982;&#x679C;&#x662F;&#x6570;&#x7EC4;&#xFF1A;&#x91CD;&#x590D;&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x76F4;&#x5230;&#x5C06;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4E0D;&#x662F;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x5B58;&#x5165;&#x5230;&#x65B0;&#x6570;&#x7EC4;&#x4E2D;</li>
+</ol>
+<h2 id="2">&#x4E8C;&#x3001;reduce</h2>
+
+<p>&#x5148;&#x6765;&#x770B;&#x770B;<code>reduce</code>&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1A;<code>reduce()</code> &#x65B9;&#x6CD5;&#x5BF9;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x7531;&#x60A8;&#x63D0;&#x4F9B;&#x7684;<code>reducer&#x51FD;&#x6570;</code>(&#x5347;&#x5E8F;&#x6267;&#x884C;)&#xFF0C;&#x5C06;&#x5176;&#x7ED3;&#x679C;&#x6C47;&#x603B;&#x4E3A;&#x5355;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B;&#xFF1A;</strong></p>
+<pre><code>&#x8F93;&#x5165;
+const arr = [1, [2, [3, 4, { a: 1 }], null], undefined];`
+&#x8F93;&#x51FA;
+[ 1, 2, 3, 4, { a: 1 }, null, undefined ]
+</code></pre><p><strong>&#x4EE3;&#x7801;&#xFF1A;</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flatten</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">return</span> arr.reduce((prev, next) =&gt; {
+        <span class="hljs-comment">// prev&#x8868;&#x793A;&#x4E0A;&#x4E00;&#x6B21;&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;</span>
+        <span class="hljs-keyword">return</span> prev.concat(<span class="hljs-built_in">Array</span>.isArray(next) ? flatten(next) : next)
+    }, [])
+    <span class="hljs-comment">// &#x6CE8;&#x610F;reduce&#x7684;&#x521D;&#x59CB;&#x503C;&#x5E94;&#x8BE5;&#x662F;[]&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6CD5;&#x8FDB;&#x884C;&#x62FC;&#x63A5;</span>
+}
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong></p>
+<p>&#x4ED4;&#x7EC6;&#x5BF9;&#x7167;<strong>&#x65B9;&#x6CD5;&#x4E00;</strong>&#x548C;<strong>&#x65B9;&#x6CD5;&#x4E8C;</strong>&#xFF0C;&#x4E24;&#x8005;&#x601D;&#x8DEF;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x2014;&#x2014;&#x627E;&#x5230;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x6570;&#x7EC4;&#x7684;&#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x62B9;&#x5E73;&#x5904;&#x7406;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5B9E;&#x73B0;&#x7684;&#x7EC6;&#x8282;&#x7565;&#x6709;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x552F;&#x4E00;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x62FC;&#x63A5;&#x65F6;&#x6570;&#x636E;&#x7684;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x8981;&#x4EE5;&#x6570;&#x7EC4;&#x5F00;&#x59CB;&#x3002;</p>
+<h2 id="3">&#x4E09;&#x3001;apply+some</h2>
+
+<p>&#x65E2;&#x7136;&#x65B9;&#x6CD5;&#x4E8C;&#x662F;&#x65B9;&#x6CD5;&#x4E00;&#x7684;&#x53D8;&#x5F0F;&#xFF0C;&#x90A3;&#x4E2A;&#x65B9;&#x6CD5;&#x4E09;&#x4E5F;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x65B9;&#x6CD5;&#x4E8C;&#x7684;&#x53D8;&#x5F0F;&#xFF0C;&#x4F46;&#x4E0D;&#x5728;&#x91C7;&#x7528;&#x9012;&#x5F52;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x201C;&#x62C6;&#x9664;&#x201D;&#x5D4C;&#x5957;&#x7684;&#x65B9;&#x5F0F;</p>
+<p>&#x5148;&#x6765;&#x770B;&#x770B;&#x7528;&#x5230;&#x7684;API&#xFF1A;</p>
+<ul>
+<li><code>apply</code>&#xFF1A;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x7ED9;&#x5B9A;this&#x503C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4EE5;&#x53CA;&#x4EE5;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF08;&#x6216;&#x7C7B;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#xFF09;&#x7684;&#x5F62;&#x5F0F;&#x63D0;&#x4F9B;&#x7684;&#x53C2;&#x6570;&#x3002;</li>
+<li><code>some</code>&#xFF1A;&#x6D4B;&#x8BD5;&#x6570;&#x7EC4;&#x4E2D;&#x662F;&#x4E0D;&#x662F;&#x81F3;&#x5C11;&#x6709;1&#x4E2A;&#x5143;&#x7D20;&#x901A;&#x8FC7;&#x4E86;&#x88AB;&#x63D0;&#x4F9B;&#x7684;&#x51FD;&#x6570;&#x6D4B;&#x8BD5;&#x3002;&#x5B83;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;Boolean&#x7C7B;&#x578B;&#x7684;&#x503C;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#xFF1A;</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flatten</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">while</span> (arr.some(item =&gt; <span class="hljs-built_in">Array</span>.isArray(item))) {
+        <span class="hljs-comment">// &#x53EA;&#x8981;&#x5B58;&#x5728;&#x6570;&#x7EC4;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5C31;&#x62B9;&#x5E73;&#x4E00;&#x5C42;</span>
+        arr = [].concat.apply([], arr)
+    }
+    <span class="hljs-keyword">return</span> arr;
+}
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong></p>
+<p>&#x5927;&#x5BB6;&#x7591;&#x60D1;&#x7684;&#x70B9;&#x4E3B;&#x8981;&#x5728;<code>apply</code>&#xFF0C;&#x5176;&#x5B9E;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x51CF;&#x5C11;&#x62EC;&#x53F7;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> res = [];
+res  = res.concat({});
+<span class="hljs-comment">// &#x7B49;&#x4EF7;&#x4E8E;</span>
+[].concat.apply([], [{}])
+</code></pre>
+<p>&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-js">arr = [].concat.apply([], arr);
+<span class="hljs-comment">// &#x7B49;&#x4EF7;&#x4E8E;</span>
+[].concat(<span class="hljs-number">1</span>, [<span class="hljs-number">2</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, { a: <span class="hljs-number">1</span> }], <span class="hljs-literal">null</span>], <span class="hljs-literal">undefined</span>)
+</code></pre>
+<h2 id="4">&#x56DB;&#x3001;ES6&#x5C55;&#x5F00;&#x8FD0;&#x7B97;&#x7B26;</h2>
+
+<p>&#x5927;&#x5BB6;&#x53EF;&#x80FD;&#x4E1A;&#x4E5F;&#x6CE8;&#x610F;&#x5230;&#x4E86;&#xFF0C;&#x65B9;&#x6CD5;&#x4E00;&#x5230;&#x65B9;&#x6CD5;&#x4E09; &#x6211;&#x4EEC;&#x4E0D;&#x65AD;&#x7684;&#x501F;&#x52A9;&#x73B0;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x7CBE;&#x7B80;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x91CF;&#xFF0C;&#x672C;&#x65B9;&#x6CD5;&#x4E5F;&#x662F;&#x5982;&#x6B64;&#xFF5E;</p>
+<p>&#x6211;&#x4EEC;&#x5229;&#x7528;ES6&#x7684;&#x5C55;&#x5F00;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;&#x7528;&#x4E8E;&#x53D6;&#x51FA;&#x53C2;&#x6570;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x53EF;&#x904D;&#x5386;&#x5C5E;&#x6027;&#xFF0C;&#x62F7;&#x8D1D;&#x5230;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x4E4B;&#x4E2D;&#xFF09;&#xFF0C;&#x7EE7;&#x7EED;&#x7CBE;&#x7B80;&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;</p>
+<p><strong>&#x4EE3;&#x7801;&#xFF1A;</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flatten</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">while</span> (arr.some(item =&gt; <span class="hljs-built_in">Array</span>.isArray(item))) {
+        <span class="hljs-comment">// &#x53EA;&#x8981;&#x5B58;&#x5728;&#x6570;&#x7EC4;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5C31;&#x62B9;&#x5E73;&#x4E00;&#x5C42;</span>
+        arr = [].concat(...arr)
+    }
+    <span class="hljs-keyword">return</span> arr;
+}
+</code></pre>
+<h2 id="5">&#x4E94;&#x3001;toString</h2>
+
+<p>&#x5982;&#x679C;&#x524D;&#x9762;&#x56DB;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7684;&#x4E3B;&#x6D41;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x51E0;&#x4E2A;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7684;&#x201C;&#x975E;&#x4E3B;&#x6D41;&#x201D;&#x65B9;&#x5F0F;&#xFF0C;&#x76F4;&#x63A5;&#x4E0A;&#x4EE3;&#x7801;&#xFF01;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flatten</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">return</span> arr.toString().split(<span class="hljs-string">&apos;,&apos;</span>).map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">item</span>)</span>{
+        <span class="hljs-keyword">return</span> +item
+    })
+}
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong></p>
+<p>&#x5C06;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x7C7B;&#x578B;&#x5B58;&#x5728;&#x7C7B;&#x578B;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x5982;&#x679C;&#x539F;&#x59CB;&#x6570;&#x636E;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;[1, &apos;2&apos;]&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x95EE;&#x9898;</p>
+<h2 id="6">&#x516D;&#x3001;&#x6B63;&#x5219;</h2>
+
+<p>&#x5047;&#x5982;&#x6211;&#x4EEC;&#x9ED8;&#x8BA4;&#x4E86;&#x7C7B;&#x578B;&#x4F1A;&#x88AB;&#x8F6C;&#x6362;&#x8FD9;&#x4E00;&#x7F3A;&#x9677;&#xFF0C;&#x90A3;&#x4E48;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x66F4;&#x66B4;&#x529B;&#x91CC;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5C06;&#x6570;&#x7EC4;&#x6241;&#x5E73;&#x5316;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flatten</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">JSON</span>.stringify(arr).replace(<span class="hljs-regexp">/\[|\]/g</span>, <span class="hljs-string">&apos;&apos;</span>).split(<span class="hljs-string">&apos;,&apos;</span>);
+}
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong></p>
+<p>&#x5982;&#x679C;&#x662F;&#x7EAF;&#x6570;&#x7EC4;&#xFF0C;&#x8C8C;&#x4F3C;&#x6CA1;&#x4EC0;&#x4E48;&#x95EE;&#x9898;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flatten</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">JSON</span>.parse(<span class="hljs-string">&apos;[&apos;</span> + <span class="hljs-built_in">JSON</span>.stringify(arr).replace(<span class="hljs-regexp">/\[|\]/g</span>, <span class="hljs-string">&apos;&apos;</span>).split(<span class="hljs-string">&apos;,&apos;</span>) + <span class="hljs-string">&apos;]&apos;</span>)
+}
+</code></pre>
+<p>&#x4F46;&#x5982;&#x679C;&#x6570;&#x7EC4;&#x5185;&#x5B58;&#x5728;&#x5BF9;&#x8C61;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x6D88;&#x9664;JSON&#x540E;&#x7684;&#x540E;&#x679C;&#xFF0C;&#x8FD9;&#x6837;&#x66F4;&#x4E25;&#x8C28;&#x4E00;&#x4E9B;&#xFF5E;</p>
+<p>&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x516D;&#x79CD;&#x65B9;&#x6CD5;&#x7B97;&#x662F;&#x5305;&#x62EC;&#x4E86;&#x5927;&#x90E8;&#x5206;&#x6570;&#x7EC4;&#x6241;&#x5E73;&#x5316;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5C06;&#x6211;&#x4EEC;&#x7684;&#x65B9;&#x6CD5;&#x201C;&#x5347;&#x7EA7;&#x201D;&#x6210;&#x5DE5;&#x5177;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x201C;&#x6284;&#x88AD;&#x201D;&#x4E00;&#x4E0B;loadsh&#x4E86;~</p>
+<p align="center">
+    <img src="https://img-blog.csdnimg.cn/20201019171042335.jpg" width="70%">
+</p>
+
+<h2 id="7">&#x4E03;&#x3001;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;&#x6241;&#x5E73;&#x5316;&#x5DE5;&#x5177;&#x65B9;&#x6CD5;</h2>
+
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x7B80;&#x5316;&#x4E86;loadsh&#x91CC;&#x7684;flatten&#x51FD;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x6539;&#x52A8;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"> <span class="hljs-comment">/*
+ * @private
+ * @param {Array} array &#x9700;&#x8981;&#x6241;&#x5E73;&#x5316;&#x7684;&#x6570;&#x7EC4;
+ * @param {number} depth &#x6700;&#x591A;&#x5904;&#x7406;&#x51E0;&#x5C42;
+ * @param {boolean} [isStrict] &#x662F;&#x5426;&#x4E25;&#x683C;&#x5904;&#x7406;&#x51FD;&#x6570;
+ * @param {Array} [result=[]] &#x8F93;&#x51FA;&#x7684;&#x6570;&#x7EC4;
+ * @returns {Array}
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flatten</span>(<span class="hljs-params">array, depth, isStrict, result</span>) </span>{
+    result || (result = [])
+    <span class="hljs-comment">// &#x8FB9;&#x754C;</span>
+    <span class="hljs-keyword">if</span> (array == <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> result;
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> value <span class="hljs-keyword">of</span> array) {
+        <span class="hljs-keyword">if</span> (depth &gt; <span class="hljs-number">0</span> &amp;&amp; <span class="hljs-built_in">Array</span>.isArray(value)) {
+            <span class="hljs-keyword">if</span> (depth &gt; <span class="hljs-number">1</span>) {
+                flatten(value, depth - <span class="hljs-number">1</span>, isStrict, result)
+            } <span class="hljs-keyword">else</span> {
+                result.push(...value); <span class="hljs-comment">// &#x53EA;&#x62C6;1&#x5C42;</span>
+            }
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!isStrict) {
+            result[result.length] = value
+        }
+    }
+    <span class="hljs-keyword">return</span> result;
+}
+</code></pre>
+<ol>
+<li><p>&#x8BE5;&#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x4E86;&#x6241;&#x5E73;&#x5316;&#x5C42;&#x6570;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> res = flatten([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>]], { a: <span class="hljs-number">1</span> }, <span class="hljs-literal">null</span>, <span class="hljs-literal">undefined</span>], <span class="hljs-number">1</span>, <span class="hljs-literal">false</span>);
+<span class="hljs-comment">// [ 1, 2, 3, 4, [ 5, 6 ], { a: 1 }, null, undefined ]</span>
+</code></pre>
+</li>
+<li><p>&#x8BE5;&#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x4E86;&#x6241;&#x5E73;&#x5316;&#x540E;&#x76F8;&#x53CD;&#x7684;&#x6548;&#x679C;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> res = flatten([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>]], { a: <span class="hljs-number">1</span> }, <span class="hljs-literal">null</span>, <span class="hljs-literal">undefined</span>], <span class="hljs-number">1</span>, <span class="hljs-literal">true</span>);
+<span class="hljs-comment">// [ 3, 4, [ 5, 6 ] ]</span>
+<span class="hljs-keyword">const</span> res = flatten([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>]], { a: <span class="hljs-number">1</span> }, <span class="hljs-literal">null</span>, <span class="hljs-literal">undefined</span>], <span class="hljs-number">2</span>, <span class="hljs-literal">true</span>);
+<span class="hljs-comment">// [ 5, 6 ]</span>
+</code></pre>
+<p><code>isStrict</code>&#x53C2;&#x6570;&#x6253;&#x5F00;&#x540E;&#xFF0C;&#x6241;&#x5E73;&#x540E;&#x4FDD;&#x7559;&#x4E86;&#x88AB;&#x66B4;&#x6F0F;&#x51FA;&#x6765;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5254;&#x9664;&#x4E86;&#x6D45;&#x5C42;&#x5143;&#x7D20;&#x3002;</p>
+</li>
+</ol>
+<p>&#x5199;&#x5230;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5373;&#x4E86;&#x89E3;&#x4E86;&#x6241;&#x5E73;&#x5316;&#x7684;&#x5904;&#x7406;&#x601D;&#x8DEF;&#xFF0C;&#x4E5F;&#x6709;&#x4E86;&#x4E00;&#x5B9A;&#x7684;&#x5B9E;&#x73B0;&#x80FD;&#x529B;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x80FD;&#x5B8C;&#x5168;&#x7406;&#x89E3;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x76F8;&#x4FE1;&#x6241;&#x5E73;&#x5316;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x5E94;&#x8BE5;&#x96BE;&#x4E0D;&#x5230;&#x4F60;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x4E0B;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x7EE7;&#x7EED;&#x7814;&#x7A76;loadsh&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF5E;</p>
+<h3 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h3>
+<ul>
+<li><a href="https://github.com/mqyqingfeng/Blog" target="_blank">JavaScript&#x4E13;&#x9898;&#x4E4B;&#x6570;&#x7EC4;&#x6241;&#x5E73;&#x5316;</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/104133900" target="_blank">&#x524D;&#x7AEF;&#x9762;&#x8BD5;&#x9898;-&#x6570;&#x7EC4;&#x6241;&#x5E73;&#x5316;</a></li>
+</ul>
+<p align="center">
+    <img src="https://img-blog.csdnimg.cn/20201019171520958.jpg" width="70%">
+</p>
+
+<h2 id="8">&#x5199;&#x5728;&#x6700;&#x540E;</h2>
+
+<p><strong>JavaScript &#x7CFB;&#x5217;&#xFF1A;</strong></p>
+<ol>
+<li><a href="https://blog.csdn.net/jbj6568839z/article/details/103161970" target="_blank">&#x300A;JavaScript &#x5185;&#x529F;&#x8FDB;&#x9636;&#x7CFB;&#x5217;&#x300B;&#xFF08;&#x5DF2;&#x5B8C;&#x7ED3;&#xFF09;</a></li>
+<li><a href="https://blog.csdn.net/jbj6568839z/category_10204368.html" target="_blank">&#x300A;JavaScript &#x4E13;&#x9879;&#x7CFB;&#x5217;&#x300B;&#xFF08;&#x6301;&#x7EED;&#x66F4;&#x65B0;&#xFF09;</a></li>
+</ol>
+<p><strong>&#x5173;&#x4E8E;&#x6211;</strong></p>
+<ul>
+<li>&#x82B1;&#x540D;&#xFF1A;&#x4F59;&#x5149;&#xFF08;&#x6C89;&#x8FF7; JS&#xFF0C;&#x865A;&#x5FC3;&#x5B66;&#x4E60;&#x4E2D;&#xFF09;</li>
+<li>WX&#xFF1A;j565017805</li>
+</ul>
+<p><strong>&#x5176;&#x4ED6;&#x6C89;&#x6DC0;</strong></p>
+<ul>
+<li><a href="https://webbj97.github.io/leetCode-Js/" target="_blank">Js &#x7248; LeetCode &#x9898;&#x89E3;</a></li>
+<li><a href="https://webbj97.github.io/summary/" target="_blank">&#x524D;&#x7AEF;&#x8FDB;&#x9636;&#x7B14;&#x8BB0;</a></li>
+<li><a href="https://yuguang.blog.csdn.net/" target="_blank">&#x6211;&#x7684; CSDN &#x535A;&#x5BA2;</a></li>
+<li><a href="https://github.com/webbj97/" target="_blank">&#x6211;&#x7684; GitHub</a></li>
+</ul>
+<p>&#x5982;&#x679C;&#x60A8;&#x770B;&#x5230;&#x4E86;&#x6700;&#x540E;&#xFF0C;&#x5BF9;&#x6587;&#x7AE0;&#x6709;&#x4EFB;&#x4F55;&#x5EFA;&#x8BAE;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x8BC4;&#x8BBA;&#x533A;&#x7559;&#x8A00;</p>
+<p>&#x8FD9;&#x662F;<a href="https://github.com/webbj97/summary" target="_blank">&#x6587;&#x7AE0;&#x6240;&#x5728; GitHub &#x4ED3;&#x5E93;&#x7684;&#x4F20;&#x9001;&#x95E8;</a>&#xFF0C;&#x5982;&#x679C;&#x771F;&#x7684;&#x5BF9;&#x60A8;&#x6709;&#x6240;&#x5E2E;&#x52A9;&#xFF0C;&#x5E0C;&#x671B;&#x53EF;&#x4EE5;&#x70B9;&#x4E2A; star&#xFF0C;&#x8FD9;&#x662F;&#x5BF9;&#x6211;&#x6700;&#x5927;&#x7684;&#x9F13;&#x52B1; &#xFF5E;</p>
+<p align="center">
+    <img src="https://img-blog.csdnimg.cn/20200602155947301.png" width="60%">
+</p>
+
+
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-10-20 13:36:22 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.类型转换.html" class="navigation navigation-prev " aria-label="Previous page: 7.类型转换">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="9.数组中查找指定元素.html" class="navigation navigation-next " aria-label="Next page: 9.数组中查找指定元素">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"8.数组扁平化","level":"1.3.8","depth":2,"next":{"title":"9.数组中查找指定元素","level":"1.3.9","depth":2,"path":"Js专题/9.数组中查找指定元素.md","ref":"Js专题/9.数组中查找指定元素.md","articles":[]},"previous":{"title":"7.类型转换","level":"1.3.7","depth":2,"path":"Js专题/7.类型转换.md","ref":"Js专题/7.类型转换.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"summary","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"Js专题/8.数组扁平化.md","mtime":"2020-10-20T05:36:22.874Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-20T05:38:26.791Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
