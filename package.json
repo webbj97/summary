@@ -6,7 +6,9 @@
   "scripts": {
     "serve": "gitbook serve",
     "build": "gitbook build",
-    "deploy": "npm run build && gh-pages -d _book"
+    "deploy": "npm run build && gh-pages -d _book",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,8 @@
   },
   "homepage": "https://github.com/webbj97/summary#readme",
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "vuepress": "^1.7.1"
   },
   "dependencies": {
     "axios": "^0.19.2",
