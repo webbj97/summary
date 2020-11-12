@@ -1,6 +1,7 @@
 module.exports = {
     title: '余光的前端进阶笔记',
     description: '在这里一定有能帮助你成长的文章',
+    // base: '/summary/', // github仓库名
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
@@ -33,10 +34,18 @@ module.exports = {
                 sidebarDepth: 2, // 可选的, 默认值是 1
                 children: [
                     '/blog/js-special/1',
+                    '/blog/js-special/2',
+                    '/blog/js-special/3',
+                    '/blog/js-special/4',
+                    '/blog/js-special/5',
+                    '/blog/js-special/6',
+                    '/blog/js-special/7',
+                    '/blog/js-special/8',
+                    '/blog/js-special/9',
                 ]
             },
             {
-                title: 'JavaScript设计模式', // 必要的
+                title: 'JavaScript设计模式（未完善）', // 必要的
                 collapsable: true, // 可选的, 默认值是 true,
                 sidebarDepth: 2, // 可选的, 默认值是 1
                 children: [
@@ -54,6 +63,8 @@ module.exports = {
                 sidebarDepth: 2, // 可选的, 默认值是 1
                 children: [
                     '/blog/es6/1',
+                    '/blog/es6/2',
+                    '/blog/es6/3',
                 ]
             },
         ]

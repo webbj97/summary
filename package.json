@@ -4,11 +4,8 @@
   "description": "<h1 align=center>博健的git博客—扎实的基础能让你的技术生涯更长。</h1>",
   "main": "index.js",
   "scripts": {
-    "serve": "gitbook serve",
-    "build": "gitbook build",
-    "deploy": "npm run build && gh-pages -d _book",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",

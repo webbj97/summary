@@ -2,7 +2,7 @@
 home: true
 heroImage: title.jpg
 actionText: 快速开始
-actionLink: /
+actionLink: /blog/
 features:
 - title: 前端基础
   details: 这里有着前端基础——JavaScript的最全面的基础总结，帮助你快速打牢基础，进阶高级前端指日可待！

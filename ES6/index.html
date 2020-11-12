@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        const promise1 = new Promise((resolve, reject) => {
+            resolve(1);
+        })
+        const promise2 = new Promise((resolve, reject) => {
+            resolve(2);
+        })
+        const promise3 = new Promise((resolve, reject) => {
+            resolve(3);
+        })
+        promise1.then(val => val + 1)
+        promise2.then(val => val + 1)
+        promise3.then(val => val + 1)
+
+        const res = Promise.all([promise1, promise2, promise3])
+        res.then(val => {
+            console.log("三个实例返回的结果", val)
+        })
+    </script>
+</body>
+
+</html>

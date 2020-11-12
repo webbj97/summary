@@ -1,3 +1,1 @@
-function imgLoad(url){
-    return new Promise()
-}
+const promise =
