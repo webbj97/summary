@@ -1,7 +1,7 @@
 module.exports = {
     title: '余光的前端进阶笔记',
     description: '在这里一定有能帮助你成长的文章',
-    // base: '/summary/', // github仓库名
+    base: '/summary/', // github仓库名
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
@@ -65,6 +65,7 @@ module.exports = {
                     '/blog/es6/1',
                     '/blog/es6/2',
                     '/blog/es6/3',
+                    '/blog/es6/4',
                 ]
             },
         ]
