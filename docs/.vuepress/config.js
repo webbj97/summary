@@ -45,7 +45,7 @@ module.exports = {
                 ]
             },
             {
-                title: 'JavaScript设计模式（未完善）', // 必要的
+                title: 'JavaScript设计模式（待优化）', // 必要的
                 collapsable: true, // 可选的, 默认值是 true,
                 sidebarDepth: 2, // 可选的, 默认值是 1
                 children: [
