@@ -2,6 +2,9 @@ module.exports = {
     title: '余光的前端进阶笔记',
     description: '在这里一定有能帮助你成长的文章',
     base: '/summary/', // github仓库名
+    plugins: [
+        '@vuepress/back-to-top',
+    ],
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
