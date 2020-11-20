@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "deploy": "yarn build && gh-pages -d dist"
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
