@@ -74,8 +74,7 @@ module.exports = {
                     ]
                 },
             ],
-            '/algorithm/': [
-                {
+            '/algorithm/': [{
                     title: '数组', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 2, // 可选的, 默认值是 1
@@ -84,15 +83,14 @@ module.exports = {
                     ]
                 },
                 {
-                    title: '数组', // 必要的
+                    title: '二分查找', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
-                        '/algorithm/array/1',
+                        '/algorithm/dichotomy/1',
                     ]
                 },
             ]
         }
-
     }
 }
