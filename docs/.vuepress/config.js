@@ -90,7 +90,32 @@ module.exports = {
                         '/algorithm/dichotomy/1',
                     ]
                 },
-            ]
+            ],
+            '/algorithm/': [{
+                title: '数组', // 必要的
+                collapsable: true, // 可选的, 默认值是 true,
+                sidebarDepth: 2, // 可选的, 默认值是 1
+                children: [
+                    '/algorithm/array/1',
+                ]
+            },
+            {
+                title: '二维数组', // 必要的
+                collapsable: true, // 可选的, 默认值是 true,
+                sidebarDepth: 2, // 可选的, 默认值是 1
+                children: [
+                    '/algorithm/dichotomy/1',
+                ]
+            },
+            {
+                title: '二分查找', // 必要的
+                collapsable: true, // 可选的, 默认值是 true,
+                sidebarDepth: 2, // 可选的, 默认值是 1
+                children: [
+                    '/algorithm/dichotomy/1',
+                ]
+            },
+        ]
         }
     }
 }
