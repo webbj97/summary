@@ -79,7 +79,7 @@ module.exports = {
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
-                        '/algorithm/array/1',
+                        '/algorithm/array/35',
                     ]
                 },
                 {
@@ -88,34 +88,37 @@ module.exports = {
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
                         '/algorithm/dichotomy/1',
+                        '/algorithm/dichotomy/56',
                     ]
                 },
             ],
             '/algorithm/': [{
-                title: '数组', // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
-                sidebarDepth: 2, // 可选的, 默认值是 1
-                children: [
-                    '/algorithm/array/1',
-                ]
-            },
-            {
-                title: '二维数组', // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
-                sidebarDepth: 2, // 可选的, 默认值是 1
-                children: [
-                    '/algorithm/dichotomy/1',
-                ]
-            },
-            {
-                title: '二分查找', // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
-                sidebarDepth: 2, // 可选的, 默认值是 1
-                children: [
-                    '/algorithm/dichotomy/1',
-                ]
-            },
-        ]
+                    title: '数组', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+                        '/algorithm/array/189',
+                        '/algorithm/array/724',
+                    ]
+                },
+                {
+                    title: '二维数组', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+                        '/algorithm/dichotomy/35',
+                    ]
+                },
+                {
+                    title: '二分查找', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+                        '/algorithm/more-array/1',
+                        '/algorithm/more-array/56',
+                    ]
+                },
+            ]
         }
     }
 }
