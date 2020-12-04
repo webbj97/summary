@@ -77,45 +77,32 @@ module.exports = {
             '/algorithm/': [{
                     title: '数组', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
+                    path: '/algorithm/array/',
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
-                        '/algorithm/array/35',
-                    ]
-                },
-                {
-                    title: '二分查找', // 必要的
-                    collapsable: true, // 可选的, 默认值是 true,
-                    sidebarDepth: 2, // 可选的, 默认值是 1
-                    children: [
-                        '/algorithm/dichotomy/1',
-                        '/algorithm/dichotomy/56',
-                    ]
-                },
-            ],
-            '/algorithm/': [{
-                    title: '数组', // 必要的
-                    collapsable: true, // 可选的, 默认值是 true,
-                    sidebarDepth: 2, // 可选的, 默认值是 1
-                    children: [
+                        '/algorithm/array/154',
                         '/algorithm/array/189',
                         '/algorithm/array/724',
                     ]
                 },
                 {
-                    title: '二维数组', // 必要的
+                    title: '二分查找', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
+                    path: '/algorithm/dichotomy/',
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
                         '/algorithm/dichotomy/35',
+                        '/algorithm/dichotomy/154',
                     ]
                 },
                 {
-                    title: '二分查找', // 必要的
+                    title: '二维数组', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
+                    path: '/algorithm/more-array/',
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
-                        '/algorithm/more-array/1',
                         '/algorithm/more-array/56',
+                        '/algorithm/more-array/240',
                     ]
                 },
             ]
