@@ -2,6 +2,9 @@ module.exports = {
     title: '余光的前端进阶笔记',
     description: '在这里一定有能帮助你成长的文章',
     base: '/summary/', // github仓库名
+    head: [
+        ['link', {rel: 'icon', href: `/favicon.ico`}]
+    ],
     plugins: [
         '@vuepress/back-to-top',
     ],
@@ -91,8 +94,11 @@ module.exports = {
                     path: '/algorithm/dichotomy/',
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
-                        '/algorithm/dichotomy/35',
-                        '/algorithm/dichotomy/154',
+                        '/algorithm/dichotomy/704', // 二分查找
+                        '/algorithm/dichotomy/69', // x 的平方根
+                        '/algorithm/dichotomy/374', // 猜数字大小
+                        '/algorithm/dichotomy/35', //
+                        '/algorithm/dichotomy/154', //
                     ]
                 },
                 {
