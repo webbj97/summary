@@ -77,28 +77,21 @@ module.exports = {
                     ]
                 },
             ],
-            '/algorithm/': [{
-                    title: '数组', // 必要的
-                    collapsable: true, // 可选的, 默认值是 true,
-                    path: '/algorithm/array/',
-                    sidebarDepth: 2, // 可选的, 默认值是 1
-                    children: [
-                        '/algorithm/array/154',
-                        '/algorithm/array/189',
-                        '/algorithm/array/724',
-                    ]
-                },
+            '/algorithm/': [
                 {
                     title: '二分查找', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
                     path: '/algorithm/dichotomy/',
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
-                        '/algorithm/dichotomy/704', // 二分查找
-                        '/algorithm/dichotomy/69', // x 的平方根
-                        '/algorithm/dichotomy/374', // 猜数字大小
-                        '/algorithm/dichotomy/35', //
-                        '/algorithm/dichotomy/154', //
+                        '/algorithm/dichotomy/1-1', // 二分查找 ok
+                        '/algorithm/dichotomy/1-2', // 搜索插入的位置 ok
+                        '/algorithm/dichotomy/1-3', // x 的平方根 ok
+                        '/algorithm/dichotomy/1-4', // 猜数字大小 ok
+                        '/algorithm/dichotomy/1-5', // 搜索旋转排序数组 ok
+                        '/algorithm/dichotomy/2-1', // 第一个错误的版本 ok
+                        '/algorithm/dichotomy/2-2', // 寻找旋转排序数组中的最小值
+                        '/algorithm/dichotomy/2-3', // 寻找旋转排序数组中的最小值
                     ]
                 },
                 {
@@ -109,6 +102,17 @@ module.exports = {
                     children: [
                         '/algorithm/more-array/56',
                         '/algorithm/more-array/240',
+                    ]
+                },
+                {
+                    title: '数组', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    path: '/algorithm/array/',
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+                        '/algorithm/array/154',
+                        '/algorithm/array/189',
+                        '/algorithm/array/724',
                     ]
                 },
             ]
