@@ -80,8 +80,7 @@ module.exports = {
                     ]
                 },
             ],
-            '/algorithm/': [
-                {
+            '/algorithm/': [{
                     title: '二分查找', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
                     path: '/algorithm/dichotomy',
@@ -108,7 +107,8 @@ module.exports = {
                                 '/algorithm/dichotomy/2-1', // 第一个错误的版本 ok
                                 '/algorithm/dichotomy/2-2', // 寻找峰值
                                 '/algorithm/dichotomy/2-3', // 寻找旋转排序数组中的最小值
-                                '/algorithm/dichotomy/2-4', // 寻找旋转排序数组中的最小值
+                                '/algorithm/dichotomy/2-4', // 输入有序数组
+                                '/algorithm/dichotomy/2-5', // 寻找旋转排序数组中的最小值II
                             ]
                         },
                         {
@@ -118,7 +118,7 @@ module.exports = {
                             path: '/algorithm/dichotomy/3-1',
                             children: [
                                 '/algorithm/dichotomy/3-1', // 在排序数组中查找元素的第一个和最后一个位置
-                                '/algorithm/dichotomy/3-2', // 在排序数组中查找元素的第一个和最后一个位置
+                                '/algorithm/dichotomy/3-2', // 找到 K 个最接近的元素
                             ]
                         },
                         {
@@ -128,6 +128,10 @@ module.exports = {
                             path: '/algorithm/dichotomy/4-1',
                             children: [
                                 '/algorithm/dichotomy/4-1', // pow(n, x)
+                                '/algorithm/dichotomy/4-2', // 有效的完全平方数
+                                '/algorithm/dichotomy/4-3', // 寻找比目标字母大的最小字母
+                                '/algorithm/dichotomy/4-4', // 统计有序矩阵中的负数
+                                '/algorithm/dichotomy/4-5', // 矩阵中战斗力最弱的 K 行
                             ]
                         },
                     ]
@@ -137,16 +141,20 @@ module.exports = {
                     collapsable: true, // 可选的, 默认值是 true,
                     path: '/algorithm/linked/',
                     sidebarDepth: 2, // 可选的, 默认值是 1
-                    children: [{
-                        title: '模版I', // 必要的
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2, // 可选的, 默认值是 1
-                        path: '/algorithm/linked/one/1-1',
-                        children: [
-                            '/algorithm/linked/one/1-1', // 二分查找 ok
-                        ]
-                    },
-                ]
+                    children: [
+                        '/algorithm/linked/1-1', // 设计链表
+                        '/algorithm/linked/1-2', // 环形链表
+                        '/algorithm/linked/1-3', // 环形链表II
+                    ]
+                },
+                {
+                    title: '树', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    path: '/algorithm/tree/',
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+
+                    ]
                 },
                 {
                     title: '二维数组', // 必要的
@@ -171,22 +179,21 @@ module.exports = {
                 },
             ],
             '/css/': [{
-                    title: 'css基础样式', // 必要的
-                    collapsable: true, // 可选的, 默认值是 true,
-                    path: '/algorithm/dichotomy/',
-                    sidebarDepth: 2, // 可选的, 默认值是 1
-                    children: [
-                        '/algorithm/dichotomy/1-1', // 二分查找 ok
-                        '/algorithm/dichotomy/1-2', // 搜索插入的位置 ok
-                        '/algorithm/dichotomy/1-3', // x 的平方根 ok
-                        '/algorithm/dichotomy/1-4', // 猜数字大小 ok
-                        '/algorithm/dichotomy/1-5', // 搜索旋转排序数组 ok
-                        '/algorithm/dichotomy/2-1', // 第一个错误的版本 ok
-                        '/algorithm/dichotomy/2-2', // 寻找旋转排序数组中的最小值
-                        '/algorithm/dichotomy/2-3', // 寻找旋转排序数组中的最小值
-                    ]
-                },
-            ]
+                title: 'css基础样式', // 必要的
+                collapsable: true, // 可选的, 默认值是 true,
+                path: '/algorithm/dichotomy/',
+                sidebarDepth: 2, // 可选的, 默认值是 1
+                children: [
+                    '/algorithm/dichotomy/1-1', // 二分查找 ok
+                    '/algorithm/dichotomy/1-2', // 搜索插入的位置 ok
+                    '/algorithm/dichotomy/1-3', // x 的平方根 ok
+                    '/algorithm/dichotomy/1-4', // 猜数字大小 ok
+                    '/algorithm/dichotomy/1-5', // 搜索旋转排序数组 ok
+                    '/algorithm/dichotomy/2-1', // 第一个错误的版本 ok
+                    '/algorithm/dichotomy/2-2', // 寻找旋转排序数组中的最小值
+                    '/algorithm/dichotomy/2-3', // 寻找旋转排序数组中的最小值
+                ]
+            }, ]
         }
     }
 }
