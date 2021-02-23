@@ -35,41 +35,46 @@
 
 本系列的内容偏向Js基础知识，但是无论是平时工作还是面试加薪，你都无法忽视它们。全系列预计10-15篇文章，欢迎大家指正，虚心学习提高
 
-1. [一篇搞懂this指向问题](./Js内功/1.一篇搞懂this指向问题.md)
-2. [从原型到原型链](./Js内功/2.从原型到原型链.md)
-3. [词法作用域和动态作用域](./Js内功/3.JavaScript中的作用域.md)
-4. [执行上下文](./Js内功/4.执行上下文.md)
-5. [深入变量对象](./Js内功/5.深入变量对象.md)
-6. [立即执行函数](./Js内功/6.立即执行函数.md)
-7. [看透闭包](./Js内功/7.闭包.md)
-8. [函数参数传递](./Js内功/8.JavaScript中的参数传递.md)
-9. [基本数据类型](./Js内功/9.基本数据类型.md)
-10. [你真的了解Js吗（系列完结）](./Js内功/10.你真的了解Js吗1.md)
+1. [一篇搞懂this指向问题](https://webbj97.github.io/summary/blog/js-basics/1.html)
+2. [从原型到原型链](https://webbj97.github.io/summary/blog/js-basics/2.html)
+3. [词法作用域和动态作用域](https://webbj97.github.io/summary/blog/js-basics/3.html)
+4. [执行上下文](https://webbj97.github.io/summary/blog/js-basics/4.html)
+5. [深入变量对象](https://webbj97.github.io/summary/blog/js-basics/5.html)
+6. [立即执行函数](https://webbj97.github.io/summary/blog/js-basics/6.html)
+7. [看透闭包](https://webbj97.github.io/summary/blog/js-basics/7.html)
+8. [函数参数传递](https://webbj97.github.io/summary/blog/js-basics/8.html)
+9. [基本数据类型](https://webbj97.github.io/summary/blog/js-basics/9.html)
+10. [你真的了解Js吗（系列完结）](https://webbj97.github.io/summary/blog/js-basics/10.html)
 
 
 ## JavaScript专项进阶系列（ing）
 
-1. [变量与函数提升](./Js专题/1.变量与函数提升.md)
-2. [数组去重](./Js专题/2.数组去重.md)
-3. [防抖专题](./Js专题/3.防抖.md)
-4. [节流专题](./Js专题/4.节流.md)
-5. [深浅拷贝](./Js专题/5.深浅拷贝.md)
-6. [数据类型检测](./Js专题/6.类型判断,md)
-7. [类型转换](./Js专题/7.类型转换.md)
-8. [数组扁平化](./Js专题/8.数组扁平化.md)
-8. [持续更新...]
+1. [变量与函数提升](https://webbj97.github.io/summary/blog/js-special/1.html)
+2. [数组去重](https://webbj97.github.io/summary/blog/js-special/2.html)
+3. [防抖专题](https://webbj97.github.io/summary/blog/js-special/3.html)
+4. [节流专题](https://webbj97.github.io/summary/blog/js-special/4.html)
+5. [深浅拷贝](https://webbj97.github.io/summary/blog/js-special/5.html)
+6. [数据类型检测](https://webbj97.github.io/summary/blog/js-special/6.html)
+7. [类型转换](https://webbj97.github.io/summary/blog/js-special/7.html)
+8. [数组扁平化](https://webbj97.github.io/summary/blog/js-special/8.html)
+9. [数组中查找指定元素](https://webbj97.github.io/summary/blog/js-special/9.html)
 
-**ES6基础进阶篇**
+## ES6基础进阶篇
 
-1. [let和const](./ES6/1.let和const命令.md)
-1. [变量的解构赋值](./ES6/2.变量的解构赋值.md)
-1. [箭头函数](./ES6/3.箭头函数.md)
+1. [let和const](https://webbj97.github.io/summary/blog/es6/1.html)
+2. [变量的解构赋值](https://webbj97.github.io/summary/blog/es6/2.html)
+3. [箭头函数](https://webbj97.github.io/summary/blog/es6/3.html)
+4. [Iterator（遍历器）和for...of循环](https://webbj97.github.io/summary/blog/es6/4.html)
+5. [set](https://webbj97.github.io/summary/blog/es6/5.html)
 
+## LeetCode题解
+
+[传送门](https://webbj97.github.io/leetCode-Js/)
 
 ### 如果您读到了最后，又觉得对您有帮助的话，那么留下您的star～吧（页面顶部），您的鼓励是我最大动力！
 
 <h1 align=center>
-    <img src="./Images/common/star.png"/>
+    <img src="https://hlgcdn.oss-cn-hangzhou.aliyuncs.com/hlg-ui/1607504321645897/yuguang-vue-bottom.gif"/>
 </h1>
 
 

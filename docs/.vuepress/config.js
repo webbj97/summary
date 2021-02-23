@@ -13,7 +13,7 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: '前端|博文', link: '/blog/' },
             { text: '算法|题解', link: '/algorithm/' },
-            { text: 'CSS|进阶', link: '/css/' },
+            { text: 'CSS|基础', link: '/css/' },
             { text: 'GitHub', link: 'https://github.com/webbj97/summary' },
         ],
         markdown: {
@@ -179,19 +179,12 @@ module.exports = {
                 },
             ],
             '/css/': [{
-                title: 'css基础样式', // 必要的
+                title: 'CSS基础', // 必要的
                 collapsable: true, // 可选的, 默认值是 true,
-                path: '/algorithm/dichotomy/',
                 sidebarDepth: 2, // 可选的, 默认值是 1
                 children: [
-                    '/algorithm/dichotomy/1-1', // 二分查找 ok
-                    '/algorithm/dichotomy/1-2', // 搜索插入的位置 ok
-                    '/algorithm/dichotomy/1-3', // x 的平方根 ok
-                    '/algorithm/dichotomy/1-4', // 猜数字大小 ok
-                    '/algorithm/dichotomy/1-5', // 搜索旋转排序数组 ok
-                    '/algorithm/dichotomy/2-1', // 第一个错误的版本 ok
-                    '/algorithm/dichotomy/2-2', // 寻找旋转排序数组中的最小值
-                    '/algorithm/dichotomy/2-3', // 寻找旋转排序数组中的最小值
+                    '/css/code/1', // css选择器权重与优先级
+                    '/css/code/2', // css选择器权重与优先级
                 ]
             }, ]
         }
