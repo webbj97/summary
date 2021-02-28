@@ -183,8 +183,11 @@ module.exports = {
                 collapsable: true, // 可选的, 默认值是 true,
                 sidebarDepth: 2, // 可选的, 默认值是 1
                 children: [
-                    '/css/code/1', // css选择器权重与优先级
-                    '/css/code/2', // css选择器权重与优先级
+                    '/css/code/1', // 选择器的权重与优先级有什么关系？
+                    '/css/code/2', // 简述 CSS 盒模型
+                    '/css/code/3', // 浅谈position
+                    '/css/code/4', // CSS的上下文之BFC
+                    '/css/code/5', // CSS的上下文之层叠上下文
                 ]
             }, ]
         }
