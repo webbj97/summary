@@ -188,6 +188,7 @@ module.exports = {
                     '/css/code/3', // 浅谈position
                     '/css/code/4', // CSS的上下文之BFC
                     '/css/code/5', // CSS的上下文之层叠上下文
+                    '/css/code/6', // CSS弹性盒子
                 ]
             }, ]
         }
