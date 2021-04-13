@@ -79,6 +79,17 @@ module.exports = {
                         '/blog/es6/6',
                     ]
                 },
+                {
+                    title: 'Vue', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 3, // 可选的, 默认值是 1
+                    children: [
+                        '/blog/vue/mvvm', // MVVM
+                        '/blog/vue/observer', // 数据监听
+                        '/blog/vue/observer1', // 数据监听
+                        '/blog/vue/dom-diff', // 虚拟Dom
+                    ]
+                },
             ],
             '/algorithm/': [{
                     title: '二分查找', // 必要的
