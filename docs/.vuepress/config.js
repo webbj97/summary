@@ -77,6 +77,8 @@ module.exports = {
                         '/blog/es6/4',
                         '/blog/es6/5',
                         '/blog/es6/6',
+                        '/blog/es6/10',
+                        '/blog/es6/11',
                     ]
                 },
                 {
@@ -86,7 +88,6 @@ module.exports = {
                     children: [
                         '/blog/vue/mvvm', // MVVM
                         '/blog/vue/observer', // 数据监听
-                        '/blog/vue/observer1', // 数据监听
                         '/blog/vue/dom-diff', // 虚拟Dom
                     ]
                 },
