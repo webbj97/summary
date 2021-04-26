@@ -54,7 +54,7 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'JavaScript设计模式', // 必要的
+                    title: '设计模式', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
@@ -89,6 +89,22 @@ module.exports = {
                         '/blog/vue/mvvm', // MVVM
                         '/blog/vue/observer', // 数据监听
                         '/blog/vue/dom-diff', // 虚拟Dom
+                    ]
+                },
+                {
+                    title: '浏览器', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+                        '/blog/browser/1', // 渲染机制
+                    ]
+                },
+                {
+                    title: '网络', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+                        '/blog/network/1', // 渲染机制
                     ]
                 },
             ],
