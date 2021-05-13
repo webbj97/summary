@@ -94,9 +94,9 @@ module.exports = {
                 {
                     title: '浏览器', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
-                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    sidebarDepth: 4, // 可选的, 默认值是 1
                     children: [
-                        '/blog/browser/1', // 渲染机制
+                        '/blog/browser/2', // 渲染原理
                     ]
                 },
                 {
