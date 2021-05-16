@@ -13,7 +13,7 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: '前端|博文', link: '/blog/' },
             { text: '算法|题解', link: '/algorithm/' },
-            { text: 'CSS|基础', link: '/css/' },
+            { text: 'CSS|博文', link: '/css/' },
             { text: 'GitHub', link: 'https://github.com/webbj97/summary' },
         ],
         markdown: {
@@ -216,7 +216,8 @@ module.exports = {
                     '/css/code/3', // 浅谈position
                     '/css/code/4', // CSS的上下文之BFC
                     '/css/code/5', // CSS的上下文之层叠上下文
-                    '/css/code/6', // CSS弹性盒子
+                    '/css/code/6', // CSS-Flex弹性盒子
+                    '/css/code/7', // CSS-Grid弹性盒子
                 ]
             }, ]
         }
