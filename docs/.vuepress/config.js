@@ -104,7 +104,9 @@ module.exports = {
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
-                        '/blog/network/1', // 渲染机制
+                        '/blog/network/1', // 浏览器基础
+                        '/blog/network/2', // 渲染机制
+                        '/blog/network/3', // EventLoop
                     ]
                 },
             ],
