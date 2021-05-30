@@ -97,6 +97,7 @@ module.exports = {
                     sidebarDepth: 4, // 可选的, 默认值是 1
                     children: [
                         '/blog/browser/2', // 渲染原理
+                        '/blog/browser/3', // 浏览器EventLoop
                     ]
                 },
                 {
