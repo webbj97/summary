@@ -96,6 +96,7 @@ module.exports = {
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 4, // 可选的, 默认值是 1
                     children: [
+                        '/blog/browser/1', // 浏览器基本运行原理
                         '/blog/browser/2', // 渲染原理
                         '/blog/browser/3', // 浏览器EventLoop
                     ]
@@ -105,9 +106,9 @@ module.exports = {
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
-                        '/blog/network/1', // 浏览器基础
-                        '/blog/network/2', // 渲染机制
-                        '/blog/network/3', // EventLoop
+                        '/blog/browser/1', // 浏览器基础
+                        '/blog/browser/2', // 渲染机制
+                        '/blog/browser/3', // EventLoop
                     ]
                 },
             ],
