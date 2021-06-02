@@ -111,6 +111,15 @@ module.exports = {
                         '/blog/browser/3', // EventLoop
                     ]
                 },
+                {
+                    title: '有意思的分享', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+                        '/blog/something-interesting/1-bank', // CSDN排行榜能分析出什么？
+                        '/blog/something-interesting/2-csdn-plugin', // 渲染机制
+                    ]
+                },
             ],
             '/algorithm/': [{
                     title: '二分查找', // 必要的
