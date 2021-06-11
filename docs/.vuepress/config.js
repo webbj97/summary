@@ -77,7 +77,7 @@ module.exports = {
                         '/blog/es6/4',
                         '/blog/es6/5',
                         '/blog/es6/6',
-                        '/blog/es6/10',
+                        '/blog/es6/7',
                         '/blog/es6/11',
                     ]
                 },
