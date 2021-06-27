@@ -8,10 +8,7 @@
     "build": "vuepress build docs",
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/webbj97/summary.git"
-  },
+  "repository": "git+https://github.com/webbj97/summary.git",
   "author": "bojian",
   "license": "ISC",
   "bugs": {
