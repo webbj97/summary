@@ -35,6 +35,7 @@ module.exports = {
                         '/blog/js-basics/8',
                         '/blog/js-basics/9',
                         '/blog/js-basics/10',
+                        '/blog/js-basics/11',
                     ]
                 },
                 {
@@ -112,7 +113,7 @@ module.exports = {
                     ]
                 },
                 {
-                    title: '有意思的分享', // 必要的
+                    title: '其他', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
