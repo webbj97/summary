@@ -21,7 +21,7 @@ module.exports = {
         },
         sidebar: {
             '/blog/': [{
-                    title: 'JavaScript基础', // 必要的
+                    title: 'JavaScript系列', // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
@@ -36,13 +36,6 @@ module.exports = {
                         '/blog/js-basics/9',
                         '/blog/js-basics/10',
                         '/blog/js-basics/11',
-                    ]
-                },
-                {
-                    title: 'JavaScript专题', // 必要的
-                    collapsable: true, // 可选的, 默认值是 true,
-                    sidebarDepth: 2, // 可选的, 默认值是 1
-                    children: [
                         '/blog/js-special/1',
                         '/blog/js-special/2',
                         '/blog/js-special/3',
@@ -52,6 +45,14 @@ module.exports = {
                         '/blog/js-special/7',
                         '/blog/js-special/8',
                         '/blog/js-special/9',
+                    ]
+                },
+                {
+                    title: 'TypeScript系列', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+                        '/blog/ts/1',
                     ]
                 },
                 {
