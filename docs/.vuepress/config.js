@@ -53,6 +53,7 @@ module.exports = {
                     sidebarDepth: 2, // 可选的, 默认值是 1
                     children: [
                         '/blog/ts/1',
+                        '/blog/ts/2',
                     ]
                 },
                 {

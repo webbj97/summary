@@ -3,6 +3,10 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# 键入commit信息
+
+read -p "请输入commit文本：" msg
+
 # 生成静态文件
 yarn build
 
@@ -14,7 +18,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m $msg
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
