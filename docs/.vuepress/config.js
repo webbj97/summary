@@ -54,6 +54,8 @@ module.exports = {
                     children: [
                         '/blog/ts/1',
                         '/blog/ts/2',
+                        '/blog/ts/3',
+                        '/blog/ts/4',
                     ]
                 },
                 {
