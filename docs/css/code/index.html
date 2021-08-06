@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            width: 300px;
+            border: 1px solid red;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+        }
+        .grid>div {
+            line-height: 100px;
+            text-align: center;
+        }
+        .center{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="center">1</div>
+        <div class="a">2</div>
+        <div class="b">3</div>
+        <div class="d">4</div>
+        <div class="e">5</div>
+        <div class="b">6</div>
+        <div class="b">7</div>
+        <div class="b">8</div>
+    </div>
+    <script>
+        const Grid = document.getElementsByClassName('grid')[0];
+        const childNodes = Array.prototype.slice.call(Grid.children);
+        childNodes.forEach((ele, i) => {
+            ele.style.backgroundColor = `#${Math.random().toString(16).substr(2, 6).toUpperCase()}`;
+            ele.style.color = '#fff'
+        })
+        console.log('childNodes:', childNodes);
+
+
+    </script>
+</body>
+
+</html>

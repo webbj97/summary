@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class A {
+
+        }
+        let a = new A();
+        // 1. a是什么
+        // 2. A是什么
+        // 3. a和A是什么关系？
+        // constructor是什么？
+
+        // 左侧：A.prototype.__proto__ = a.__proto__
+        console.log(a instanceof Object)
+        a.__proto__ = A.prototype
+        console.log('a:', A.constructor);
+        console.log(A.prototype.__proto__===Object.prototype);
+    </script>
+</body>
+
+</html>
