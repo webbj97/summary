@@ -15,6 +15,7 @@ cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
+# 初始化为git仓库，发送到远程dist文件夹下
 
 git init
 git add -A
