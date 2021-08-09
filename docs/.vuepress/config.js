@@ -56,6 +56,7 @@ module.exports = {
                         '/blog/ts/2',
                         '/blog/ts/3',
                         '/blog/ts/4',
+                        '/blog/ts/5',
                     ]
                 },
                 {
