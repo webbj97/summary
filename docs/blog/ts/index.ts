@@ -1,35 +1,21 @@
-// type A1 = 'x' | 'y'
-// type A2 = A1 extends 'x' ? 1 : 2;
-// const c: A2 = 2
-
-// type P<T> = T extends 'x' ? 1 : 2;
-// type A3 = P<'x' | 'y'>
-
-interface fruits {
-  name: string;
-  getColor(): void;
-}
-interface person {
-  name: string;
-  getAge(): void;
+abstract class Animal {
+  abstract makeSound(): void;
+  sayHi(): void {
+    console.log("Hi.");
+  }
 }
 
-type fruitsOrPerson = fruits | person;
+// error
+// class Dog extends Animal {
+//   // error 非抽象类“Dog”不会实现继承自“Animal”类的抽象成员“makeSound”
+// }
 
-// 通过
-function getColor(intance: fruitsOrPerson) {
-  return (intance as fruits).getColor();
+// good
+class Cat extends Animal {
+  makeSound() :void{
+    console.log('miao miao~');
+  }
 }
-
-interface Animal {
-  name: string;
-}
-interface Cat {
-  age: string;
-}
-
-const animal: Animal = {
-  name: "tom",
-};
-
-let tom = animal as Cat
+const cat = new Cat();
+cat.sayHi(); // hi
+cat.makeSound(); // miao miao~

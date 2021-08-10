@@ -18,18 +18,6 @@
 * [GitHub](https://github.com/webbj97)
 * [掘金](https://juejin.im/user/5c0726c6f265da613b6f8dab/posts)
 
-### 我想说的
-
-余光的前端进阶笔记持续更新，希望大家一起见证。
-
-参加工作不久，深知自己水平有限，正处于实力和梦想有很大差距的阶段，但是我仍希望通过自己努力将一些好的知识点为想给大家，让我们共同进步。
-
-如果大家对文章、内容等任何方面有建议可以加我【微信】提意见。希望大家猛戳star，收藏这个有“潜力”的前端进阶笔记！！！
-
-### 其他沉淀
-
-* [leetCode题解](https://webbj97.github.io/leetCode-Js/)
-* [有趣的CSS](https://webbj97.github.io/Interesting-CSS/)
 
 ## JavaScript内功进阶系列（完结）
 
@@ -79,10 +67,14 @@
 6. [CSS弹性盒子](https://webbj97.github.io/summary/css/code/6.html)
 7. 持续更新中...
 
+## 其他沉淀
 
-## LeetCode题解
+* [leetCode题解](https://webbj97.github.io/leetCode-Js/)
+* [有趣的CSS](https://webbj97.github.io/Interesting-CSS/)
 
+余光的前端进阶笔记持续更新，希望大家一起见证。
 
+如果大家对文章、内容等任何方面有建议可以加我【微信】提意见。希望大家猛戳star，收藏这个有“潜力”的前端进阶笔记！！！
 
 [传送门](https://webbj97.github.io/leetCode-Js/)
 
