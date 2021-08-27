@@ -369,6 +369,7 @@ demo.$watch('text', str => p.innerHTML = str);
 ```
 
 至此我们拆解了部分代码，来看一下它的实际效果？
+```js
 
 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="webbj97" data-slug-hash="RwKJrbq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwKJrbq">
   <span>See the Pen <a href="https://codepen.io/webbj97/pen/RwKJrbq">
@@ -376,6 +377,7 @@ demo.$watch('text', str => p.innerHTML = str);
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+```
 
 再次回顾下图：
 

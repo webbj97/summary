@@ -1,0 +1,437 @@
+# JavaScript基础（一）this
+
+## 前言
+
+记得当时找实习的时候，总是会在简历上加上一句——熟悉Js，例如this指向、call、apply等...
+<p align=center><img align=center src="https://img-blog.csdnimg.cn/20200601184858430.png" width="40%" /></p>
+
+而每次投递简历时我都会经历如下步骤
+* 面试前，去问度娘——this指向可以分为哪几种啊～、call和apply的区别是什么？底气由0% 猛涨到了 50%；
+* 面试中，面试官随便扔上来几道题，我都可以“坚定的”给出答案，结果总是不尽人意...
+* 面试后，我会羞愧的删除掉简历上的这一条。而再之后投递简历时我又再次加上了这一条...
+
+
+<p align=center><img align=center src="https://img-blog.csdnimg.cn/20200601185742490.png" width="40%" /></p>
+
+既然知道这个知识点重要，这次我们猛攻它吧😊，let's go！六月第一篇文章，也是我第一次接触思维脑图，并尝试将它运用到平时的学习中，我们共勉！
+
+## 一、this的指向
+
+百度、谷歌上输入“this的指向”关键字，大几千条文章肯定是有的，总不至于为了全方面、无死角的掌握它就要将所有的文章都看一遍吧？所以不如梳理出一个稳固的框架，我们一起来填充它。
+#### 思维导图
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200602110330766.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70#pic_center)
+
+
+* this 总是（非严格模式下）指向一个对象，而具体指向哪个对象是在运行时基于函数的`执行环境`动态绑定的，而非函数被声明时的环境；
+* 除了不常用的with和eval的情况，具体到实际应用中，this指向大概可以分为四种：
+	- 作为对象的方法调用；
+	- 作为普通函数调用；
+	- 构造器调用；
+	- call 或 apply调用；
+	- 箭头函数中，this指向函数上层作用域的this；
+* **构造器**和**普通函数**的区别在于`被调用的方式`；
+* A,call(B) => 可以理解成在B的作用域内调用了A方法；
+
+#### 1.1 作为对象的方法调用
+
+当函数作为对象的方法被调用时，`this指向该对象`
+
+```js
+var obj = {
+    a: 'yuguang',
+    getName: function(){
+        console.log(this === obj);
+        console.log(this.a);
+    }
+};
+
+obj.getName(); // true yuguang
+```
+
+#### 1.2 作为普通函数调用
+
+当函数不作为对象的属性被调用，而是以普通函数的方式，this总是指向全局对象（在浏览器中，通常是Window对象）
+
+```js
+window.name = 'yuguang';
+
+var getName = function(){
+    console.log(this.name);
+};
+
+getName(); // yuguang
+```
+或者下面这段迷惑性的代码
+
+```js
+window.name = '老王'
+var obj = {
+    name: 'yuguang',
+    getName: function(){
+        console.log(this.name)
+    }
+};
+
+var getNew = obj.getName;
+getNew(); // 老王
+```
+
+而在ES5的严格模式下，this被规定为不会指向全局对象，而是`undefined`
+
+#### 1.3 构造器调用
+
+除了一些内置函数，大部分Js中的函数都可以成为构造器，它们与普通函数没什么不同
+
+**构造器**和**普通函数**的区别在于`被调用的方式`：
+当new运算符调用函数时，总是返回一个对象，this通常也指向这个对象
+
+```js
+var MyClass = function(){
+    this.name = 'yuguang';
+}
+var obj = new MyClass()
+obj.name; // yuguang
+```
+
+但是，如果显式的返回了一个object对象，那么此次运算结果最终会返回这个对象。
+
+```js
+var MyClass = function () {
+    this.name = 1;
+    return {
+        name: 2
+    }
+}
+var myClass = new MyClass();
+console.log('myClass.name:', myClass.name); // { name: 2}
+```
+
+只要构造器不显示的返回任何数据，或者返回非对象类型的数据，就不会造成上述问题。
+
+
+#### 1.4 call或apply调用
+
+跟普通的函数调用相比，用call和apply可以动态的改变函数的this
+
+```js
+var obj1 = {
+    name: 1,
+    getName: function (num = '') {
+        return this.name + num;
+    }
+};
+
+var obj2 = {
+    name: 2,
+}
+// 可以理解成在 obj2的作用域下调用了 obj1.getName()函数
+console.log(obj1.getName()); // 1
+console.log(obj1.getName.call(obj2, 2)); // 2 + 2 = 4
+console.log(obj1.getName.apply(obj2, [2])); // 2 + 2 = 4
+```
+
+#### 1.5 箭头函数
+
+箭头函数不会创建自己的this，它只会从自己的作用域链的上一层继承this。因此，在下面的代码中，传递给setInterval的函数内的this与封闭函数中的this值相同：
+
+```js
+this.name = 2
+var obj = {
+    name: '1',
+    getName: () => {
+        console.log(this.name)
+    }
+}
+
+obj.getName()
+```
+
+
+#### 1.6 常见的坑
+
+就像标题一样，有的时候`this`会指向undefined
+
+**情况一**
+
+```js
+var obj = {
+    name: '1',
+    getName: function (params) {
+        console.log(this.name)
+    }
+};
+obj.getName();
+
+var getName2 = obj.getName;
+getName2()
+
+```
+这个时候，getName2()作为普通函数被调用时，this指向全局对象——window。
+
+**情况二**
+
+当我们希望自己封装Dom方法，来精简代码时：
+```js
+var getDomById = function (id) {
+    return document.getElementById(id);
+};
+getDomById('div1') //dom节点
+```
+那么我们看看这么写行不行？
+
+```js
+var getDomById = document.getElementById
+getDomById('div1') // Uncaught TypeError: Illegal invocation(非法调用)
+```
+这是因为:
+
+* 当我们去调用`document`对象的方法时，方法内的this指向`document`。
+* 当我们用getId应用document内的方法，再以普通函数的方式调用，函数内容的this就指向了全局对象。
+
+**利用call和apply修正情况二**
+
+```js
+document.getElementById = (function (func) {
+    return function(){
+        return func.call(document, ...arguments)
+    }
+})(document.getElementById)
+// 利用立即执行函数将document保存在作用域中
+```
+<p align="center">
+<img  src="https://img-blog.csdnimg.cn/20200602141035376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" />
+</p>
+
+
+
+## 二、call和apply
+
+不要因为它的“强大”而对它产生抗拒，了解并熟悉它是我们必须要做的，共勉！
+
+#### 思维导图
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200602153648211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70#pic_center)
+
+#### 1.call和apply区别
+先来看区别，是因为它们**几乎**没有区别，下文代码实例call和apply都可以轻易的切换。
+
+当它们被设计出来时要做到的事情一摸一样，唯一的区别就在于`传参的格式不一样`
+
+* apply接受两个参数
+    - 第一个参数指定了函数体内this对象的指向
+    - 第二个参数为一个带下标的参数集合（可以是数组或者类数组）
+* call接受的参数不固定
+    - 第一个参数指定了函数体内this对象的指向
+    - 第二个参数及以后为函数调用的参数
+
+因为在所有（非箭头）函数中都可以通过`arguments`对象在函数中引用函数的参数。此对象包含传递给函数的每个参数，它本身就是一个类数组，我们apply在实际使用中更常见一些。
+
+call是包装在apply上面的语法糖，如果我们明确的知道参数数量，并且希望展示它们，可以使用call。
+
+当使用call或者apply的时候，如果我们传入的第一个参数为null，函数体内的this会默认指向宿主对象，在浏览器中则是`window`。
+
+**借用其他对象的方法**
+
+我们可以直接传null来代替任意对象
+
+```js
+Math.max.apply(null, [1, 2, 3, 4, 5])
+```
+
+#### 2.call和apply能做什么？
+使用一个指定的 this 值和单独给出的一个或多个参数来调用一个函数——来时[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+
+* 调用构造函数来`实现继承`;
+* 调用函数并且指定上下文的 `this`;
+* 调用函数并且不指定第一个参数;
+
+**1.调用构造函数来实现继承**
+
+通过“借用”的方式来达到继承的效果：
+
+```js
+function Product(name, price) {
+	this.name = name;
+	this.price = price;
+}
+
+function Food(name, price) {
+	Product.call(this, name, price); //
+	this.category = food;
+}
+
+var hotDog = new Food('hotDog', 20);
+```
+
+**2.调用函数并且指定上下文的 `this`**
+
+此时this被指向了obj
+
+```js
+function showName() {
+    console.log(this.id + ':' + this.name);
+};
+
+var obj = {
+    id: 1,
+    name: 'yuguang'
+};
+
+showName.call(obj)
+```
+
+**3.使用call单纯的调用某个函数**
+
+```js
+Math.max.apply(null, [1,2,3,10,4,5]); // 10
+```
+
+<p align=center>
+	<img  src="https://img-blog.csdnimg.cn/20200602143803240.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" width="60%"/>
+</p>
+
+
+## 三、模拟实现一个call
+
+先来看一下call帮我们需要做什么？
+
+```js
+var foo = {
+	value: 1
+};
+function show() {
+	console.log(this.value);
+};
+show.call(foo); //1
+```
+
+就像解方程，要在已知条件中寻找突破哦口：
+* `call` 使得this的指向变了，指向了foo;
+* `show` 函数被执行了;
+* 传入的参数应为 `this` + 参数列表;
+
+**第一版代码**
+
+上面提到的3点，仅仅完成了一点，且传入的参数
+
+```js
+var foo = {
+    value: 1
+}
+function show() {
+    console.log(this.value);
+}
+
+Function.prototype.setCall = function (obj) {
+    console.log(this); // 此时this指向show
+    obj.func = this; // 将函数变成对象的内部属性
+    obj.func(obj.value) // 指定函数
+    delete obj.func // 删除函数，当做什么都没发生～
+}
+show.setCall(foo)
+```
+
+**第二版代码**
+
+为了解决参数的问题，我们要能获取到参数，并且正确的传入：
+
+```js
+var foo = {
+    value: 1
+}
+function show(a, b) {
+    console.log(this.value);
+    console.log(a + b)
+}
+Function.prototype.setCall = function (obj) {
+    obj.fn = this; // 将函数变成对象的内部属性
+    var args = [];
+    for(let i = 1; i < arguments.length; i++){
+        args.push('arguments[' + i + ']');
+    }
+    eval('obj.fn(' + args + ')'); // 传入参数
+    delete obj.fn; // 删除函数，当做什么都没发生～
+}
+
+show.setCall(foo, 1, 2); // 1 3
+```
+
+此时，我们就可以做到，传入多个参数的情况下使用call了，但是如果你仅想用某个方法呢？
+
+**第三版代码**
+
+```js
+Function.prototype.setCall = function (obj) {
+  var obj = obj || window;
+  obj.fn = this;
+  var args = [];
+  for(var i = 1, len = arguments.length; i < len; i++) {
+    args.push('arguments[' + i + ']');
+  }
+  var result = eval('obj.fn(' + args +')');
+  delete obj.fn;
+  return result;
+};
+// 测试一下
+var value = 2;
+var obj = { value: 1 };
+
+function bar(name, age) {
+  console.log(this.value);
+  return {
+    value: this.value,
+    name: name,
+    age: age
+  }
+}
+bar.setCall(null); // 2
+console.log(bar.setCall(obj, 'kevin', 18));
+```
+
+## 四、bind
+
+提到了**call**和**apply**，就绕不开**bind()**，来看一下MDN上对**bind()**的解释：
+
+bind() 方法创建一个新的函数，在 bind() 被调用时，这个新函数的 this 被指定为 bind() 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
+
+我们用Js来模拟一个bind方法，以便加深我们的认识
+
+```js
+Function.prototype.bind = function (func) {
+    var _this = this
+    return function(){
+        return _this.apply(func, arguments);
+    }
+}
+
+var obj = {
+    name: 1,
+    getName: function(){
+        console.log(this.name)
+    }
+}
+
+var func = function(){
+    console.log(this.name)
+}
+func.bind(obj)
+```
+
+这样看上去，bind总会帮我们返回同样的`this`值，还是挺坚挺的哦～
+
+## 结尾
+
+**关于我**
+
+* 花名：余光
+* 稿定设计一名工作不到一年的前端小白
+* [JavaScript版LeetCode题解](https://webbj97.github.io/leetCode-Js/)
+* [LeetCode题解CSDN地址](https://blog.csdn.net/jbj6568839z/article/details/105714458)
+* [前端进阶笔记](https://webbj97.github.io/summary/)
+
+这是我第一次尝试脑图+代码实例相结合的方式来展开知识，如果您看到了最后，不妨收藏、点赞、评论一下吧！！！
+
+持续更新，您的**三连**就是我最大的动力，虚心接受大佬们的批评和指点，共勉！
+
+<p align=center>
+	<img src="https://img-blog.csdnimg.cn/20200602155947301.png" width="80%"/>
+</p>

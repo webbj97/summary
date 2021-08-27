@@ -1,0 +1,299 @@
+# JavaScript专题（六）数据类型检测的那些事
+
+## 前言
+
+在[《JavaScript的数据类型》](https://blog.csdn.net/jbj6568839z/article/details/107151991)中我们也提到过简单的类型检测问题。
+
+作为前端的同学，我们应该都知道可以使用typeof和instanceof在运行时判断JavaScript数据的类型，那么他们都是怎么判断的呢？一千个人会不会写出来一千个判断方法？
+
+本文会从通用的typeof、到专攻对象的instanceof，再到isNull、isNumber、isString等方法，来讨论如何判断数据类型，一起加油～
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200820190630893.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70#pic_center)
+
+## 一、typeof
+
+**typeof：`操作符`返回一个字符串，表示未经计算的操作数的类型。**
+
+我们都知道，在 ES6 前，JavaScript 共六种数据类型，分别是：
+
+1. Undefined
+2. Null
+3. Boolean
+4. Number
+5. String
+6. Object
+
+然而当我们使用 typeof 对这些数据类型的值进行操作的时候，返回的结果却不是一一对应，分别是：
+
+1. Undefined
+2. object -- ***
+3. Boolean
+4. Number
+5. String
+6. Object
+
+有一些意外，`typeof null => 'object'` 且 `typeof function(){} => 'function'`
+
+所以在大多数情况下我们可以使用typeof来检测基本数据类型，但是，检测得到的`Object`后，却无法区分是哪一种Object：
+
+```js
+typeof [] === 'object'; //true
+typeof {} === 'object'; //true
+typeof null === 'object'; //true
+```
+
+**总结**
+
+👉🏻 在检测Js的原始类型时，除了`typeof null`返回`object`之外，其他的都返回对应类型名的小写字母。
+
+
+## 二、instanceof
+
+我们判断对象类型的时候，可以使用instanceof：
+
+如果对原型及原型链不太熟悉的同学不妨看看这篇文章[从原型到原型链](https://blog.csdn.net/jbj6568839z/article/details/106555301)
+
+**定义**
+
+instanceof 运算符用于检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上。
+
+**实例**
+
+```js
+const arr = [];
+const obj = {};
+
+console.log(arr instanceof Array);   // true
+console.log(arr instanceof Object);  // true
+console.log(obj instanceof Array);   // false
+console.log(obj instanceof Object);  // true
+```
+
+💡 注意instanceof是能匹配类型的父类的，所以arr instanceof Array和arr instanceof Object都是true，因为Object是Array的父类。
+
+满足`class extends`和`原型链规则`的父子类关系的对象都能被匹配：
+
+**class**
+
+```js
+class Base {}
+
+class Current extends Base {}
+
+const obj = new Current();
+
+console.log(obj instanceof Current); // true
+console.log(obj instanceof Base); // true
+```
+
+**原型链**
+
+```js
+function Foo() {}
+
+function Bar() {}
+
+Bar.prototype = new Foo();
+
+const obj = new Bar();
+
+console.log(obj instanceof Bar); // true
+console.log(obj instanceof Foo); // true
+```
+
+⚠️ 注意如果我们修改obj的原型链能改变instanceof的结果：
+
+```js
+function Other() {}
+
+obj.__proto__ = new Other();
+
+console.log(obj instanceof Other); // true
+console.log(obj instanceof Foo); // false
+```
+
+**总结**
+
+👉🏻 instanceof借助了原型链来判断的实际上，只要一个类型`Type`的prototype在一个`对象obj`的原型链上，那么`obj instanceof Type`就是true，否则就是false。
+
+## 三、constructor
+
+有时候我们不希望匹配父类型，只希望匹配当前类型，那么我们可以用constructor来判断：
+
+如果对原型及原型链不太熟悉的同学不妨看看这篇文章[从原型到原型链](https://blog.csdn.net/jbj6568839z/article/details/106555301)
+
+**定义**
+
+返回创建实例对象的 `Object` 构造函数的引用。注意，此属性的值是对函数本身的引用，而不是一个包含函数名称的字符串。
+
+**实例**
+
+```js
+const arr = [];
+
+console.log(arr.constructor === Array); // true
+console.log(arr.constructor === Object); // false
+```
+
+👉🏻 对象的constructor会返回它的类型，而类型在定义的时候，会创建一个name只读属性，值为类型的名字。
+
+```js
+class Foo {
+
+}
+console.log(Foo.name); // Foo
+
+const foo = new Foo();
+console.log(foo.constructor === Foo); // true
+console.log(foo.constructor.name === 'Foo'); // true
+```
+
+**疑问**
+
+* constructor.name 一定就是正确的吗？
+* 我们可以修改它吗？
+
+## 四、stringTag是什么？
+
+#### 4.1 stringTag——类型标签
+
+如果你看过一些库的早期实现，你会发现使用`Object.prototype.toString`来做类型判断的方式，他们会数据类型的字符串标志，被称作`stringTag`；
+
+
+#### 4.2 Object.prototype.toString
+
+
+**定义**
+
+`toString() `方法返回一个表示该对象的字符串。
+
+每个对象都有一个 `toString()` 方法，当该对象被表示为一个文本值时，默认情况下，`toString()` 方法被每个 Object 对象继承。
+
+⚠️ 如果此方法在自定义对象中未被覆盖，toString() 返回 "[object type]"，其中 type 是对象的类型。以下代码说明了这一点：
+
+
+**实例**
+
+比如这是requirejs里面的代码片段。
+
+```js
+var ostring = Object.prototype.toString;
+function isArray(it) {
+  return ostring.call(it) === '[object Array]';
+}
+```
+
+**toString时都做了什么？**
+
+这里直接将冴羽大大的总结搬了过来:
+
+> When the toString method is called, the following steps are taken:
+
+> 1. If the this value is undefined, return "[object Undefined]".
+> 2. If the this value is null, return "[object Null]".
+> 3. Let O be the result of calling ToObject passing the this value as the argument.
+> 4. Let class be the value of the [[Class]] internal property of O.
+> 5. Return the String value that is the result of concatenating the three Strings "[object ", class, and "]".
+
+当 toString 方法被调用的时候，下面的步骤会被执行：
+
+1. 如果 this 值是 undefined，就返回 [object Undefined]
+2. 如果 this 的值是 null，就返回 [object Null]
+3. 让 O 成为 ToObject(this) 的结果
+4. 让 class 成为 O 的内部属性 [[Class]] 的值
+5. 最后返回由 "[object " 和 class 和 "]" 三个部分组成的字符串
+
+**注意**
+
+有几点我们需要注意：
+
+* toString无法区分原始类型及其构造对象；
+    - 我们认为Number、Boolean这种类型在被构造器构造出来后的类型应该是`对象`；
+    - 但toString都会返回[object number]等原始类型；
+* toString方法是可以自定义的；
+
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200820190847236.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70#pic_center)
+
+
+## 五、实现几个数据检测的方法
+
+好了看了几款常用的类型判断方法后，我们可不可以实现自己的类型判断工具？就利用上述提到的一个或多个方法。我们自己动手丰衣足食～
+
+#### 5.1 isObject
+
+注意，我们认为null不是一个对象，它就是null～
+
+```js
+function isObject(value) {
+    const type = typeof value;
+    return value != null && (type === 'object' || type === 'function');
+}
+```
+
+#### 5.2 isNull
+
+```js
+function isNull(value) {
+    return value === null;
+}
+```
+
+#### 5.3 isFunction
+
+```js
+function isFunction(value) {
+    return typeof value === 'function';
+}
+```
+
+#### 5.4 isArray
+
+```js
+var isArray = Array.isArray || function( value ) {
+    return type(value) === "array";
+}
+```
+
+#### 5.5 stringTag
+
+```js
+const toString = Object.prototype.toString;
+
+function getTag(value) {
+    // if (value === null) return '[object Null]';
+    // if (value == null) return '[object Undefined]'
+    if (value == null) {
+        return value === undefined ? '[object Undefined]' : '[object Null]'
+    }
+    return toString.call(value)
+}
+```
+
+好了到最后，大家平时对类型检测的态度是什么样的呢？
+
+## 写在最后
+
+**JavaScript系列：**
+
+1. [《JavaScript内功进阶系列》（已完结）](https://blog.csdn.net/jbj6568839z/article/details/103161970)
+2. [《JavaScript专项系列》（持续更新）](https://blog.csdn.net/jbj6568839z/category_10204368.html)
+
+**关于我**
+
+* 花名：余光（沉迷JS，虚心学习中）
+* WX：j565017805
+
+**其他沉淀**
+
+* [Js版LeetCode题解](https://webbj97.github.io/leetCode-Js/)
+* [前端进阶笔记](https://webbj97.github.io/summary/)
+* [我的CSDN博客](https://yuguang.blog.csdn.net/)
+
+如果您看到了最后，对文章有任何建议，都可以在评论区留言
+
+这是[文章所在GitHub仓库的传送门](https://github.com/webbj97/summary)，如果真的对您有所帮助，希望可以点个star，这是对我最大的鼓励 ～
+
+<p align=center>
+	<img src="https://img-blog.csdnimg.cn/20200602155947301.png" width="60%"/>
+</p>
