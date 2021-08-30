@@ -10,6 +10,7 @@ export default defineUserConfig < DefaultThemeOptions > ({
     ],
     plugins: [
         '@vuepress/back-to-top',
+        'vuepress-plugin-code-copy'
     ],
     themeConfig: {
         navbar: [
@@ -79,20 +80,19 @@ export default defineUserConfig < DefaultThemeOptions > ({
                         '/blog/es6/11',
                     ]
                 },
-                // {
-                //     title: '设计模式', // 必要的
-                //     collapsable: true, // 可选的, 默认值是 true,
-                //     sidebarDepth: 2, // 可选的, 默认值是 1
-                //     children: [
-                //         '/blog/js-sjms/1',
-                //         '/blog/js-sjms/2',
-                //         '/blog/js-sjms/3',
-                //         '/blog/js-sjms/4',
-                //         '/blog/js-sjms/5',
-                //         '/blog/js-sjms/6',
-                //     ]
-                // },
-
+                {
+                    title: '设计模式', // 必要的
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2, // 可选的, 默认值是 1
+                    children: [
+                        '/blog/js-sjms/1',
+                        '/blog/js-sjms/2',
+                        '/blog/js-sjms/3',
+                        '/blog/js-sjms/4',
+                        '/blog/js-sjms/5',
+                        '/blog/js-sjms/6',
+                    ]
+                },
                 // {
                 //     title: 'Vue', // 必要的
                 //     collapsable: true, // 可选的, 默认值是 true,

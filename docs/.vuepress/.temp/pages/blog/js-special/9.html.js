@@ -39,12 +39,12 @@ export const data = {
   ],
   "filePathRelative": "blog/js-special/9.md",
   "git": {
-    "updatedTime": 1606181425000,
+    "updatedTime": 1630052908000,
     "contributors": [
       {
         "name": "yuguang",
         "email": "yuguang@gaoding.com",
-        "commits": 3
+        "commits": 4
       }
     ]
   }

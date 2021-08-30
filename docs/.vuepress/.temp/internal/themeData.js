@@ -78,6 +78,19 @@ export const themeData = {
           "/blog/es6/7",
           "/blog/es6/11"
         ]
+      },
+      {
+        "title": "设计模式",
+        "collapsable": true,
+        "sidebarDepth": 2,
+        "children": [
+          "/blog/js-sjms/1",
+          "/blog/js-sjms/2",
+          "/blog/js-sjms/3",
+          "/blog/js-sjms/4",
+          "/blog/js-sjms/5",
+          "/blog/js-sjms/6"
+        ]
       }
     ]
   },

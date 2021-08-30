@@ -52,12 +52,12 @@ export const data = {
   ],
   "filePathRelative": "css/code/2.md",
   "git": {
-    "updatedTime": 1628247495000,
+    "updatedTime": 1630052908000,
     "contributors": [
       {
         "name": "yuguang",
         "email": "yuguang@gaoding.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

@@ -71,8 +71,14 @@ export const data = {
   ],
   "filePathRelative": "blog/typescript/basic-3.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1630052908000,
+    "contributors": [
+      {
+        "name": "yuguang",
+        "email": "yuguang@gaoding.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

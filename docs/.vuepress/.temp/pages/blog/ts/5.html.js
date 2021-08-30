@@ -65,12 +65,12 @@ export const data = {
   ],
   "filePathRelative": "blog/ts/5.md",
   "git": {
-    "updatedTime": 1628420813000,
+    "updatedTime": 1630052908000,
     "contributors": [
       {
         "name": "yuguang",
         "email": "yuguang@gaoding.com",
-        "commits": 2
+        "commits": 3
       }
     ]
   }

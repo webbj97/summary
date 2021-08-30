@@ -8,8 +8,14 @@ export const data = {
   "headers": [],
   "filePathRelative": "blog/typescript/README.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1630052908000,
+    "contributors": [
+      {
+        "name": "yuguang",
+        "email": "yuguang@gaoding.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

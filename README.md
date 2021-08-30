@@ -23,29 +23,28 @@
 
 本系列的内容偏向Js基础知识，但是无论是平时工作还是面试加薪，你都无法忽视它们。全系列预计10-15篇文章，欢迎大家指正，虚心学习提高
 
-1. [一篇搞懂this指向问题](https://webbj97.github.io/summary/blog/js-basics/1.html)
-2. [从原型到原型链](https://webbj97.github.io/summary/blog/js-basics/2.html)
-3. [词法作用域和动态作用域](https://webbj97.github.io/summary/blog/js-basics/3.html)
-4. [执行上下文](https://webbj97.github.io/summary/blog/js-basics/4.html)
-5. [深入变量对象](https://webbj97.github.io/summary/blog/js-basics/5.html)
-6. [立即执行函数](https://webbj97.github.io/summary/blog/js-basics/6.html)
-7. [看透闭包](https://webbj97.github.io/summary/blog/js-basics/7.html)
-8. [函数参数传递](https://webbj97.github.io/summary/blog/js-basics/8.html)
-9. [基本数据类型](https://webbj97.github.io/summary/blog/js-basics/9.html)
-10. [你真的了解Js吗](https://webbj97.github.io/summary/blog/js-basics/10.html)
-
+1. [一篇搞懂this指向问题](https://webbj97.github.io/summary/blog/javascript/basic-1.html)
+2. [从原型到原型链](https://webbj97.github.io/summary/blog/javascript/2.html)
+3. [词法作用域和动态作用域](https://webbj97.github.io/summary/blog/javascript/3.html)
+4. [执行上下文](https://webbj97.github.io/summary/blog/javascript/4.html)
+5. [深入变量对象](https://webbj97.github.io/summary/blog/javascript/5.html)
+6. [立即执行函数](https://webbj97.github.io/summary/blog/javascript/6.html)
+7. [看透闭包](https://webbj97.github.io/summary/blog/javascript/7.html)
+8. [函数参数传递](https://webbj97.github.io/summary/blog/javascript/8.html)
+9. [基本数据类型](https://webbj97.github.io/summary/blog/javascript/9.html)
+10. [你真的了解Js吗](https://webbj97.github.io/summary/blog/javascript/10.html)
 
 ## JavaScript专项进阶系列
 
-1. [变量与函数提升](https://webbj97.github.io/summary/blog/js-special/1.html)
-2. [数组去重](https://webbj97.github.io/summary/blog/js-special/2.html)
-3. [防抖专题](https://webbj97.github.io/summary/blog/js-special/3.html)
-4. [节流专题](https://webbj97.github.io/summary/blog/js-special/4.html)
-5. [深浅拷贝](https://webbj97.github.io/summary/blog/js-special/5.html)
-6. [数据类型检测](https://webbj97.github.io/summary/blog/js-special/6.html)
-7. [类型转换](https://webbj97.github.io/summary/blog/js-special/7.html)
-8. [数组扁平化](https://webbj97.github.io/summary/blog/js-special/8.html)
-9. [数组中查找指定元素](https://webbj97.github.io/summary/blog/js-special/9.html)
+1. [变量与函数提升](https://webbj97.github.io/summary/blog/javascript/senior-1.html)
+2. [数组去重](https://webbj97.github.io/summary/blog/javascript/senior-2.html)
+3. [防抖专题](https://webbj97.github.io/summary/blog/javascript/senior-3.html)
+4. [节流专题](https://webbj97.github.io/summary/blog/javascript/senior-4.html)
+5. [深浅拷贝](https://webbj97.github.io/summary/blog/javascript/senior-5.html)
+6. [数据类型检测](https://webbj97.github.io/summary/blog/javascript/senior-6.html)
+7. [类型转换](https://webbj97.github.io/summary/blog/javascript/senior-7.html)
+8. [数组扁平化](https://webbj97.github.io/summary/blog/javascript/senior-8.html)
+9. [数组中查找指定元素](https://webbj97.github.io/summary/blog/javascript/senior-9.html)
 10. 持续更新中...
 
 ## ES6基础进阶篇

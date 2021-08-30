@@ -15,12 +15,12 @@ export const data = {
   ],
   "filePathRelative": "blog/js-basics/2.md",
   "git": {
-    "updatedTime": 1604659479000,
+    "updatedTime": 1630052908000,
     "contributors": [
       {
         "name": "yuguang",
         "email": "yuguang@gaoding.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }
