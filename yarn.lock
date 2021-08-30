@@ -7160,11 +7160,6 @@ vue@^3.2.3:
     "@vue/runtime-dom" "3.2.6"
     "@vue/shared" "3.2.6"
 
-vuepress-plugin-code-copy@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npm.taobao.org/vuepress-plugin-code-copy/download/vuepress-plugin-code-copy-1.0.6.tgz#6431dab764b48b5b203e4936d98b1943651ce4ad"
-  integrity sha1-ZDHat2S0i1sgPkk22YsZQ2Uc5K0=
-
 vuepress@^2.0.0-beta.25:
   version "2.0.0-beta.25"
   resolved "https://registry.nlark.com/vuepress/download/vuepress-2.0.0-beta.25.tgz#a99e84c4de019f48901c9837ac57d492ddc1a968"
@@ -7419,9 +7414,9 @@ write-file-atomic@^3.0.0:
     typedarray-to-buffer "^3.1.5"
 
 ws@^7.2.3:
-  version "7.4.2"
-  resolved "https://registry.npm.taobao.org/ws/download/ws-7.4.2.tgz?cache=0&sync_timestamp=1609271318119&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fws%2Fdownload%2Fws-7.4.2.tgz#782100048e54eb36fe9843363ab1c68672b261dd"
-  integrity sha1-eCEABI5U6zb+mEM2OrHGhnKyYd0=
+  version "7.5.4"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.4.tgz#56bfa20b167427e138a7795de68d134fe92e21f9"
+  integrity sha512-zP9z6GXm6zC27YtspwH99T3qTG7bBFv2VIkeHstMLrLlDJuzA7tQ5ls3OJ1hOGGCzTQPniNJoHXIAOS0Jljohg==
 
 ws@^8.1.0:
   version "8.2.1"
