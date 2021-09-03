@@ -24,7 +24,7 @@
     "vuepress": "^1.8.2"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
     "driver.js": "^0.9.8",
     "node-fetch": "^2.6.1",
