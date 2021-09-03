@@ -21,7 +21,7 @@
     "@vuepress/shared-utils": "^1.8.2",
     "gh-pages": "^2.1.1",
     "jest": "^26.6.3",
-    "vuepress": "^2.0.0-beta.25"
+    "vuepress": "^1.8.2"
   },
   "dependencies": {
     "axios": "^0.19.2",

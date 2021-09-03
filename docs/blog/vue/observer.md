@@ -10,7 +10,7 @@
 
 大胆的一句话概括：视图因为它依赖的数据的变化二变化，即：
 
-<font color="red">UI = render(state)</font>
+`UI = render(state)`
 
 * state(状态)：输入数据
 * UI(页面)：输出视图

@@ -85,7 +85,7 @@ getData()
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210601170116422.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70)
 
-<font color=red>注意</font>
+* 注意
 
 经常浏览排行榜的小伙伴可能意识到了，出于性能和体验的考虑，只有用户划到页面底部，才会更新排行榜单后续的内容，每次新增25条。所以我们也想一个真正的用户一样，让代码帮我们阅读好啦～
 
