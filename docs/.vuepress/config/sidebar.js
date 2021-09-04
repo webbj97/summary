@@ -1,6 +1,7 @@
 module.exports = {
     '/blog/': [{
-            text: 'JavaScript基础', // 必要的
+            title: 'JavaScript基础', // 必要的
+            sidebarDepth: 1,
             children: [
                 '/blog/javascript/basic-1',
                 '/blog/javascript/basic-2',
@@ -16,7 +17,7 @@ module.exports = {
             ]
         },
         {
-            text: 'JavaScript进阶', // 必要的
+            title: 'JavaScript进阶', // 必要的
             children: [
                 '/blog/javascript/senior-1',
                 '/blog/javascript/senior-2',
@@ -30,7 +31,7 @@ module.exports = {
             ]
         },
         {
-            text: 'TypeScript基础', // 必要的
+            title: 'TypeScript基础', // 必要的
             children: [
                 '/blog/typescript/basic-1',
                 '/blog/typescript/basic-2',
@@ -41,7 +42,7 @@ module.exports = {
             ]
         },
         {
-            text: 'ES6', // 必要的
+            title: 'ES6', // 必要的
             children: [
                 '/blog/es6/1',
                 '/blog/es6/2',
@@ -54,7 +55,7 @@ module.exports = {
             ]
         },
         {
-            text: '设计模式', // 必要的
+            title: '设计模式', // 必要的
             children: [
                 '/blog/js-sjms/1',
                 '/blog/js-sjms/2',
@@ -104,4 +105,18 @@ module.exports = {
         //     ]
         // },
     ],
+    '/css/': [{
+        title: 'Css基础', // 必要的
+        sidebarDepth: 2,
+        children: [
+            '/css/basic/1',
+            '/css/basic/2',
+            '/css/basic/3',
+            '/css/basic/4',
+            '/css/basic/5',
+            '/css/basic/6',
+            '/css/basic/7',
+            '/css/basic/8',
+        ]
+    }, ]
 }
