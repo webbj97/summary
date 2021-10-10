@@ -1,10 +1,3 @@
-<!--
- * @desc:
- * @Author: 余光
- * @Email: webbj97@163.com
- * @Date: 2019-11-19 11:13:07
--->
-
 <h1 align=center>
     <img src="https://hlgcdn.oss-cn-hangzhou.aliyuncs.com/hlg-ui/1597299044012458/Js.jpg"/>
 </h1>
