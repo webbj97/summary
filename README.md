@@ -33,8 +33,9 @@
 8. [函数参数传递](https://webbj97.github.io/summary/blog/javascript/8.html)
 9. [基本数据类型](https://webbj97.github.io/summary/blog/javascript/9.html)
 10. [你真的了解Js吗](https://webbj97.github.io/summary/blog/javascript/10.html)
+11. [正则表达式入门]((https://webbj97.github.io/summary/blog/javascript/11.html))
 
-## JavaScript专项进阶系列
+## JavaScript专项进阶系列（完结）
 
 1. [变量与函数提升](https://webbj97.github.io/summary/blog/javascript/senior-1.html)
 2. [数组去重](https://webbj97.github.io/summary/blog/javascript/senior-2.html)
@@ -45,7 +46,6 @@
 7. [类型转换](https://webbj97.github.io/summary/blog/javascript/senior-7.html)
 8. [数组扁平化](https://webbj97.github.io/summary/blog/javascript/senior-8.html)
 9. [数组中查找指定元素](https://webbj97.github.io/summary/blog/javascript/senior-9.html)
-10. 持续更新中...
 
 ## ES6基础进阶篇
 
@@ -70,6 +70,8 @@
 
 * [leetCode题解](https://webbj97.github.io/leetCode-Js/)
 * [有趣的CSS](https://webbj97.github.io/Interesting-CSS/)
+* [剑指Offer](https://webbj97.github.io/fe-questions/algorithm/)
+* [手撕代码](https://webbj97.github.io/fe-questions/warehouse/js/1.html)
 
 余光的前端进阶笔记持续更新，希望大家一起见证。
 
