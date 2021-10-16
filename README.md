@@ -40,7 +40,7 @@
 8. [数组扁平化](https://webbj97.github.io/summary/blog/javascript/senior-8.html)
 9. [数组中查找指定元素](https://webbj97.github.io/summary/blog/javascript/senior-9.html)
 
-## ES6基础进阶篇
+## ES6进阶篇（50%）
 
 1. [let和const](https://webbj97.github.io/summary/blog/es6/1.html)
 2. [变量的解构赋值](https://webbj97.github.io/summary/blog/es6/2.html)
@@ -49,7 +49,7 @@
 5. [set](https://webbj97.github.io/summary/blog/es6/5.html)
 6. 持续更新中...
 
-## CSS基础
+## CSS基础（50%）
 
 1. [选择器的权重与优先级](https://webbj97.github.io/summary/css/code/1.html)
 2. [简述 CSS 盒模型](https://webbj97.github.io/summary/css/code/2.html)
@@ -59,12 +59,13 @@
 6. [CSS弹性盒子](https://webbj97.github.io/summary/css/code/6.html)
 7. 持续更新中...
 
+
+## Vue系列（待开始）
 ## 其他沉淀
 
-* [leetCode题解](https://webbj97.github.io/leetCode-Js/)
-* [有趣的CSS](https://webbj97.github.io/Interesting-CSS/)
-* [剑指Offer](https://webbj97.github.io/fe-questions/algorithm/)
-* [手撕代码](https://webbj97.github.io/fe-questions/warehouse/js/1.html)
+* [经典面试手撕代码](https://github.com/webbj97/fe-questions)
+* [剑指Offer](https://github.com/webbj97/fe-questions/tree/master/docs/algorithm)
+* [leetCode全题解](https://webbj97.github.io/leetCode-Js/)
 
 余光的前端进阶笔记持续更新，希望大家一起见证。
 
