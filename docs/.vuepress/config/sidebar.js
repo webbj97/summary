@@ -3,31 +3,31 @@ module.exports = {
             title: 'JavaScript基础', // 必要的
             sidebarDepth: 1,
             children: [
-                '/blog/javascript/basic-1',
-                '/blog/javascript/basic-2',
-                '/blog/javascript/basic-3',
-                '/blog/javascript/basic-4',
-                '/blog/javascript/basic-5',
-                '/blog/javascript/basic-6',
-                '/blog/javascript/basic-7',
-                '/blog/javascript/basic-8',
-                '/blog/javascript/basic-9',
-                '/blog/javascript/basic-10',
-                '/blog/javascript/basic-11',
+                '/blog/javascript-basic/1',
+                '/blog/javascript-basic/2',
+                '/blog/javascript-basic/3',
+                '/blog/javascript-basic/4',
+                '/blog/javascript-basic/5',
+                '/blog/javascript-basic/6',
+                '/blog/javascript-basic/7',
+                '/blog/javascript-basic/8',
+                '/blog/javascript-basic/9',
+                '/blog/javascript-basic/10',
+                '/blog/javascript-basic/11',
             ]
         },
         {
             title: 'JavaScript进阶', // 必要的
             children: [
-                '/blog/javascript/senior-1',
-                '/blog/javascript/senior-2',
-                '/blog/javascript/senior-3',
-                '/blog/javascript/senior-4',
-                '/blog/javascript/senior-5',
-                '/blog/javascript/senior-6',
-                '/blog/javascript/senior-7',
-                '/blog/javascript/senior-8',
-                '/blog/javascript/senior-9',
+                '/blog/javascript-senior/1',
+                '/blog/javascript-senior/2',
+                '/blog/javascript-senior/3',
+                '/blog/javascript-senior/4',
+                '/blog/javascript-senior/5',
+                '/blog/javascript-senior/6',
+                '/blog/javascript-senior/7',
+                '/blog/javascript-senior/8',
+                '/blog/javascript-senior/9',
             ]
         },
         {
@@ -52,6 +52,17 @@ module.exports = {
                 '/blog/es6/6',
                 '/blog/es6/7',
                 '/blog/es6/11',
+            ]
+        },
+        {
+            title: 'CSS', // 必要的
+            children: [
+                '/blog/css/1',
+                '/blog/css/2',
+                '/blog/css/3',
+                '/blog/css/4',
+                '/blog/css/5',
+                '/blog/css/6',
             ]
         },
         {

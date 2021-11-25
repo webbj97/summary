@@ -1,7 +1,8 @@
 module.exports = {
-    title: '余光的前端成长笔记',
+    title: 'Hi 余光',
     description: '在这里一定有能帮助你成长的文章',
     base: '/summary/', // github仓库名
+    theme: 'antdocs', // 接入ant主题
     head: [
         ['link', { rel: 'icon', href: `/favicon.ico` }]
     ],
