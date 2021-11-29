@@ -1,6 +1,7 @@
 <template>
     <div class="home-page">
         <div class="home-page__title">Hi 我是余光</div>
+        <p class="home-page__desc">欢迎来到余光的前端进阶指南</p>
         <div class="home-page__btns">
             <a-button
                 type="link"
@@ -55,9 +56,28 @@ export default {
     &__title
         font-weight: 500
         font-size: 30px
+    &__desc
+        font-size: 18px
+        margin-top: 15px
         margin-bottom: 40px
     &__btns
         width: 300px
+        font-size: 16px
         display: flex
         justify-content: space-around
+        animation: opacity 2s
+        animation-iteration-count: infinite
+        transition: all .4s
+        .btn
+            cursor: pointer
+            &:hover
+                font-size: 20px
+                text-shadow: 3px 3px 3px #ccc
+    @keyframes opacity
+        0%
+            opacity: 1
+        50%
+            opacity: 0.5 
+        100%
+            opacity: 1  
 </style>
