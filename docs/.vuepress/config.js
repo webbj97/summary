@@ -22,7 +22,7 @@ module.exports = {
         ads:{
             style: 1, 
             image: '/summary/1.jpg',
-            text: '前端经典 \n《手撕代码合集》《剑指OfferJs版》都在这里',
+            text: '前端经典 \n《手撕代码合集》《剑指OfferJs版》《CSS实现》都在这里',
             link: 'https://webbj97.github.io/fe-questions/',
           },
     }
