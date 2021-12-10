@@ -16,29 +16,29 @@
 
 本系列的内容偏向Js基础知识，但是无论是平时工作还是面试加薪，你都无法忽视它们。全系列预计10-15篇文章，欢迎大家指正，虚心学习提高
 
-1. [一篇搞懂this指向问题](https://webbj97.github.io/summary/blog/javascript/basic-1.html)
-2. [从原型到原型链](https://webbj97.github.io/summary/blog/javascript/2.html)
-3. [词法作用域和动态作用域](https://webbj97.github.io/summary/blog/javascript/3.html)
-4. [执行上下文](https://webbj97.github.io/summary/blog/javascript/4.html)
-5. [深入变量对象](https://webbj97.github.io/summary/blog/javascript/5.html)
-6. [立即执行函数](https://webbj97.github.io/summary/blog/javascript/6.html)
-7. [看透闭包](https://webbj97.github.io/summary/blog/javascript/7.html)
-8. [函数参数传递](https://webbj97.github.io/summary/blog/javascript/8.html)
-9. [基本数据类型](https://webbj97.github.io/summary/blog/javascript/9.html)
-10. [你真的了解Js吗](https://webbj97.github.io/summary/blog/javascript/10.html)
-11. [正则表达式入门]((https://webbj97.github.io/summary/blog/javascript/11.html))
+1. [一篇搞懂this指向问题](https://webbj97.github.io/summary/blog/javascript-basic/1.html)
+2. [从原型到原型链](https://webbj97.github.io/summary/blog/javascript-basic/2.html)
+3. [词法作用域和动态作用域](https://webbj97.github.io/summary/blog/javascript-basic/3.html)
+4. [执行上下文](https://webbj97.github.io/summary/blog/javascript-basic/4.html)
+5. [深入变量对象](https://webbj97.github.io/summary/blog/javascript-basic/5.html)
+6. [立即执行函数](https://webbj97.github.io/summary/blog/javascript-basic/6.html)
+7. [看透闭包](https://webbj97.github.io/summary/blog/javascript-basic/7.html)
+8. [函数参数传递](https://webbj97.github.io/summary/blog/javascript-basic/8.html)
+9.  [基本数据类型](https://webbj97.github.io/summary/blog/javascript-basic/9.html)
+10. [你真的了解Js吗](https://webbj97.github.io/summary/blog/javascript-basic/10.html)
+11. [正则表达式入门]((https://webbj97.github.io/summary/blog/javascript-basic/11.html))
 
 ## JavaScript专项进阶系列（完结）
 
-1. [变量与函数提升](https://webbj97.github.io/summary/blog/javascript/senior-1.html)
-2. [数组去重](https://webbj97.github.io/summary/blog/javascript/senior-2.html)
-3. [防抖专题](https://webbj97.github.io/summary/blog/javascript/senior-3.html)
-4. [节流专题](https://webbj97.github.io/summary/blog/javascript/senior-4.html)
-5. [深浅拷贝](https://webbj97.github.io/summary/blog/javascript/senior-5.html)
-6. [数据类型检测](https://webbj97.github.io/summary/blog/javascript/senior-6.html)
-7. [类型转换](https://webbj97.github.io/summary/blog/javascript/senior-7.html)
-8. [数组扁平化](https://webbj97.github.io/summary/blog/javascript/senior-8.html)
-9. [数组中查找指定元素](https://webbj97.github.io/summary/blog/javascript/senior-9.html)
+1. [变量与函数提升](https://webbj97.github.io/summary/blog/javascript-senior/1.html)
+2. [数组去重](https://webbj97.github.io/summary/blog/javascript-senior/2.html)
+3. [防抖专题](https://webbj97.github.io/summary/blog/javascript-senior/3.html)
+4. [节流专题](https://webbj97.github.io/summary/blog/javascript-senior/4.html)
+5. [深浅拷贝](https://webbj97.github.io/summary/blog/javascript-senior/5.html)
+6. [数据类型检测](https://webbj97.github.io/summary/blog/javascript-senior/6.html)
+7. [类型转换](https://webbj97.github.io/summary/blog/javascript-senior/7.html)
+8. [数组扁平化](https://webbj97.github.io/summary/blog/javascript-senior/8.html)
+9. [数组中查找指定元素](https://webbj97.github.io/summary/blog/javascript-senior/9.html)
 
 ## ES6进阶篇（50%）
 
@@ -51,12 +51,12 @@
 
 ## CSS基础（50%）
 
-1. [选择器的权重与优先级](https://webbj97.github.io/summary/css/code/1.html)
-2. [简述 CSS 盒模型](https://webbj97.github.io/summary/css/code/2.html)
-3. [浅谈position](https://webbj97.github.io/summary/css/code/3.html)
-4. [CSS的上下文之BFC](https://webbj97.github.io/summary/css/code/4.html)
-5. [CSS的上下文之层叠上下文](https://webbj97.github.io/summary/css/code/5.html)
-6. [CSS弹性盒子](https://webbj97.github.io/summary/css/code/6.html)
+1. [选择器的权重与优先级](https://webbj97.github.io/summary/blog/css/1.html)
+2. [简述 CSS 盒模型](https://webbj97.github.io/summary/blog/css/2.html)
+3. [浅谈position](https://webbj97.github.io/summary/blog/css/3.html)
+4. [CSS的上下文之BFC](https://webbj97.github.io/summary/blog/css/4.html)
+5. [CSS的上下文之层叠上下文](https://webbj97.github.io/summary/blog/css/5.html)
+6. [CSS弹性盒子](https://webbj97.github.io/summary/blog/css/6.html)
 7. 持续更新中...
 
 
@@ -65,6 +65,7 @@
 
 * [经典面试手撕代码](https://github.com/webbj97/fe-questions)
 * [剑指Offer](https://github.com/webbj97/fe-questions/tree/master/docs/algorithm)
+* [经典手撕题库](https://github.com/webbj97/fe-questions)
 * [leetCode全题解](https://webbj97.github.io/leetCode-Js/)
 
 余光的前端进阶笔记持续更新，希望大家一起见证。
@@ -78,6 +79,3 @@
 <h1 align=center>
     <img src="https://hlgcdn.oss-cn-hangzhou.aliyuncs.com/hlg-ui/1607504321645897/yuguang-vue-bottom.gif"/>
 </h1>
-
-
-
