@@ -66,6 +66,12 @@ module.exports = {
             ]
         },
         {
+            title: '手撕代码系列',
+            children: [
+                '/blog/handwork/array/1',
+            ],
+        },
+        {
             title: '设计模式', // 必要的
             children: [
                 '/blog/js-sjms/1',
