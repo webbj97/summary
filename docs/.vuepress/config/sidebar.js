@@ -68,7 +68,8 @@ module.exports = {
         {
             title: '手撕代码系列',
             children: [
-                '/blog/handwork/array/1',
+                '/blog/handwork/1',
+                '/blog/handwork/2',
             ],
         },
         {
