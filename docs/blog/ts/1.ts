@@ -1,13 +1,6 @@
-const arr = [
-    [1, 2],
-    [1, 3],
-    [0, 1],
-];
-
-const newArr = new Array(arr.length).fill([])
-for (const [index, val] of arr) {
-    newArr[index] = [...newArr[index], val];
+function getName(obj: { name: string; age?: number }): void {
+    console.log(obj.name);
+    console.log(obj.age);
 }
 
-console.log(newArr);
-// [ [ 1 ], [ 2, 3 ], [] ]
+getName({ name: "余光" });
