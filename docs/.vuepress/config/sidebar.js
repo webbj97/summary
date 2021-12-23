@@ -30,17 +30,17 @@ module.exports = {
                 '/blog/javascript-senior/9',
             ]
         },
-        {
-            title: 'TypeScript基础', // 必要的
-            children: [
-                '/blog/typescript/basic-1',
-                '/blog/typescript/basic-2',
-                '/blog/typescript/basic-3',
-                '/blog/typescript/basic-4',
-                '/blog/typescript/5',
-                '/blog/typescript/6',
-            ]
-        },
+        // {
+        //     title: 'TypeScript基础', // 必要的
+        //     children: [
+        //         '/blog/ts/1',
+        //         '/blog/typescript/basic-2',
+        //         '/blog/typescript/basic-3',
+        //         '/blog/typescript/basic-4',
+        //         '/blog/typescript/5',
+        //         '/blog/typescript/6',
+        //     ]
+        // },
         {
             title: 'ES6', // 必要的
             children: [

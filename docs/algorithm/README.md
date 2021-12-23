@@ -34,19 +34,18 @@
 
 于是就有了《算法|进阶》部分，尽自己的努力整理 LeetCode 题解 Js 版本，如果该项目能对大家起到积极的作用，就算成功了，欢迎大家留言交流，接受批评和指正～
 
-**记录：**
-
-- 2020.04.22 — LeetCode 题解达到 100
-- 2020.12.16 - LeetCode 题解链接迁移至《余光的前端进阶》
-
 ## 关于我
 
-- **decs：** 19 年毕业的前端开发一枚，沉迷 Js
 - **E-mail：** webbj97@163.com
 - **个人博客：** [CSDN](https://blog.csdn.net/jbj6568839z)
 - **GitHub：** [传送门](https://github.com/webbj97)
-- [leetCode 题解](https://webbj97.github.io/leetCode-Js/)
-- [有趣的 CSS](https://webbj97.github.io/Interesting-CSS/)
+
+## 其他沉淀
+
+* [余光的前端成长指南](https://github.com/webbj97/summary)
+* [余光手写代码系列](https://github.com/webbj97/fe-questions)
+* [LeetCodeJs题解](https://webbj97.github.io/leetCode-Js)
+* [有趣的CSS交互](https://webbj97.github.io/Interesting-CSS/)
 
 ## LeetCode 题解传送门
 
