@@ -1,5 +1,16 @@
 module.exports = {
-    '/blog/': [{
+    '/blog/': [
+        {
+            title: 'TypeScript基础', // 必要的
+            children: [
+                '/blog/ts/1',
+                // '/blog/typescript/basic-2',
+                // '/blog/typescript/basic-3',
+                // '/blog/typescript/basic-4',
+                // '/blog/typescript/5',
+                // '/blog/typescript/6',
+            ]
+        },{
             title: 'JavaScript基础', // 必要的
             sidebarDepth: 1,
             children: [
@@ -30,17 +41,6 @@ module.exports = {
                 '/blog/javascript-senior/9',
             ]
         },
-        // {
-        //     title: 'TypeScript基础', // 必要的
-        //     children: [
-        //         '/blog/ts/1',
-        //         '/blog/typescript/basic-2',
-        //         '/blog/typescript/basic-3',
-        //         '/blog/typescript/basic-4',
-        //         '/blog/typescript/5',
-        //         '/blog/typescript/6',
-        //     ]
-        // },
         {
             title: 'ES6', // 必要的
             children: [

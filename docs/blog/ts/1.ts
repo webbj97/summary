@@ -1,6 +1,2 @@
-function getName(obj: { name: string; age?: number }): void {
-    console.log(obj.name);
-    console.log(obj.age);
-}
-
-getName({ name: "余光" });
+type hasLen = string | number[]; // isNumber就是新名字，他可能语义话
+const arr: hasLen = [1];
