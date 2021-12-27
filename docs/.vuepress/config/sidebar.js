@@ -4,6 +4,7 @@ module.exports = {
             title: 'TypeScript基础', // 必要的
             children: [
                 '/blog/ts/1',
+                '/blog/ts/2',
                 // '/blog/typescript/basic-2',
                 // '/blog/typescript/basic-3',
                 // '/blog/typescript/basic-4',
