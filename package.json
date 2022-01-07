@@ -27,6 +27,7 @@
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
     "driver.js": "^0.9.8",
+    "ffmpeg": "0.0.4",
     "node-fetch": "^2.6.1",
     "node-xlsx": "^0.15.0",
     "sass": "^1.45.1",
