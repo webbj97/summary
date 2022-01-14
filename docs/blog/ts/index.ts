@@ -1,9 +1,6 @@
-function fn(x: string | number) {
-    if (typeof x === "string") {
-        // do something
-    } else if (typeof x === "number") {
-        // do something else
-    } else {
-        x; // has type 'never'!
-    }
+interface StringArray {
+    [index: number]: string;
 }
+
+const myArray: StringArray = getStringArray();
+const secondItem = myArray[1]; // const secondItem: string
