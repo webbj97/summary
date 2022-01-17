@@ -5,6 +5,10 @@ module.exports = {
             children: [
                 '/blog/ts/1',
                 '/blog/ts/2',
+                '/blog/ts/3',
+                '/blog/ts/4',
+                // '/blog/typescript/basic-2',
+                // '/blog/typescript/basic-2',
                 // '/blog/typescript/basic-2',
                 // '/blog/typescript/basic-3',
                 // '/blog/typescript/basic-4',
