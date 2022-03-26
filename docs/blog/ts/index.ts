@@ -1,30 +1,8 @@
-function create<Type>(c: { new (): Type }): Type {
-    return new c();
-}
+const NumericObject = {
+    [1]: "冴羽一号",
+    [2]: "冴羽二号",
+    [3]: "冴羽三号",
+};
 
-class BeeKeeper {
-    hasMask: boolean = true;
-}
+type res = keyof typeof NumericObject;
 
-class ZooKeeper {
-    nametag: string = "Mikle";
-}
-
-class Animal {
-    numLegs: number = 4;
-}
-
-class Bee extends Animal {
-    keeper: BeeKeeper = new BeeKeeper();
-}
-
-class Lion extends Animal {
-    keeper: ZooKeeper = new ZooKeeper();
-}
-
-function createInstance<A extends Animal>(c: new () => A): A {
-    return new c();
-}
-
-createInstance(Lion).keeper.nametag;
-createInstance(Bee).keeper.hasMask;
