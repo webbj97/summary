@@ -3,7 +3,23 @@ module.exports = {
     description: "在这里一定有能帮助你成长的文章",
     base: "/summary/", // github仓库名
     theme: "antdocs", // 接入ant主题
-    head: [["link", { rel: "icon", href: `/favicon.ico` }]],
+    head: [
+        ["link", { rel: "icon", href: `/favicon.ico` }],
+        [
+            "script",
+            {},
+            `
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?bad0529633c615bdcfa53b745c7d094e";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>        
+        `,
+        ],
+    ],
     plugins: [
         ["@vuepress/back-to-top"],
         ["vuepress-plugin-code-copy"],
