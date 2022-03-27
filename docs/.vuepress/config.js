@@ -4,6 +4,10 @@ module.exports = {
     base: "/summary/", // github仓库名
     theme: "antdocs", // 接入ant主题
     head: [
+        [
+            "meta",
+            { name: "baidu-site-verification", content: "code-twwLA5OmQN" },
+        ],
         ["link", { rel: "icon", href: `/favicon.ico` }],
         [
             "script",
