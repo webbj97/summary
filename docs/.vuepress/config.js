@@ -37,6 +37,12 @@ module.exports = {
                 zIndex: 999999999, // z-index property of the canvas, default: 999999999
             },
         ],
+        [
+            "sitemap",
+            {
+                hostname: "https://webbj97.github.io/summary/",
+            },
+        ],
         // [
         //     "@vuepress-reco/vuepress-plugin-bulletin-popover",
         //     {
