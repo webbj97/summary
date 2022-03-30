@@ -1,39 +1,69 @@
-const platformProps = {
-    主要颜色: "黑色",
-    品牌: "慢闪",
-    图案: "字母",
-    图案文化: "青春",
-    尺码: "S,M,L,XL,2XL,3XL",
-    年份季节: "2020年夏季",
-    成分含量: "71%(含)-85%(含)",
-    服装版型: "宽松",
-    流行元素: "印花",
-    街头: "运动休闲",
-    衣长: "中长款",
-    袖型: "常规",
-    袖长: "短袖",
-    货号: "M-X0003",
-    面料: "棉",
-    领型: "圆领",
-}
+const { TestScheduler } = require("jest");
 
-const renderList = [{
-    options: [
-        { name: "渐变", value: "渐变" },
-        { name: "字母", value: "字母2" }
-    ],
-    property_id: 921642,
-    property_name: "图案",
-    required: false,
-    type: "select",
-}];
+var obj = {
+    202202211705: {
+        total: 1,
+        avg: 2,
+        max: 1,
+        success: 0,
+        failed: 0,
+    },
+    202202220505: {
+        total: 0,
+        avg: 10,
+        max: 11,
+        success: 0,
+        failed: 0,
+    },
+    202202221705: {
+        total: 0,
+        avg: 0.0,
+        max: 12,
+        success: 0,
+        failed: 0,
+    },
+    202202230505: {
+        total: 0,
+        avg: 23,
+        max: 23,
+        success: 0,
+        failed: 0,
+    },
+    202202231705: {
+        total: 0,
+        avg: 0.0,
+        max: 24,
+        success: 0,
+        failed: 0,
+    },
+};
 
-renderList.map(item => {
-    const propVal = platformProps[item.property_name];
-    const options = item.options;
-    const index = options.findIndex(p => p.value == propVal);
-    const valInPropValues = options[index]
-    if(valInPropValues){
-        item.value = options[index].value
-    }
-});
+const merge = (obj, len = 8) => {
+    return Object.entries(obj).reduce((map, [key, object]) => {
+        const _key = key.slice(0, len);
+        const cur = map[_key];
+        if (!cur) {
+            map[_key] = object;
+        } else {
+            Object.entries(object).forEach(([_key, val]) => {
+                const newKey = _key.slice(0, len);
+                cur[newKey] = cur[newKey] + val;
+            });
+        }
+        return map;
+    }, {});
+};
+
+// const test = (obj) => {
+//     let newObj = {};
+//     for (let key in obj) {
+//         if (key.slice(0, 7) in newObj) {
+//             let { max: max1 } = newObj;
+//             let { max } = obj[key];
+//             newObj[key.slice(0, 7)] = { max: max + max1 };
+//         } else {
+//             newObj[key] = obj[key];
+//         }
+//     }
+//     return newObj;
+// };

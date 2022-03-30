@@ -10,17 +10,29 @@
         <span id="wrapper"></span>
         <button id="btn" onclick="addData()">+1</button>
         <button id="btn" onclick="curData()">-1</button>
-        <button id="btn" onclick="toggleOk()">change</button>
+        <button id="btn" onclick="toggle()">切换</button>
         <div></div>
         <script>
-            const data = { index: 1 };
+            let activeEffect;
+            const data = { index: 1, ok: true };
             // “桶”改造
             const bucket = new WeakMap();
+            // 拦截代理
+            const objP = new Proxy(data, {
+                get(target, key) {
+                    // 将副作用函数添加进关系中
+                    track(target, key);
+                    return target[key];
+                },
+                set(target, key, newVal) {
+                    target[key] = newVal;
+                    trigger(target, key);
+                },
+            });
 
-            // 改造3 - 响应函数
-            let activeEffect;
             function effect(fn) {
                 const effectFn = () => {
+                    // 清除旧关系
                     cleanup(effectFn);
                     activeEffect = effectFn;
                     fn();
@@ -45,19 +57,19 @@
                 if (!activeEffect) return;
                 // 获取响应对象内部的响应关系
                 let dependMap = bucket.get(target);
-                if (!dependMap) {
-                    bucket.set(target, dependMap);
+                if (!bucket.get(target)) {
+                    // 没有值，则初始化
+                    bucket.set(target, (dependMap = new Map()));
                 }
-                // 获取对应属性的响应函数列表
-                // 存储着与key有关联的响应函数
+
+                // 获取对应属性的响应函数列表，存储着与key有关联的响应函数
                 let deps = dependMap[key];
                 if (!deps) {
-                    dependMap.set(key, deps);
+                    dependMap.set(key, (deps = new Set()));
                 }
 
                 // 添加响应函数
                 deps.add(activeEffect);
-                console.log("dependMap:", dependMap);
                 // 将当前副作用函数的依赖集合
                 activeEffect.deps.push(deps);
             }
@@ -71,42 +83,32 @@
                 console.log("响应:");
                 deps && deps.forEach((f) => f());
             }
-            // 改造1 - 拦截代理
-            const objP = new Proxy(data, {
-                get(target, key) {
-                    // 将副作用函数添加进关系中
-                    track(target, key);
-                    return target[key];
-                },
-                set(target, key, newVal) {
-                    target[key] = newVal;
-                    trigger(target, key);
-                },
-            });
+
             // 数据修改1
             function addData() {
                 if (objP.index >= 10) {
                     return window.alert("到顶啦");
                 }
-                objP.ok && (objP.index += 1);
+                objP.index += 1;
             }
             // 数据修改2
             function curData() {
                 if (objP.index <= 1) {
                     return window.alert("到底啦");
                 }
-                objP.ok && (objP.index -= 1);
-            }
-            function toggleOk() {
-                objP.ok = !objP.ok;
+                objP.index -= 1;
             }
 
             // 注册响应函数
             effect(() => {
                 document.getElementById("wrapper").innerText = objP.ok
-                    ? `${objP.index}`
-                    : "清理关系1";
+                    ? objP.index
+                    : "not";
             });
+
+            function toggle() {
+                data.ok = !data.ok;
+            }
         </script>
     </body>
 </html>
