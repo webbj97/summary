@@ -11,26 +11,23 @@
                 height: 2000px;
                 background: #ccc;
             }
-            .content{
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 300px;
-                background: rgb(221, 22, 1);
-            }
-            .nav {
-                position: sticky;
-                top: 0;
-                width: 90px;
-                height: 200px;
-                background: rgb(21, 222, 1);
-            }
         </style>
     </head>
     <body>
         <div class="wrapper">
-            <div class="content"></div>
-            <div class="nav"></div>
+            <button class="button" onclick="getClipboardData()">点击</button>
+            <input id="input" type="text" />
         </div>
+
+        <script>
+            const oInput = document.querySelector("#input");
+            document.addEventListener("paste", (e) => {
+                console.log("e:", e);
+            });
+            function getClipboardData() {
+                console.log("11:", 11);
+                oInput.execCommand("paste");
+            }
+        </script>
     </body>
 </html>

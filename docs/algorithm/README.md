@@ -1,4 +1,4 @@
-<h1 align="center">LeetCode题解Js版</h1>
+<h1 align="center">数据结构与算法</h1>
 
 <p align="center">
     <img src="https://img.shields.io/badge/language-javaScript-brightgreen"/>
@@ -13,26 +13,30 @@
     </a>
 </p>
 <p align="center">
-    <a href="https://webbj97.github.io/leetCode-Js/">https://webbj97.github.io/leetCode-Js/</a>
+    <a href="https://webbj97.github.io/leetCode-Js/">https://webbj97.github.io/summary/</a>
 </p>
 
-## 内容划分
+## 整体规划（持续更新！）
 
-左侧列表划分：
+在学习数据结构时，对知识的理解和实际代码编写会存在很大的出入，所以我们需要**总结+刻意练习**才能达到学习数据结构的目的。
 
-- 分组标题代表数据结构或算法思想
-- 序号代表 LeetCode 题号
-- 括号内标识题目的难度
+## 目录引导
 
-本页内容划分：
-
-- 按照 LeetCode 排列全题解
+1. 数据结构
+    - 数组：数组浅谈+涉及到数组这类数据结构的算法思想
+    - 对象：对象浅谈+涉及到对象这类数据结构的算法思想
+    - ...
+2. leetCode专题
+    - 1-100...
+    - 101-200...
+3. 剑指Offer专题
+    - 1
 
 ## 项目背景
 
-作为前端开发，本身业务需求对算法的要求不高，也导致大家对算法不够重视，而我在偶尔做 LeetCode 的时候也很难找到通俗易懂的 Js 题解。
+作为前端开发，本身业务需求对算法的要求不高，也导致大家对算法不够重视，而我在偶尔做 LeetCode 的之后很快就会忘记，
 
-于是就有了《算法|进阶》部分，尽自己的努力整理 LeetCode 题解 Js 版本，如果该项目能对大家起到积极的作用，就算成功了，欢迎大家留言交流，接受批评和指正～
+于是就有了《算法与设计结构》部分，尽自己的努力整理 LeetCode 题解 Js 版本，如果该项目能对大家起到积极的作用，就算成功了，欢迎大家留言交流，接受批评和指正～
 
 ## 关于我
 
