@@ -33,7 +33,7 @@ module.exports = {
             ],
         },
         {
-            title: "CSS实用知识点", // 必要的
+            title: "CSS基础系列", // 必要的
             sidebarDepth: 1,
             children: [
                 "/blog/css/1",
@@ -70,19 +70,7 @@ module.exports = {
                 "/blog/ts/4",
                 "/blog/ts/5",
                 "/blog/ts/6",
-                // '/blog/ts/7',
-                // '/blog/typescript/basic-2',
-                // '/blog/typescript/basic-2',
-                // '/blog/typescript/basic-2',
-                // '/blog/typescript/basic-3',
-                // '/blog/typescript/basic-4',
-                // '/blog/typescript/5',
-                // '/blog/typescript/6',
             ],
-        },
-        {
-            title: "手撕代码系列",
-            children: ["/blog/handwork/1", "/blog/handwork/2"],
         },
         {
             title: "设计模式", // 必要的
@@ -95,26 +83,6 @@ module.exports = {
                 "/blog/js-sjms/6",
             ],
         },
-        // {
-        //     title: 'Vue', // 必要的
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 3, // 可选的, 默认值是 1
-        //     children: [
-        //         '/blog/vue/mvvm', // MVVM
-        //         '/blog/vue/observer', // 数据监听
-        //         '/blog/vue/dom-diff', // 虚拟Dom
-        //     ]
-        // },
-        // {
-        //     title: '浏览器', // 必要的
-        //     collapsable: true, // 可选的, 默认值是 true,
-        //     sidebarDepth: 4, // 可选的, 默认值是 1
-        //     children: [
-        //         '/blog/browser/1', // 浏览器基本运行原理
-        //         '/blog/browser/2', // 渲染原理
-        //         '/blog/browser/3', // 浏览器EventLoop
-        //     ]
-        // },
     ],
     "/handwork/": ["1", "2"],
     "/algorithm/": [
@@ -124,9 +92,9 @@ module.exports = {
             children: ["/algorithm/type/array"],
         },
         {
-            title: "leetCode题解", // 必要的
+            title: "leetCode专题", // 必要的
             sidebarDepth: 1,
-            children: ["/algorithm/leeCode/1"],
+            children: ["/algorithm/code/1"],
         },
         {
             title: "剑指Offer专题", // 必要的
