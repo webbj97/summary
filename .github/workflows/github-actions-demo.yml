@@ -27,5 +27,5 @@ jobs:
           publish_dir: docs/.vuepress/dist # 发布本地文件地址
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
-#  workflow 文档流里我们可以用 ${{ secrets.GITHUB_TOKEN }} 做权限认证，是一个默认存在的变量，并不需要我们去添加 ACCESS_TOKEN ，当然你也可以自己添加自己的 token 到项目的 secrets 里并使用。
+# workflow 文档流里我们可以用 ${{ secrets.GITHUB_TOKEN }} 做权限认证，是一个默认存在的变量，并不需要我们去添加 ACCESS_TOKEN ，当然你也可以自己添加自己的 token 到项目的 secrets 里并使用。
 # FOLDER 是 build 之后生成的代码位置，如果你是 vue 、react 等项目可能在根目录 build 文件夹下，那就写成 build 。

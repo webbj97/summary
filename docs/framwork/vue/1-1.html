@@ -5,110 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <style>
+            .p {
+                height: auto;
+                overflow: hidden;
+                border: 1px solid red;
+            }
+            
+            .child1 {
+                float: left;
+                border: 1px solid green;
+                width: 100px;
+                height: 300px;
+            }
+            .child2 {
+                float: right;
+                border: 1px solid blue;
+                width: 100px;
+            }
+        </style>
     </head>
     <body>
-        <span id="wrapper"></span>
-        <button id="btn" onclick="addData()">+1</button>
-        <button id="btn" onclick="curData()">-1</button>
-        <button id="btn" onclick="toggle()">切换</button>
-        <div></div>
-        <script>
-            let activeEffect;
-            const data = { index: 1, ok: true };
-            // “桶”改造
-            const bucket = new WeakMap();
-            // 拦截代理
-            const objP = new Proxy(data, {
-                get(target, key) {
-                    // 将副作用函数添加进关系中
-                    track(target, key);
-                    return target[key];
-                },
-                set(target, key, newVal) {
-                    target[key] = newVal;
-                    trigger(target, key);
-                },
-            });
-
-            function effect(fn) {
-                const effectFn = () => {
-                    // 清除旧关系
-                    cleanup(effectFn);
-                    activeEffect = effectFn;
-                    fn();
-                };
-                // 与该作用函数相关联的依赖集合
-                effectFn.deps = [];
-                effectFn();
-            }
-            // 清除该方法的旧关系
-            function cleanup(effectFn) {
-                console.log("effectFn.deps-1:", effectFn.deps);
-                for (let i = 0; i < effectFn.deps.length; i++) {
-                    const deps = effectFn.deps[i];
-                    // 将依赖集合中的effectFn移除
-                    deps.delete(effectFn);
-                }
-                console.log("effectFn.deps-2:", effectFn.deps);
-                effectFn.deps.length = 0; // 清空
-            }
-            // 追踪
-            function track(target, key) {
-                if (!activeEffect) return;
-                // 获取响应对象内部的响应关系
-                let dependMap = bucket.get(target);
-                if (!bucket.get(target)) {
-                    // 没有值，则初始化
-                    bucket.set(target, (dependMap = new Map()));
-                }
-
-                // 获取对应属性的响应函数列表，存储着与key有关联的响应函数
-                let deps = dependMap[key];
-                if (!deps) {
-                    dependMap.set(key, (deps = new Set()));
-                }
-
-                // 添加响应函数
-                deps.add(activeEffect);
-                // 将当前副作用函数的依赖集合
-                activeEffect.deps.push(deps);
-            }
-
-            function trigger(target, key) {
-                const dependMap = bucket.get(target);
-                // 该对象没有设置响应关系
-                if (!dependMap) return;
-                const deps = dependMap.get(key);
-                // dependList存在则遍历执行
-                console.log("响应:");
-                deps && deps.forEach((f) => f());
-            }
-
-            // 数据修改1
-            function addData() {
-                if (objP.index >= 10) {
-                    return window.alert("到顶啦");
-                }
-                objP.index += 1;
-            }
-            // 数据修改2
-            function curData() {
-                if (objP.index <= 1) {
-                    return window.alert("到底啦");
-                }
-                objP.index -= 1;
-            }
-
-            // 注册响应函数
-            effect(() => {
-                document.getElementById("wrapper").innerText = objP.ok
-                    ? objP.index
-                    : "not";
-            });
-
-            function toggle() {
-                data.ok = !data.ok;
-            }
-        </script>
+        <div class="p">
+            <div class="child1"></div>
+            <div class="child2"></div>
+        </div>
     </body>
 </html>
