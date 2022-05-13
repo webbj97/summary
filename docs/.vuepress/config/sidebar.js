@@ -87,9 +87,11 @@ module.exports = {
     "/handwork/": ["1", "2"],
     "/algorithm/": [
         {
-            title: "数据结构", // 必要的
+            title: "数组", // 必要的
             sidebarDepth: 1,
-            children: ["/algorithm/type/array"],
+            children: [
+                "/algorithm/array/1"
+            ],
         },
         {
             title: "leetCode专题", // 必要的
