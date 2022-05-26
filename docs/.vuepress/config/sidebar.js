@@ -104,4 +104,24 @@ module.exports = {
             children: ["/algorithm/offer/1"],
         },
     ],
+    "/computer/": [
+        {
+            title: "网络", // 必要的
+            sidebarDepth: 1,
+            children: [
+                "/computer/network/1", // 网络TCP/IP 有几层
+                "/computer/network/2", // 键入一个网址期间发生了什么
+            ],
+        },
+        {
+            title: "leetCode专题", // 必要的
+            sidebarDepth: 1,
+            children: ["/algorithm/code/1"],
+        },
+        {
+            title: "剑指Offer专题", // 必要的
+            sidebarDepth: 1,
+            children: ["/algorithm/offer/1"],
+        },
+    ],
 };
