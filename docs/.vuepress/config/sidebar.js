@@ -64,6 +64,7 @@ module.exports = {
             title: "TypeScript基础", // 必要的
             sidebarDepth: 1,
             children: [
+                "/blog/ts/0",
                 "/blog/ts/1",
                 "/blog/ts/2",
                 "/blog/ts/3",
