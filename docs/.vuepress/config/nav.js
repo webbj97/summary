@@ -1,6 +1,6 @@
 module.exports = [
     { text: 'Home', link: '/' },
-    { text: '前端|核心', link: '/blog/' },
+    { text: '前端|沉淀', link: '/blog/' },
     { text: '手撕|代码', link: '/handwork/' },
     { text: '算法|题解', link: '/algorithm/' },
     { text: '计算机|基础', link: '/computer/' },

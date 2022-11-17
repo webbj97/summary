@@ -33,6 +33,33 @@ module.exports = {
             ],
         },
         {
+            title: "TypeScript基础", // 必要的
+            sidebarDepth: 1,
+            children: [
+                "/blog/ts/0",
+                "/blog/ts/1",
+                "/blog/ts/2",
+                "/blog/ts/3",
+                "/blog/ts/4",
+                "/blog/ts/5",
+                "/blog/ts/6",
+            ],
+        },
+        {
+            title: "ES6系列", // 必要的
+            sidebarDepth: 1,
+            children: [
+                "/blog/es6/1",
+                "/blog/es6/2",
+                "/blog/es6/3",
+                "/blog/es6/4",
+                "/blog/es6/5",
+                "/blog/es6/6",
+                "/blog/es6/7",
+                "/blog/es6/11",
+            ],
+        },
+        {
             title: "CSS基础系列", // 必要的
             sidebarDepth: 1,
             children: [
@@ -47,43 +74,23 @@ module.exports = {
             ],
         },
         {
-            title: "ES6", // 必要的
+            title: "Canvas基础系列", // 必要的
             sidebarDepth: 1,
             children: [
-                "/blog/es6/1",
-                "/blog/es6/2",
-                "/blog/es6/3",
-                "/blog/es6/4",
-                "/blog/es6/5",
-                "/blog/es6/6",
-                "/blog/es6/7",
-                "/blog/es6/11",
+                "/blog/canvas/1",
             ],
         },
-        {
-            title: "TypeScript基础", // 必要的
-            sidebarDepth: 1,
-            children: [
-                "/blog/ts/0",
-                "/blog/ts/1",
-                "/blog/ts/2",
-                "/blog/ts/3",
-                "/blog/ts/4",
-                "/blog/ts/5",
-                "/blog/ts/6",
-            ],
-        },
-        {
-            title: "设计模式", // 必要的
-            children: [
-                "/blog/js-sjms/1",
-                "/blog/js-sjms/2",
-                "/blog/js-sjms/3",
-                "/blog/js-sjms/4",
-                "/blog/js-sjms/5",
-                "/blog/js-sjms/6",
-            ],
-        },
+        // {
+        //     title: "设计模式", // 必要的
+        //     children: [
+        //         "/blog/js-sjms/1",
+        //         "/blog/js-sjms/2",
+        //         "/blog/js-sjms/3",
+        //         "/blog/js-sjms/4",
+        //         "/blog/js-sjms/5",
+        //         "/blog/js-sjms/6",
+        //     ],
+        // },
     ],
     "/handwork/": ["1", "2"],
     "/algorithm/": [
