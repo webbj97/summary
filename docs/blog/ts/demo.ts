@@ -1,38 +1,64 @@
+// const NumericObject = {
+//     [1]: "冴羽一号",
+//     [2]: "冴羽二号",
+//     [3]: "冴羽三号",
+// };
 
-export function a() {
-    fafdafl;
+// type res = keyof typeof NumericObject;
+
+type Array1 = { [index: number]: unknown };
+type A = keyof Array1; // type A = number
+
+type Map1 = { [k: string]: boolean };
+type M = keyof Map1; // type M = string | number
+
+function returnObjVal<T, K extends keyof T>(obj: T, key: K) {
+    // (parameter) key: K extends keyof T
+    return obj[key];
 }
 
-export function b() {
-    dfadfaf
+class GenericNumber<NumType> {
+    add: (x: NumType, y: NumType) => NumType;
 }
 
-class Tracker() {
-    init([{
-        a: {
-            id: 100,
-            payload: {}
-        },
-        b: {}
-    }]) {
+type numberOrStr = number | string;
+let myGenericNumber = new GenericNumber<numberOrStr>();
 
-    }
+myGenericNumber.add = function(x, y) {
+    return x + y; // 运算符“+”不能应用于类型“numberOrStr”和“numberOrStr”
+};
 
-    track(name) {
-        adfadfafa
-    }
-}\
+// let s = "hello";
+// let n: typeof s; // let n: string
 
-function a(){
-    id = 100;
-    track({id})
+// type funcType = (str: string) => boolean;
+// type n = ReturnType<funcType>; // type n = boolean
+
+function f() {
+    return { x: 10, y: 3 };
 }
 
-function b(){
-    id = 200;
-    track({id})
+// 获取函数类型
+type typeFn = typeof f;
+// type typeFn = () => {
+//     x: number;
+//     y: number;
+// }
+type returnTypeFn = ReturnType<typeFn>;
+// type typeFn = () => {
+//     x: number;
+//     y: number;
+// }
+
+const obj = { name: "kevin", age: "18" };
+type objT = typeof obj;
+// type objT = {
+//     name: string;
+//     age: string;
+// }
+
+function identity<Type>(arg: Type): Type {
+    return arg;
 }
 
-const tracker = new Tracker();
-
-tracker.track('a')
+type identityT = typeof identity 
