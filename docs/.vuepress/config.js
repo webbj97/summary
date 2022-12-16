@@ -27,12 +27,20 @@ module.exports = {
     plugins: [
         ["@vuepress/back-to-top"],
         ["vuepress-plugin-code-copy"],
-        [
-            "@vuepress-reco/vuepress-plugin-kan-ban-niang",
-            {
-                theme: ["haru1"],
-            },
-        ],
+        // [
+        //     "vuepress-plugin-typescript",
+        //     {
+        //         tsLoaderOptions: {
+        //             // ts-loader 的所有配置项
+        //         },
+        //     },
+        // ], // 支持ts编译
+        // [
+        //     "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+        //     {
+        //         theme: ["haru1"],
+        //     },
+        // ], // 右下角看板娘
         [
             "cursor-effects",
             {

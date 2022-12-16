@@ -81,6 +81,13 @@ module.exports = {
                 "/blog/canvas/1",
             ],
         },
+        {
+            title: "Webpack基础系列", // 必要的
+            sidebarDepth: 1,
+            children: [
+                "/blog/webpack/1",
+            ],
+        },
         // {
         //     title: "设计模式", // 必要的
         //     children: [
