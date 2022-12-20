@@ -55,7 +55,18 @@ interface Email1 {
 // type EmailMessageOrNeverContents2 = MessageOf<Email1>; // never
 
 type inferT<T> = T extends { message: infer R } ? R : never;
-type _inferT1 = inferT<1>
-type _inferT2 = inferT<Email>
+type _inferT1 = inferT<1>;
+type _inferT2 = inferT<Email>;
 
 type number_7 = number extends number ? number : string;
+
+
+class Point {
+    x: number; // 属性“x”没有初始化表达式，且未在构造函数中明确赋值。
+    o!: string; // 你可以使用明确赋值断言操作符，来消减上面的错误（definite assignment assertion operator） !:
+    y; // 成员“y”隐式包含类型“any”。
+    z = 1; // Point.z: number 初始值的设置，会让Ts自动推断出它的类型
+}
+
+const point = new Point();
+point.z = '1'; // 不能将类型“string”分配给类型“number”。
