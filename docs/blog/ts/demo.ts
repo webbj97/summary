@@ -1,17 +1,14 @@
-abstract class Base {
-    abstract getName(): string;
-
-    printName() {
-        console.log("Hello, " + this.getName());
-    }
+interface Todo {
+    title: string;
+    description: string;
+    completed: boolean;
+    createdAt: number;
 }
 
-class Derived extends Base {
-    // 非抽象类“Derived”不会实现继承自“Base”类的抽象成员“getName”。
-    getAge() {
-        return "world";
-    }
-}
+type TodoPreview = Omit<Todo, "description">;
 
-const d = new Derived();
-d.printName();
+const todo: TodoPreview = {
+    title: "Clean room",
+    completed: false,
+    createdAt: 1615544252770,
+};
