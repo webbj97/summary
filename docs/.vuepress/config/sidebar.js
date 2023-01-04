@@ -142,4 +142,7 @@ module.exports = {
             children: ["/algorithm/offer/1"],
         },
     ],
+    "/efficiency/": [
+        "dependencies"
+    ],
 };
