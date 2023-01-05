@@ -143,6 +143,7 @@ module.exports = {
         },
     ],
     "/efficiency/": [
-        "dependencies"
+        "dependencies", // 依赖
+        "loader", // 加载
     ],
 };
