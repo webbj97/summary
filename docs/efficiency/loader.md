@@ -2,7 +2,7 @@
 
 > Webpack 支持使用 loader 对文件进行预处理。你可以构建包括 JavaScript 在内的任何静态资源。并且可以使用 Node.js 轻松编写自己的 loader。—— MDN
 
-## 一、什么是loader
+## 什么是loader？
 
 loader，它是一个转换器，将A文件进行编译成B文件，比如：将A.less转换为A.css，单纯的文件转换过程。它只专注于transform！！！！！！
 
@@ -14,7 +14,7 @@ loader，它是一个转换器，将A文件进行编译成B文件，比如：将
 
 `loader` 支持链式调用。链中的每个 `loader` 会将转换应用在已处理过的资源上。一组链式的 `loader` 将按照相反的顺序执行。链中的第一个 `loader` 将其结果（也就是应用过转换后的资源）传递给下一个 `loader`，依此类推。最后，链中的最后一个 `loader`，返回 `webpack` 所期望的 `JavaScript`。
 
-**有关样式的loader**
+**使用样式loader**
 
 1. style-loader 将模块导出的内容作为样式并添加到 DOM 中
 2. css-loader 加载 CSS 文件并解析 import 的 CSS 文件，最终返回 CSS 代
@@ -44,7 +44,7 @@ module.exports = {
                 test: /\.less$/,
                 use: [
                     devMode ? "style-loader" : MiniCssExtractPlugin.loader,
-                    "css-loader",
+                    "css-loader", // 解析css
                     "less-loader", // less解析为css
                 ],
             },
