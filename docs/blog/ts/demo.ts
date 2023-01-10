@@ -68,3 +68,24 @@ type Result = Concat<[1], [2]>; // expected to be [1, 2]
 
 type Push<T extends unknown[], U> = [...T, U];
 type test = Push<[1, 2], "3">; //  [1, 2, '3']
+
+// unshift
+
+type Unshift<T extends unknown[], U> = [U, ...T];
+type testUnshift = Unshift<[1, 2], "3">; //  ['3', 1, 2,]
+
+// params
+type MyParameters<T extends Function> = T extends (...arg: infer P) => unknown
+    ? P
+    : never;
+
+const foo = (arg1: string, arg2: number): void => {};
+const bar = (arg1: boolean, arg2: { a: "A" }): void => {};
+const baz = (): void => {};
+
+type testP1 = MyParameters<typeof foo>;
+type MyAwaited<T extends PromiseLike<any>> = T extends PromiseLike<infer A>
+    ? A extends PromiseLike<any>
+        ? MyAwaited<A>
+        : A
+    : never;
