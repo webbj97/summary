@@ -45,3 +45,26 @@ interface Props {
 }
 
 type k3 = K2<Props>;
+
+// 剔除
+type _Exclude<T, U> = T extends U ? never : T;
+type testE1 = _Exclude<"a" | "b" | "c", "a">;
+
+// 包含
+type Includes<T extends unknown[], U> = U extends T[number] ? true : false;
+type isPillarMen1 = Includes<["Kars", "Esidisi", "Wamuu", "Santana"], "Wamuu">; // true
+
+// if
+type If<C extends boolean, T, F> = C extends true ? T : F;
+type A = If<true, "a", "b">; // expected to be 'a'
+type B = If<false, "a", "b">; // expected to be 'b'
+type C = If<null, "a", "b">; // expected to be 'b'
+
+// concat
+type Concat<T extends unknown[], U extends unknown[]> = [...T, ...U];
+type Result = Concat<[1], [2]>; // expected to be [1, 2]
+
+// push
+
+type Push<T extends unknown[], U> = [...T, U];
+type test = Push<[1, 2], "3">; //  [1, 2, '3']
