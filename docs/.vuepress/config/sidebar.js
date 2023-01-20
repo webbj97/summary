@@ -136,9 +136,9 @@ module.exports = {
             title: "工程化", // 必要的
             sidebarDepth: 0,
             children: [
-                "/computer/efficiency/dependencies", // 依赖
-                "/computer/efficiency/loader", //
                 // "/computer/efficiency/module", //
+                "/computer/efficiency/dependencies", // 依赖
+                "/computer/efficiency/loader", // 加载器
             ],
         },
     ],
