@@ -102,7 +102,7 @@ class Canvas {
         this.initParticles();
     }
     initParticles() {
-        for (let i = 0; i < 350; i++) {
+        for (let i = 0; i < 200; i++) {
             this.particles.push(new Particle(this.w, this.h));
         }
     }
