@@ -1,6 +1,5 @@
 <h1 align=center>余光的前端笔记</h1>
 
-
 ### 我想说的
 
 余光的前端进阶笔记持续更新，这里记录了前端基础技能和高频考察点，旨在帮助大家快速定位、查阅、解决问题！
@@ -15,9 +14,7 @@
 * [GitHub](https://github.com/webbj97)
 * [掘金](https://juejin.im/user/5c0726c6f265da613b6f8dab/posts)
 
-### JavaScript内功进阶系列（完结）
-
-本系列的内容偏向Js基础知识，但是无论是平时工作还是面试加薪，你都无法忽视它们。全系列预计10-15篇文章，欢迎大家指正，虚心学习提高
+### JavaScript高频
 
 1. [一篇搞懂this指向问题](./js-basics/1.md)
 2. [从原型到原型链](./js-basics/2.md)
@@ -30,7 +27,7 @@
 9. [基本数据类型](./js-basics/9.md)
 10. [你真的了解Js吗（系列完结）](./js-basics/10.md)
 
-### JavaScript专项进阶系列（ing）
+### JavaScript专项
 
 1. [变量与函数提升](./js-special/1.md)
 2. [数组去重](./js-special/2.md)
@@ -42,21 +39,22 @@
 8. [数组扁平化](./js-special/8.md)
 9. [数组中查找指定元素](./js-special/9.md)
 
-### ES6系列
+### ES6
 
 1. [ES6（一）let和const](./es6/1.md)
 2. [ES6（二）变量的解构赋值](./es6/2.md)
 3. [ES6（三）箭头函数](./es6/3.md)
 4. [ES6（四）箭头函数](./es6/4.md)
 
-### CSS系列
+### CSS
 
-1. [ES6（一）let和const](./es6/1.md)
-
+1. [选择器的权重](./css/1.md)
+2. [CSS 盒模型](./css/2.md)
+3. [Position](./css/3.md)
+4. [BFC](./css/4.md)
+5. [CSS上下文](./css/5.md)
+6. [Flex](./css/6.md)
+7. [Grid](./css/7.md)
+8. [选择器实战](./css/8.md)
 
 ### 如果您读到了最后，又觉得对您有帮助的话，那么留下您的star～吧，您的鼓励是我最大动力！
-
-
-
-
-

@@ -89,3 +89,12 @@ type MyAwaited<T extends PromiseLike<any>> = T extends PromiseLike<infer A>
         ? MyAwaited<A>
         : A
     : never;
+
+function returnTypeFn(num: number) {
+    if (num > 1) {
+        return "1";
+    } else {
+        return 1;
+    }
+}
+type aaa = ReturnType<returnTypeFn>;
