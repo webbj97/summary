@@ -79,9 +79,7 @@ module.exports = {
         {
             title: "Canvas基础系列", // 必要的
             sidebarDepth: 1,
-            children: [
-                "/blog/canvas/1",
-            ],
+            children: ["/blog/canvas/1"],
         },
         // {
         //     title: "设计模式", // 必要的
@@ -95,26 +93,42 @@ module.exports = {
         //     ],
         // },
     ],
-    "/handwork/": ["1", "2"],
     "/algorithm/": [
         {
-            title: "数组", // 必要的
-            sidebarDepth: 1,
+            title: "LeetCode Hot 100", // 必要的
+            sidebarDepth: 0,
             children: [
-                "/algorithm/array/1"
+                "/algorithm/hot100/1",
+                "/algorithm/hot100/2",
             ],
         },
         {
-            title: "leetCode专题", // 必要的
-            sidebarDepth: 1,
-            children: ["/algorithm/code/1"],
-        },
-        {
-            title: "剑指Offer专题", // 必要的
-            sidebarDepth: 1,
-            children: ["/algorithm/offer/1"],
+            title: "专题：数组排序", // 必要的
+            sidebarDepth: 0,
+            children: [
+                "/algorithm/sort/1",
+                "/algorithm/sort/2",
+                "/algorithm/sort/3",
+            ],
         },
     ],
+    // "/algorithm/": [
+    //     {
+    //         title: "数组", // 必要的
+    //         sidebarDepth: 1,
+    //         children: ["/algorithm/array/1"],
+    //     },
+    //     {
+    //         title: "leetCode专题", // 必要的
+    //         sidebarDepth: 1,
+    //         children: ["/algorithm/code/1"],
+    //     },
+    //     {
+    //         title: "剑指Offer专题", // 必要的
+    //         sidebarDepth: 1,
+    //         children: ["/algorithm/offer/1"],
+    //     },
+    // ],
     "/computer/": [
         {
             title: "网络", // 必要的
