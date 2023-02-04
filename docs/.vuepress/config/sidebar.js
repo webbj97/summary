@@ -63,7 +63,7 @@ module.exports = {
             ],
         },
         {
-            title: "CSS基础系列", // 必要的
+            title: "CSS", // 必要的
             sidebarDepth: 1,
             children: [
                 "/blog/css/1",
@@ -80,6 +80,11 @@ module.exports = {
             title: "Canvas基础系列", // 必要的
             sidebarDepth: 1,
             children: ["/blog/canvas/1"],
+        },
+        {
+            title: "Vue", // 必要的
+            sidebarDepth: 1,
+            children: ["/blog/Vue/1"],
         },
         // {
         //     title: "设计模式", // 必要的
