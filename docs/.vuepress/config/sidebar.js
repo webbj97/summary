@@ -79,7 +79,7 @@ module.exports = {
         {
             title: "Vue系列", // 必要的
             sidebarDepth: 1,
-            children: ["/blog/vue/1"],
+            children: ["/blog/vue/1", "/blog/vue/2"],
         },
         // {
         //     title: "Canvas基础系列", // 必要的
@@ -102,10 +102,7 @@ module.exports = {
         {
             title: "LeetCode Hot 100", // 必要的
             sidebarDepth: 0,
-            children: [
-                "/algorithm/hot100/1",
-                "/algorithm/hot100/2",
-            ],
+            children: ["/algorithm/hot100/1", "/algorithm/hot100/2"],
         },
         {
             title: "专题：数组排序", // 必要的
