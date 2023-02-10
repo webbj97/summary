@@ -3,6 +3,7 @@ module.exports = [
     { text: "前端", link: "/blog/" },
     { text: "工程化", link: "/efficiency/" },
     { text: "算法", link: "/algorithm/" },
+    { text: "编程", link: "/handwork/" },
     // {
     //     text: "其他",
     //     items: [

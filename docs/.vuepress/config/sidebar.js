@@ -114,6 +114,13 @@ module.exports = {
             ],
         },
     ],
+    "/handwork/": [
+        {
+            title: "数组：数组方法JS实现", // 必要的
+            sidebarDepth: 0,
+            children: ["/handwork/1", "/handwork/2"],
+        },
+    ],
     // "/algorithm/": [
     //     {
     //         title: "数组", // 必要的
