@@ -63,6 +63,11 @@ module.exports = {
             ],
         },
         {
+            title: "HTML系列", // 必要的
+            sidebarDepth: 0,
+            children: ["/blog/html/1", "/blog/html/2", "/blog/html/3"],
+        },
+        {
             title: "CSS系列", // 必要的
             sidebarDepth: 1,
             children: [
@@ -77,26 +82,10 @@ module.exports = {
             ],
         },
         {
-            title: "Vue系列", // 必要的
+            title: "框架", // 必要的
             sidebarDepth: 1,
             children: ["/blog/vue/1", "/blog/vue/2"],
         },
-        // {
-        //     title: "Canvas基础系列", // 必要的
-        //     sidebarDepth: 1,
-        //     children: ["/blog/canvas/1"],
-        // },
-        // {
-        //     title: "设计模式", // 必要的
-        //     children: [
-        //         "/blog/js-sjms/1",
-        //         "/blog/js-sjms/2",
-        //         "/blog/js-sjms/3",
-        //         "/blog/js-sjms/4",
-        //         "/blog/js-sjms/5",
-        //         "/blog/js-sjms/6",
-        //     ],
-        // },
     ],
     "/algorithm/": [
         {
@@ -113,31 +102,12 @@ module.exports = {
                 "/algorithm/sort/3",
             ],
         },
-    ],
-    "/handwork/": [
         {
             title: "数组：数组方法JS实现", // 必要的
             sidebarDepth: 0,
-            children: ["/handwork/1", "/handwork/2"],
+            children: ["/algorithm/handwork/1", "/algorithm/handwork/2"],
         },
     ],
-    // "/algorithm/": [
-    //     {
-    //         title: "数组", // 必要的
-    //         sidebarDepth: 1,
-    //         children: ["/algorithm/array/1"],
-    //     },
-    //     {
-    //         title: "leetCode专题", // 必要的
-    //         sidebarDepth: 1,
-    //         children: ["/algorithm/code/1"],
-    //     },
-    //     {
-    //         title: "剑指Offer专题", // 必要的
-    //         sidebarDepth: 1,
-    //         children: ["/algorithm/offer/1"],
-    //     },
-    // ],
     "/computer/": [
         {
             title: "网络", // 必要的
@@ -148,18 +118,12 @@ module.exports = {
             ],
         },
         {
-            title: "算法：leetCode专题", // 必要的
-            sidebarDepth: 1,
-            children: ["/algorithm/code/1"],
+            title: "工程化", // 必要的
+            sidebarDepth: 0,
+            children: [
+                "/computer/efficiency/dependencies", // 依赖
+                "/computer/efficiency/loader", //
+            ],
         },
-        {
-            title: "算法：剑指Offer专题", // 必要的
-            sidebarDepth: 1,
-            children: ["/algorithm/offer/1"],
-        },
-    ],
-    "/efficiency/": [
-        "dependencies", // 依赖
-        "loader", // 加载
     ],
 };

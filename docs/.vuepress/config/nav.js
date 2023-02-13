@@ -1,9 +1,11 @@
 module.exports = [
     { text: "Home", link: "/" },
-    { text: "前端", link: "/blog/" },
+    {
+        text: "前端｜基础",
+        link: "/blog/",
+    },
+    { text: "前端｜体系", link: "/computer/" },
     { text: "算法｜编程", link: "/algorithm/" },
-    { text: "工程化", link: "/efficiency/" },
-    { text: "计算机", link: "/computer/" },
     // {
     //     text: "其他",
     //     items: [
