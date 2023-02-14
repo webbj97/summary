@@ -7,13 +7,15 @@
     <title>Document</title>
     <style>
         .line{
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            border: 2px solid #eee;
-            border-left-color: transparent;
+            width: 100px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            white-space: initial;
 
-            animation: ro 2s infinite;
+            /* animation: ro 2s infinite; */
         }
         @keyframes ro {
             from{
@@ -26,6 +28,8 @@
     </style>
 </head>
 <body>
-    <div class="line"></div>
+    <div class="line">
+        哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+    </div>
 </body>
 </html>

@@ -4,14 +4,7 @@ module.exports = [
         text: "前端｜基础",
         link: "/blog/",
     },
-    { text: "计算机", link: "/computer/" },
-    { text: "算法｜编程", link: "/algorithm/" },
-    // {
-    //     text: "其他",
-    //     items: [
-    //         { text: "Chinese", link: "/language/chinese/" },
-    //         { text: "Japanese", link: "/language/japanese/" },
-    //     ],
-    // },
+    { text: "前端｜工程化", link: "/computer/" },
+    { text: "算法｜手写", link: "/algorithm/" },
     { text: "点个Star⭐️", link: "https://github.com/webbj97/summary" },
 ];
