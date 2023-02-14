@@ -4,7 +4,7 @@ module.exports = [
         text: "前端｜基础",
         link: "/blog/",
     },
-    { text: "前端｜体系", link: "/computer/" },
+    { text: "计算机", link: "/computer/" },
     { text: "算法｜编程", link: "/algorithm/" },
     // {
     //     text: "其他",

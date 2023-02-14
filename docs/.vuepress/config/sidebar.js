@@ -86,6 +86,20 @@ module.exports = {
             sidebarDepth: 1,
             children: ["/blog/vue/1", "/blog/vue/2"],
         },
+        {
+            title: "网络", // 必要的
+            sidebarDepth: 0,
+            children: [
+                "/blog/network/1", // 状态码
+            ],
+        },
+        {
+            title: "浏览器", // 必要的
+            sidebarDepth: 0,
+            children: [
+                "/blog/browser/1", // 浏览器渲染基本原理
+            ],
+        },
     ],
     "/algorithm/": [
         {
@@ -109,14 +123,7 @@ module.exports = {
         },
     ],
     "/computer/": [
-        {
-            title: "网络", // 必要的
-            sidebarDepth: 0,
-            children: [
-                "/computer/network/1", // 网络TCP/IP 有几层
-                "/computer/network/2", // 键入一个网址期间发生了什么
-            ],
-        },
+
         {
             title: "工程化", // 必要的
             sidebarDepth: 0,
