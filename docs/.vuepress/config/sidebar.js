@@ -58,14 +58,18 @@ module.exports = {
                 "/blog/es6/4",
                 "/blog/es6/5",
                 "/blog/es6/6",
-                "/blog/es6/7",
-                "/blog/es6/11",
+                // "/blog/es6/7",
+                // "/blog/es6/11",
             ],
         },
         {
             title: "HTML系列", // 必要的
             sidebarDepth: 0,
-            children: ["/blog/html/1", "/blog/html/2", "/blog/html/3"],
+            children: [
+                "/blog/html/1",
+                "/blog/html/2",
+                // "/blog/html/3"
+            ],
         },
         {
             title: "CSS系列", // 必要的
@@ -123,7 +127,6 @@ module.exports = {
         },
     ],
     "/computer/": [
-
         {
             title: "工程化", // 必要的
             sidebarDepth: 0,

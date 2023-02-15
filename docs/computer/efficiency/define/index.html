@@ -7,9 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./req"></script>
+    <script src="./req"></script>\
+    <script type="module">
+        import requirjs from './noleedf'
+    </script>
     <script>
-       requirejs(['1'], function(app){
+       requirejs(['2'], function(app){
         console.log('arr:', app);
        })
     </script>

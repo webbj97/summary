@@ -1,5 +1,3 @@
-define(function() {
-    return {
-        name: "2",
-    };
-});
+module.exports = {
+    name: "余光",
+};

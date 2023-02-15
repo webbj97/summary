@@ -12,3 +12,18 @@ function _flat(list = []) {
 }
 
 console.log("_flat:", _flat(arr));
+
+const str =
+    'name: 2, url: "https://www.baidu.com" } \n name: 2, url: "https://www.baidu.com" }';
+const res1 = str
+    .replace("}", "")
+    .split("\n")
+    .filter((_) => _)
+    .map((_) =>
+        _.split(",").reduce((obj, str) => {
+            const [, key, val] = str.match(/(\w+):([\s\d\w]+)/);
+            obj[key.trim()] = val.trim();
+            return obj;
+        }, {})
+    );
+console.log("res1:", res1);
