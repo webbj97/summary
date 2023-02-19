@@ -253,5 +253,4 @@ button.addEventListener('click',function(){
 });
 ```
 
-
 ## 自动化构建

@@ -138,7 +138,7 @@ module.exports = {
             children: [
                 "/computer/efficiency/dependencies", // 依赖
                 "/computer/efficiency/loader", //
-                "/computer/efficiency/module", //
+                // "/computer/efficiency/module", //
             ],
         },
     ],
