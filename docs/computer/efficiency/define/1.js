@@ -1,2 +1,5 @@
-const foo = require('./2'); // 输入
-console.log('foo:', foo);
+const name = 1;
+
+export default {
+    name,
+};

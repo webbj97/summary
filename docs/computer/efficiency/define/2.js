@@ -1,3 +1,3 @@
-module.exports = {
-    name: "余光",
-};
+import aaa from './1';
+
+console.log('aaa:', aaa);

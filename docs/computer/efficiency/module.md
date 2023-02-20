@@ -162,16 +162,91 @@ module.exports = {
 
 ### ES6
 
-Node是CommonJS在服务器端一个具有代表性的实现；
-Browserify是CommonJS在浏览器中的一种实现；
-webpack打包工具具备对CommonJS的支持和转换（后面我会讲到）；
-所以，Node中对CommonJS进行了支持和实现，让我们在开发node的过程中可以方便的进行模块化开发：
+后面伴随着 babel 等编译工具和 webpack 等自动化工具的出现，AMD/CMD的出场率降低了，大家都习惯于用 CommonJS 和 ES6 的模块化方式编写代码了。
 
-在Node中每一个js文件都是一个单独的模块；
-这个模块中包括CommonJS规范的核心变量：exports、module.exports、require；
-我们可以使用这些变量来方便的进行模块化开发；
-前面我们提到过模块化的核心是导出和导入，Node中对其进行了实现：
+```js
+// ES6
+import { foo } from './foo'; // 输入
+export const bar = 1;        // 输出
+export default {
+   name: '余光'
+}
 
-exports和module.exports可以负责对模块中的内容进行导出；
-require函数可以帮助我们导入其他模块（自定义模块、系统模块、第三方库模块）中的内容；
+// CommonJS
+const foo = require('./foo'); // 输入
+module.exports = { 。         // 输出
+    name: "余光",
+}
+```
 
+但这种 import from 的引入方式，浏览器不能理解，但后来，编译工具 `babel` 的出现让这变成了可能
+
+### babel的出现
+
+`babel`是一个JavaScript 编译器，它让我们能够使用符合开发需求的编程风格去编写代码，然后通过babel的编译转化成对浏览器兼容良好的JavaScript。
+
+Babel 的出现改变了我们的前端开发观点。它让我们意识到：对前端项目来说，开发的代码和生产的前端代码可以是不一样的，也应该是不一样的。
+
+1. 在开发的时候，我们追求的是编程的便捷性和可阅读性。
+2. 在生产中，我们追求的是代码对各种浏览器的兼容性。
+
+Babel的工作流程可概括为三个阶段
+
+1. Parse(解析): 通过词法分析和语法分析，将源代码解析成抽象语法树(AST)
+2. Transform(转换)：对解析出来的抽象语法树做中间转换处理
+3. Generate(生成)：用经过转换后的抽象语法树生成新的代码
+
+上面提到的CMD/AMD方案，可以看作是“在线编译”方案，当浏览器加载js时，对应的模块才会开始分析，确定执行顺序，但是这样：
+
+1. 页面的加载时间必然增加
+2. 请求次数也会增加
+
+### 一个新的方式
+
+1. 我们可以通过工具，让它把组织模块的工作提前做好，在代码部署上线前就完成，从而节约页面加载时间
+2. 使用工具进行代码合并，把多个script的代码合并到少数几个script里，减少http请求的数量
+
+我们从 `在线处理`时代 走进了 `预处理`时代，其中典型的就是：典型的代表是2011年出现的`broswerify` 和2012年发明的`webpack`。他们的定位是类似的，为了解决上面的问题，随后webpack更胜一筹，逐渐成为主流的打包工具
+
+## webpack
+
+> 本质上，webpack 是一个用于现代 JavaScript 应用程序的 静态模块打包工具。当 webpack 处理应用程序时，它会在内部从一个或多个入口点构建一个 依赖图(dependency graph)，然后将你项目中所需的每一个模块组合成一个或多个 bundles，它们均为静态资源，用于展示你的内容。 —— MDN
+
+通过配置入口、出口、加载器、插件，webpack为我们输出对应的 bundle 静态文件
+
+解决问题必然就衍生出新的问题，代码预编译后，合并的代码体积也会很大，请求的数量确实减少了，但单个script脚本加载的速度可能被增加了，如此一来，首屏加载会消耗很长时间并拖慢速度，可谓是物极必反。
+
+### 代码拆分功能
+
+webpack于是引入了代码拆分的功能(Code Splitting)来解决这个问题, 从全部打包后退一步：可以打包成多个包
+
+这种代码拆分可通过webpack独特的插件机制完成。plugins字段是是一个数组，可接收不同的plugins实例，从而给webpack打包程序附加不同的功能，`CommonsChunkPlugin`就是一个实现代码拆分的插件。从 webpack4 开始，取而代之的是 `optimization.splitChunks`。
+
+```js
+// webpack.config.js
+module.exports = {
+  //...
+  optimization: {
+    splitChunks: {
+      chunks: 'async', // 这表明将选择哪些 chunk 进行优化
+      minSize: 20000, // 生成 chunk 的最小体积（以 bytes 为单位）
+      minChunks: 1, // 拆分前必须共享模块的最小 chunks 数。
+      maxAsyncRequests: 30, // 按需加载时的最大并行请求数。
+      maxInitialRequests: 30, // 入口点的最大并行请求数。
+      enforceSizeThreshold: 50000,
+    },
+  },
+};
+```
+
+### 按需加载
+
+正如其字面意思，按需加载就是等到需要的时候才加载一部分模块。并不选择将其代码打包到首次加载的入口bundle中，而是等待触发的时机，届时才通过动态脚本插入的方式进行加载: 即创建script元素，添加脚本链接并通过appendChild加入到html元素中
+
+例如我们需要实现一个功能，在点击某个按钮的时候，使用某个模块的功能。这时我们可以使用ES6的import语句动态导入，webpack会支持import的功能并实现按需加载
+
+button.addEventListener('click',function(){
+  import('./a.js').then(data => {
+    // use data
+  })
+});

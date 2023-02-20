@@ -106,11 +106,11 @@ module.exports = {
         },
     ],
     "/algorithm/": [
-        {
-            title: "LeetCode Hot 100", // 必要的
-            sidebarDepth: 0,
-            children: ["/algorithm/hot100/1", "/algorithm/hot100/2"],
-        },
+        // {
+        //     title: "LeetCode Hot 100", // 必要的
+        //     sidebarDepth: 0,
+        //     children: ["/algorithm/hot100/1", "/algorithm/hot100/2"],
+        // },
         {
             title: "专题：数组排序", // 必要的
             sidebarDepth: 0,
@@ -119,6 +119,11 @@ module.exports = {
                 "/algorithm/sort/2",
                 "/algorithm/sort/3",
             ],
+        },
+        {
+            title: "专题：动态规划", // 必要的
+            sidebarDepth: 0,
+            children: ["/algorithm/dp/1"],
         },
         {
             title: "数组：数组方法JS实现", // 必要的
@@ -133,6 +138,7 @@ module.exports = {
             children: [
                 "/computer/efficiency/dependencies", // 依赖
                 "/computer/efficiency/loader", //
+                "/computer/efficiency/module", //
             ],
         },
     ],
