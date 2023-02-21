@@ -245,8 +245,13 @@ module.exports = {
 
 例如我们需要实现一个功能，在点击某个按钮的时候，使用某个模块的功能。这时我们可以使用ES6的import语句动态导入，webpack会支持import的功能并实现按需加载
 
+```js
 button.addEventListener('click',function(){
   import('./a.js').then(data => {
     // use data
   })
 });
+```
+
+
+## 自动化构建
