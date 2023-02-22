@@ -22,7 +22,6 @@
     "@vuepress/plugin-back-to-top": "^1.7.1",
     "@vuepress/shared-utils": "^1.8.2",
     "gh-pages": "^2.1.1",
-    "jest": "^26.6.3",
     "vuepress": "^1.8.2",
     "vuepress-plugin-cursor-effects": "^1.1.2",
     "vuepress-plugin-sitemap": "^2.3.1",
