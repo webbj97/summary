@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider & vuepress build docs",
     "test": "jest"
   },
   "repository": "git+https://github.com/webbj97/summary.git",
