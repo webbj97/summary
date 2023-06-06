@@ -1,0 +1,16 @@
+{\"label\":\"主副卡用户共享限免\",
+ \"required\":true,
+ \"requiredMessage\":\"请设置主副卡用户共享限免\",
+ \"name\":\"shareLimit\",
+ \"componentType\":\"applyLimitBox\",
+ \"componentProps\":{
+  \"applyLimitTypeEditDisable\": true,
+          \"defaultValue\":{
+              \"type\": \"NO_LIMIT\",
+              \"value\": {
+                  \"applyLimitType\": \"NO_LIMIT\"
+              }
+          }, 
+  \"monthLmtProps\":{\"visible\":false},\"personalLmtProps\":{\"visible\":false},\"personDailyProps\":{\"visible\":true,\"max\":99999,\"min\":1,\"warn\": \"X会员钻石卡主副卡共用限免次数场景需要设置，设置后【每用户限免】可选不限制。其他场景请选择不限制\"},\"personWeekProps\":{\"visible\":false},
+  \"isEditDisable\":true}
+  },
